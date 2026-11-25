@@ -1,0 +1,99 @@
+{
+  "articles": [
+    {
+      "id": "bne-2026",
+      "title": "西班牙国家图书馆的宝藏",
+      "esTitle": "Los tesoros de la Biblioteca Nacional",
+      "level": "A1",
+      "date": "2026-11-26",
+      "source": {
+        "name": "Biblioteca Nacional de España",
+        "url": "https://www.bne.es/es/colecciones",
+        "date": "常设馆藏资料"
+      },
+      "cover": "covers/culture.svg",
+      "pairs": [
+        [
+          "La Biblioteca Nacional de España conserva libros y otros documentos.",
+          "西班牙国家图书馆保存书籍和其他文献。"
+        ],
+        [
+          "Su colección incluye mapas, dibujos, fotografías y periódicos.",
+          "其馆藏包括地图、绘画、照片和报纸。"
+        ],
+        [
+          "Estos materiales ayudan a conocer la historia y la cultura de España.",
+          "这些资料有助于了解西班牙的历史与文化。"
+        ],
+        [
+          "La biblioteca también tiene una colección digital.",
+          "图书馆也拥有数字馆藏。"
+        ],
+        [
+          "En internet se pueden consultar documentos antiguos.",
+          "人们可以在网上查阅古老文献。"
+        ],
+        [
+          "Esto es útil para los estudiantes y para las personas que investigan.",
+          "这对学生和研究人员很有用。"
+        ],
+        [
+          "No todos los documentos son libros: también hay partituras y revistas.",
+          "并非所有文献都是书籍：还有乐谱和杂志。"
+        ],
+        [
+          "Una biblioteca nacional ayuda a conservar la memoria de un país.",
+          "国家图书馆有助于保存一个国家的记忆。"
+        ]
+      ],
+      "dict": {
+        "conserva": "保存（conservar）",
+        "documentos": "文献",
+        "colección": "馆藏",
+        "mapas": "地图",
+        "dibujos": "绘画",
+        "fotografías": "照片",
+        "periódicos": "报纸",
+        "historia": "历史",
+        "consultar": "查阅",
+        "antiguos": "古老的",
+        "útil": "有用的",
+        "investigan": "研究（investigar）",
+        "partituras": "乐谱",
+        "revistas": "杂志",
+        "memoria": "记忆",
+        "país": "国家"
+      },
+      "grammar": "se pueden consultar：可以查阅，se 表示非人称/被动结构。\nNo todos：并非所有。",
+      "questions": [
+        {
+          "q": "¿Qué conserva la biblioteca?",
+          "options": [
+            "Libros y documentos",
+            "Solo comida",
+            "Ropa"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Dónde se pueden consultar documentos antiguos?",
+          "options": [
+            "En un tren",
+            "En internet",
+            "En una farmacia"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿Qué ayuda a conservar?",
+          "options": [
+            "La memoria de un país",
+            "La temperatura",
+            "El dinero"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}
