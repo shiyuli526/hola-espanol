@@ -1,4 +1,5 @@
 name: Publish Hola Español
+
 on:
   push:
     branches: [main]
@@ -6,32 +7,55 @@ on:
   workflow_run:
     workflows: ['Daily Spanish reading']
     types: [completed]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
+
 concurrency:
   group: hola-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/configure-pages@v5
+
+      - name: Prepare website
+        run: |
+          mkdir -p public
+          cp index.html daily.json sw.js manifest.json icon-192.png icon-512.png public/
+          cp -r covers public/
+          if [ -d audio ]; then
+            cp -r audio public/
+          fi
+          test -s public/index.html
+          test -s public/daily.json
+          ls -lah public
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: github-pages
+          path: public
+
+  deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-      - uses: actions/configure-pages@v5
-      - run: |
-          mkdir -p public
-          cp index.html daily.json sw.js manifest.json icon-192.png icon-512.png public/
-          cp -r covers public/
-          if [ -d audio ]; then cp -r audio public/; fi
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-      - uses: actions/deploy-pages@v4
+      - name: Deploy website
         id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages
