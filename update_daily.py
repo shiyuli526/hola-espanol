@@ -3,7 +3,7 @@ import os,json,re,hashlib,datetime,asyncio,pathlib,html,urllib.parse
 import requests,feedparser
 from zoneinfo import ZoneInfo
 ROOT=pathlib.Path(__file__).parent
-FEEDS={'Cultura':'https://www.rtve.es/rss/temas_cultura.xml','Ciencia':'https://www.rtve.es/rss/temas_ciencia-y-tecnologia.xml','España':'https://www.rtve.es/rss/temas_noticias.xml'}
+FEEDS=[('RTVE','España','https://api2.rtve.es/rss/temas_noticias.xml'),('SINC','Ciencia','https://www.agenciasinc.es/feed/noticias'),('RTVE','Cultura','https://api2.rtve.es/rss/temas_cultura.xml')]
 TODAY=datetime.datetime.now(ZoneInfo('Europe/Madrid')).date()
 
 def clean(x):return html.unescape(re.sub('<[^>]+>',' ',x or '')).strip()
@@ -27,26 +27,72 @@ async def audio(a):
         path=d/f'{i}.mp3';await edge_tts.Communicate(p[0],'es-ES-ElviraNeural').save(str(path));paths.append(str(path.relative_to(ROOT)))
     return paths
 
+def canonical(link):
+    u=urllib.parse.urlsplit(link)
+    return (u.hostname or '').removeprefix('www.')+u.path.rstrip('/')
+
 def main():
-    path=ROOT/'daily.json';data=json.loads(path.read_text());old=data['articles'];seen={a.get('source',{}).get('url') for a in old};added=0
-    for category,url in FEEDS.items():
-        if added>=3:break
+    import shutil
+    path=ROOT/'daily.json'
+    data=json.loads(path.read_text(encoding='utf-8'))
+    old=data['articles']
+    seen={canonical(a.get('source',{}).get('url','')) for a in old}
+    candidates=[]
+    for source,category,url in FEEDS:
         try:
-            response=requests.get(url,timeout=30);response.raise_for_status();entries=feedparser.parse(response.content).entries
-        except Exception as e:print('Feed failed:',category,type(e).__name__);continue
-        for e in entries[:12]:
-            try:
-                link=e.get('link','');dt=e.get('published_parsed') or e.get('updated_parsed');summary=clean(e.get('summary',''));title=clean(e.get('title',''))
-                if not dt or not link.startswith('https://www.rtve.es/') or link in seen or len(summary)<100:continue
-                date=datetime.date(*dt[:3]);age=(TODAY-date).days
-                if not 0<=age<=2:continue
-                level='A2' if added==2 else 'A1';item={'title':title,'summary':summary[:3500],'date':str(date),'url':link};a=generate(item,level)
-                if not valid(a,level):continue
-                a.update(id=hashlib.sha256(link.encode()).hexdigest()[:16],level=level,date=str(TODAY),source={'name':'RTVE · '+category,'url':link,'date':str(date)},cover='covers/'+('culture' if category=='Cultura' else 'science' if category=='Ciencia' else 'general')+'.svg');a.pop('audio',None)
-                try:a['audio']=asyncio.run(asyncio.wait_for(audio(a),timeout=150))
-                except Exception as ex:print('Neural audio unavailable:',type(ex).__name__)
-                old.append(a);seen.add(link);added+=1;break
-            except Exception as ex:print('Skipped item:',type(ex).__name__)
-    if not added:raise SystemExit('No qualifying fresh articles; existing library preserved.')
-    path.write_text(json.dumps(data,ensure_ascii=False,indent=2));print('Published',added)
+            response=requests.get(url,timeout=25,headers={'User-Agent':'HolaEspanol RSS reader/2.1'})
+            response.raise_for_status()
+            feed=feedparser.parse(response.content)
+            print(f'RSS {source}/{category}: HTTP {response.status_code}; entries={len(feed.entries)}',flush=True)
+            if not feed.entries: print('RSS empty or invalid:',str(feed.get('bozo_exception',''))[:180])
+        except Exception as ex:
+            print('RSS failure:',source,type(ex).__name__,str(ex)[:180]);continue
+        for e in feed.entries[:30]:
+            link=e.get('link','')
+            host=(urllib.parse.urlsplit(link).hostname or '').lower()
+            domain='rtve.es' if source=='RTVE' else 'agenciasinc.es'
+            if not (host==domain or host.endswith('.'+domain)) or not link.startswith(('http://','https://')):
+                print('Skip: unexpected host',host);continue
+            if canonical(link) in seen: continue
+            dt=e.get('published_parsed') or e.get('updated_parsed')
+            if not dt: print('Skip: missing date');continue
+            date=datetime.datetime(*dt[:6],tzinfo=datetime.timezone.utc).astimezone(ZoneInfo('Europe/Madrid')).date()
+            if not 0<=(TODAY-date).days<=2: print('Skip: source date',date);continue
+            title=clean(e.get('title',''))
+            summary=max([clean(e.get('summary','')),clean(' '.join(x.get('value','') for x in e.get('content',[])))],key=len)
+            if not title or len(summary)<100: print('Skip: insufficient source facts',len(summary));continue
+            candidates.append((source,category,link,date,title,summary))
+    print('Eligible source items:',len(candidates),flush=True)
+    added=attempts=0
+    for source,category,link,date,title,summary in candidates:
+        if added>=3 or attempts>=6: break
+        if canonical(link) in seen: continue
+        attempts+=1
+        level='A2' if added==2 else 'A1'
+        print(f'Generating {level}: {source} / {title[:100]}',flush=True)
+        try:
+            a=generate({'title':title,'summary':summary[:3500],'date':str(date),'url':link},level)
+        except requests.HTTPError as ex:
+            status=ex.response.status_code if ex.response is not None else None
+            print('Model HTTP error:',status,flush=True)
+            if status in (401,403,429): break
+            continue
+        except Exception as ex:
+            print('Model failure:',type(ex).__name__,str(ex)[:180]);continue
+        if not valid(a,level): print('Skip: invalid or insufficient learning article');continue
+        a.update(id=hashlib.sha256(canonical(link).encode()).hexdigest()[:16],level=level,date=str(TODAY),source={'name':source+' · '+category,'url':link,'date':str(date)},cover='covers/'+('culture' if category=='Cultura' else 'science' if category=='Ciencia' else 'general')+'.svg')
+        a.pop('audio',None)
+        try:
+            a['audio']=asyncio.run(asyncio.wait_for(audio(a),timeout=100))
+            print('Neural audio files:',len(a['audio']))
+        except Exception as ex:
+            shutil.rmtree(ROOT/'audio'/a['id'],ignore_errors=True)
+            print('Neural audio unavailable:',type(ex).__name__,str(ex)[:120])
+        old.append(a);seen.add(canonical(link));added+=1
+        tmp=path.with_suffix('.tmp')
+        tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
+        tmp.replace(path)
+        print('Saved article:',a['id'],flush=True)
+    if not added: raise SystemExit(f'No new articles; eligible={len(candidates)}, model attempts={attempts}; existing library preserved.')
+    print('Published',added,flush=True)
 if __name__=='__main__':main()
