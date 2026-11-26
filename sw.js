@@ -1,51 +1,45 @@
-const C = 'hola-v23';
-const core = [
-  './',
-  './index.html',
-  './daily.json',
-  './covers/general.svg',
-  './covers/culture.svg',
-  './covers/science.svg'
-];
+const C = 'hola-v28';
 
 self.addEventListener('install', e =>
-  e.waitUntil(
-    caches.open(C)
-      .then(c => c.addAll(core))
-      .then(() => self.skipWaiting())
-  )
+  e.waitUntil(self.skipWaiting())
 );
 
 self.addEventListener('activate', e =>
   e.waitUntil(
-    caches.keys()
-      .then(ks => Promise.all(
+    caches.keys().then(ks =>
+      Promise.all(
         ks.filter(k => k.startsWith('hola-') && k !== C)
           .map(k => caches.delete(k))
-      ))
-      .then(() => self.clients.claim())
+      )
+    ).then(() => self.clients.claim())
   )
 );
 
 self.addEventListener('fetch', e => {
+  const r = e.request;
+  const u = new URL(r.url);
+
   if (
-    e.request.method !== 'GET' ||
-    new URL(e.request.url).origin !== location.origin
+    r.method !== 'GET' ||
+    u.origin !== location.origin ||
+    r.headers.has('range') ||
+    r.destination === 'audio' ||
+    u.pathname.endsWith('.mp3')
   ) return;
 
   e.respondWith(
-    fetch(e.request).then(r => {
-      if (r.ok) {
-        const copy = r.clone();
+    fetch(r).then(res => {
+      if (res.ok && res.status === 200) {
+        const copy = res.clone();
         caches.open(C)
-          .then(c => c.put(e.request, copy))
+          .then(c => c.put(r, copy))
           .catch(() => {});
       }
-      return r;
+      return res;
     }).catch(() =>
-      caches.match(e.request, {ignoreSearch: true})
-        .then(r => r || (
-          e.request.mode === 'navigate'
+      caches.match(r, {ignoreSearch: true})
+        .then(res => res || (
+          r.mode === 'navigate'
             ? caches.match('./index.html')
             : Response.error()
         ))
