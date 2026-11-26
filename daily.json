@@ -2249,6 +2249,2150 @@
       ]
     },
     {
+      "level": "A1",
+      "genre": "dialogue",
+      "title": "课程 A1-04：在咖啡馆点早餐",
+      "esTitle": "Un desayuno para llevar",
+      "pairs": [
+        [
+          "Buenos días. ¿Qué le pongo? Tenemos tostadas, bocadillos y varios tipos de café.",
+          "早上好。您要点什么？我们有烤面包、三明治和几种咖啡。"
+        ],
+        [
+          "Quiero un café solo y una tostada con tomate, por favor.",
+          "请给我一杯黑咖啡和一份番茄烤面包。"
+        ],
+        [
+          "¿Toma el desayuno aquí o lo quiere para llevar?",
+          "您在这里吃早餐还是打包带走？"
+        ],
+        [
+          "Para llevar, porque tengo clase a las nueve y no tengo mucho tiempo.",
+          "打包，因为我九点有课，时间不多。"
+        ],
+        [
+          "Muy bien. ¿Quiere también un zumo de naranja o una botella de agua?",
+          "好的。您还想要一杯橙汁或一瓶水吗？"
+        ],
+        [
+          "No, gracias. ¿Cuánto cuesta el café con la tostada?",
+          "不用了，谢谢。咖啡加烤面包多少钱？"
+        ],
+        [
+          "Son cuatro euros con cincuenta. Puede pagar aquí con tarjeta o en efectivo.",
+          "四欧元五十分。您可以在这里刷卡或付现金。"
+        ],
+        [
+          "Pago con tarjeta. ¿Puedo pedir un poco más de tomate en la tostada?",
+          "我刷卡。可以在烤面包上多加一点番茄吗？"
+        ],
+        [
+          "Sí, claro. Aquí tiene el café y la tostada. Que tenga un buen día.",
+          "当然。这是您的咖啡和烤面包。祝您今天愉快。"
+        ],
+        [
+          "Muchas gracias, igualmente. Hasta luego.",
+          "非常感谢，也祝您愉快。再见。"
+        ]
+      ],
+      "grammar": "目标：点餐、询价、选择堂食或外带。① Quiero + 名词；¿Cuánto cuesta + 单数名词? ② con/sin + 食材表示含有或不含。语块：para llevar 外带；aquí tiene 给您；en efectivo 现金支付；un poco más de 再多一点。Que tenga un buen día 是礼貌告别固定语，不要求A1独立掌握虚拟式。价格为模拟。迁移：Quiero un té sin azúcar, para llevar.",
+      "questions": [
+        {
+          "q": "¿Qué café pide la persona?",
+          "options": [
+            "Un café solo.",
+            "Un café con leche.",
+            "Un café con hielo."
+          ],
+          "answer": 0,
+          "evidence": "Quiero un café solo"
+        },
+        {
+          "q": "¿Por qué pide el desayuno para llevar?",
+          "options": [
+            "Porque el café está frío.",
+            "Porque tiene clase a las nueve.",
+            "Porque no tiene tarjeta."
+          ],
+          "answer": 1,
+          "evidence": "porque tengo clase a las nueve"
+        },
+        {
+          "q": "¿Cómo paga?",
+          "options": [
+            "En efectivo.",
+            "Con un cheque.",
+            "Con tarjeta."
+          ],
+          "answer": 2,
+          "evidence": "Pago con tarjeta"
+        }
+      ],
+      "course": {
+        "level": "A1",
+        "sequence": 3,
+        "unit": 2,
+        "cycle": 1,
+        "phase": "introduce",
+        "unit_title": "Food and shopping",
+        "grammar": "gender, number, quantities, querer, costar",
+        "theme": "ordering breakfast and asking about ingredients",
+        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+        "review_expressions": "me llamo; vivo en; a las; tengo que",
+        "objective": "Introduce target expressions naturally"
+      },
+      "lexicon": {
+        "y": {
+          "meaning": "和",
+          "en": "and",
+          "es": "Une palabras o ideas.",
+          "lemma": "y",
+          "pos": "conjunción"
+        },
+        "o": {
+          "lemma": "o",
+          "pos": "conjunción disyuntiva",
+          "meaning": "或者",
+          "en": "or",
+          "es": "Presenta alternativas."
+        },
+        "sí": {
+          "lemma": "sí",
+          "pos": "adverbio de afirmación",
+          "meaning": "是的；对",
+          "en": "yes",
+          "es": "Expresa una respuesta afirmativa."
+        },
+        "hasta": {
+          "lemma": "hasta",
+          "pos": "preposición",
+          "meaning": "直到；到",
+          "en": "until; to",
+          "es": "Indica un límite espacial o temporal."
+        },
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
+        },
+        "de": {
+          "lemma": "de",
+          "pos": "preposición",
+          "meaning": "的；从；用于固定搭配",
+          "en": "of; from; in fixed expressions",
+          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
+        },
+        "a": {
+          "lemma": "a",
+          "pos": "preposición",
+          "meaning": "向；到；在（时间）；引出补语",
+          "en": "to; at; marks certain complements",
+          "es": "Indica destino, hora o introduce determinados complementos."
+        },
+        "en": {
+          "lemma": "en",
+          "pos": "preposición",
+          "meaning": "在；用；处于",
+          "en": "in; on; at; by",
+          "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "no": {
+          "lemma": "no",
+          "pos": "adverbio de negación",
+          "meaning": "不；没有；不是",
+          "en": "no; not",
+          "es": "Niega una afirmación, acción o idea."
+        },
+        "el": {
+          "lemma": "el",
+          "pos": "artículo determinado masculino singular",
+          "meaning": "阳性单数定冠词",
+          "en": "the",
+          "es": "Determina un nombre masculino singular."
+        },
+        "la": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino",
+          "meaning": "阴性定冠词；她/它（直接宾语代词）",
+          "en": "the; her; it",
+          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
+        },
+        "las": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino plural",
+          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
+        },
+        "un": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado masculino singular",
+          "meaning": "一个；某个",
+          "en": "a; one",
+          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
+        },
+        "una": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado femenino singular",
+          "meaning": "一个；某个（阴性）",
+          "en": "a; one",
+          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
+        },
+        "euros": {
+          "meaning": "欧元",
+          "en": "euros",
+          "es": "Unidades de la moneda euro.",
+          "lemma": "euro",
+          "pos": "sustantivo masculino plural"
+        },
+        "efectivo": {
+          "meaning": "现金",
+          "en": "cash",
+          "es": "Dinero en monedas o billetes.",
+          "lemma": "efectivo",
+          "pos": "sustantivo masculino"
+        },
+        "puedo": {
+          "lemma": "poder",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我能；我可以",
+          "en": "I can",
+          "es": "Tengo capacidad o permiso para hacer algo."
+        },
+        "café": {
+          "meaning": "咖啡",
+          "en": "coffee",
+          "es": "Bebida preparada con granos de café.",
+          "lemma": "café",
+          "pos": "sustantivo masculino"
+        },
+        "luego": {
+          "meaning": "之后（hasta luego：回头见）",
+          "en": "later; see you later",
+          "es": "En un momento posterior.",
+          "lemma": "luego",
+          "pos": "adverbio"
+        },
+        "tomate": {
+          "meaning": "番茄",
+          "en": "tomato",
+          "es": "Fruto rojo usado en muchos platos.",
+          "lemma": "tomate",
+          "pos": "sustantivo masculino"
+        },
+        "clase": {
+          "lemma": "clase",
+          "pos": "sustantivo femenino",
+          "meaning": "课；课堂",
+          "en": "class",
+          "es": "Sesión en la que se enseña algo."
+        },
+        "tipos": {
+          "meaning": "种类",
+          "en": "types",
+          "es": "Clases diferentes de algo.",
+          "lemma": "tipo",
+          "pos": "sustantivo masculino plural"
+        },
+        "son": {
+          "meaning": "是；总价为",
+          "en": "are; come to",
+          "es": "Indica una cantidad o precio total.",
+          "lemma": "ser",
+          "pos": "verbo presente 3.ª plural"
+        },
+        "toma": {
+          "meaning": "您吃；您喝",
+          "en": "you have (food/drink)",
+          "es": "Consume comida o bebida.",
+          "lemma": "tomar",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "bocadillos": {
+          "meaning": "夹馅面包",
+          "en": "sandwiches",
+          "es": "Panes abiertos y rellenos de alimentos.",
+          "lemma": "bocadillo",
+          "pos": "sustantivo masculino plural"
+        },
+        "muchas": {
+          "meaning": "很多（muchas gracias：非常感谢）",
+          "en": "many",
+          "es": "Indica una cantidad grande.",
+          "lemma": "mucho",
+          "pos": "cuantificador femenino plural"
+        },
+        "igualmente": {
+          "meaning": "您也一样",
+          "en": "likewise",
+          "es": "Se usa para devolver un deseo amable.",
+          "lemma": "igualmente",
+          "pos": "adverbio"
+        },
+        "zumo": {
+          "meaning": "果汁",
+          "en": "juice",
+          "es": "Líquido obtenido al exprimir fruta.",
+          "lemma": "zumo",
+          "pos": "sustantivo masculino"
+        },
+        "claro": {
+          "lemma": "claro",
+          "pos": "adjetivo; fórmula de afirmación",
+          "meaning": "当然；清楚的",
+          "en": "of course; sure",
+          "es": "En una respuesta, expresa acuerdo o confirmación."
+        },
+        "solo": {
+          "meaning": "不加奶的（café solo）",
+          "en": "black (coffee)",
+          "es": "Sin leche, referido al café.",
+          "lemma": "solo",
+          "pos": "adjetivo masculino singular"
+        },
+        "naranja": {
+          "meaning": "橙子",
+          "en": "orange",
+          "es": "Fruta cítrica de la que se obtiene zumo.",
+          "lemma": "naranja",
+          "pos": "sustantivo femenino"
+        },
+        "que": {
+          "meaning": "祝愿句引导词（Que tenga...）",
+          "en": "may (introducing a wish)",
+          "es": "Introduce una expresión de deseo.",
+          "lemma": "que",
+          "pos": "conjunción"
+        },
+        "pedir": {
+          "meaning": "点单；请求",
+          "en": "order; ask for",
+          "es": "Solicitar algo a otra persona.",
+          "lemma": "pedir",
+          "pos": "verbo infinitivo"
+        },
+        "gracias": {
+          "lemma": "gracias",
+          "pos": "fórmula de cortesía",
+          "meaning": "谢谢",
+          "en": "thank you",
+          "es": "Expresión de agradecimiento."
+        },
+        "le": {
+          "meaning": "给您",
+          "en": "to you (formal)",
+          "es": "Pronombre que señala a la persona que recibe algo.",
+          "lemma": "le",
+          "pos": "pronombre personal indirecto"
+        },
+        "tostadas": {
+          "meaning": "烤面包片（复数）",
+          "en": "pieces of toast",
+          "es": "Rebanadas de pan tostado.",
+          "lemma": "tostada",
+          "pos": "sustantivo femenino plural"
+        },
+        "buenos": {
+          "meaning": "好的（问候语中）",
+          "en": "good",
+          "es": "Expresa un deseo positivo en el saludo.",
+          "lemma": "bueno",
+          "pos": "adjetivo masculino plural"
+        },
+        "cuatro": {
+          "lemma": "cuatro",
+          "pos": "numeral cardinal",
+          "meaning": "四",
+          "en": "four",
+          "es": "Número que sigue al tres."
+        },
+        "más": {
+          "lemma": "más",
+          "pos": "adverbio",
+          "meaning": "更多；更",
+          "en": "more",
+          "es": "Indica aumento de cantidad, grado o comparación."
+        },
+        "tiene": {
+          "meaning": "您有；这里给您",
+          "en": "you have; here you are",
+          "es": "Posee algo o lo recibe en ese momento.",
+          "lemma": "tener",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "tenga": {
+          "meaning": "祝您拥有（Que tenga...）",
+          "en": "may you have",
+          "es": "Expresa un deseo dirigido a usted.",
+          "lemma": "tener",
+          "pos": "verbo presente de subjuntivo 3.ª singular"
+        },
+        "quiero": {
+          "meaning": "我想要",
+          "en": "I want",
+          "es": "Deseo algo o deseo hacer algo.",
+          "lemma": "querer",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "con": {
+          "meaning": "用；和",
+          "en": "with",
+          "es": "Indica compañía o medio.",
+          "lemma": "con",
+          "pos": "preposición"
+        },
+        "botella": {
+          "meaning": "瓶子",
+          "en": "bottle",
+          "es": "Recipiente para líquidos.",
+          "lemma": "botella",
+          "pos": "sustantivo femenino"
+        },
+        "tarjeta": {
+          "meaning": "银行卡",
+          "en": "card",
+          "es": "Instrumento que permite pagar sin efectivo.",
+          "lemma": "tarjeta",
+          "pos": "sustantivo femenino"
+        },
+        "desayuno": {
+          "lemma": "desayuno",
+          "pos": "sustantivo masculino",
+          "meaning": "早餐",
+          "en": "breakfast",
+          "es": "Primera comida del día."
+        },
+        "mucho": {
+          "lemma": "mucho",
+          "pos": "cuantificador masculino singular",
+          "meaning": "很多；mucho gusto 很高兴认识你",
+          "en": "much; a lot",
+          "es": "Indica una cantidad o intensidad grande; forma parte del saludo mucho gusto."
+        },
+        "días": {
+          "lemma": "día",
+          "pos": "sustantivo masculino plural",
+          "meaning": "天（复数）",
+          "en": "days",
+          "es": "Periodos de veinticuatro horas."
+        },
+        "nueve": {
+          "lemma": "nueve",
+          "pos": "numeral cardinal",
+          "meaning": "九",
+          "en": "nine",
+          "es": "Número que sigue al ocho."
+        },
+        "tengo": {
+          "lemma": "tener",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我有；tengo que 我必须",
+          "en": "I have; I have to",
+          "es": "Poseo algo; con que e infinitivo indica obligación."
+        },
+        "por": {
+          "meaning": "用于固定礼貌表达 por favor（请）",
+          "en": "part of the expression please",
+          "es": "Forma parte de la expresión de cortesía por favor.",
+          "lemma": "por",
+          "pos": "preposición"
+        },
+        "tiempo": {
+          "lemma": "tiempo",
+          "pos": "sustantivo masculino",
+          "meaning": "时间；tener tiempo 有空",
+          "en": "time",
+          "es": "Duración disponible para hacer algo."
+        },
+        "día": {
+          "lemma": "día",
+          "pos": "sustantivo masculino",
+          "meaning": "天；白天",
+          "en": "day",
+          "es": "Periodo de veinticuatro horas o parte con luz."
+        },
+        "tenemos": {
+          "meaning": "我们有",
+          "en": "we have",
+          "es": "Disponemos de algo.",
+          "lemma": "tener",
+          "pos": "verbo presente 1.ª plural"
+        },
+        "tostada": {
+          "meaning": "烤面包片",
+          "en": "toast",
+          "es": "Rebanada de pan tostado.",
+          "lemma": "tostada",
+          "pos": "sustantivo femenino"
+        },
+        "pongo": {
+          "meaning": "我给您上（食物）",
+          "en": "I serve",
+          "es": "Ofrezco o sirvo algo al cliente.",
+          "lemma": "poner",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "quiere": {
+          "meaning": "您想要",
+          "en": "you want (formal)",
+          "es": "Desea obtener o hacer algo.",
+          "lemma": "querer",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "porque": {
+          "meaning": "因为",
+          "en": "because",
+          "es": "Introduce una causa o razón.",
+          "lemma": "porque",
+          "pos": "conjunción"
+        },
+        "agua": {
+          "meaning": "水",
+          "en": "water",
+          "es": "Líquido que bebemos para hidratarnos.",
+          "lemma": "agua",
+          "pos": "sustantivo femenino"
+        },
+        "cuesta": {
+          "meaning": "价格是",
+          "en": "costs",
+          "es": "Tiene un precio determinado.",
+          "lemma": "costar",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "lo": {
+          "meaning": "它（指早餐）",
+          "en": "it",
+          "es": "Pronombre que sustituye un objeto masculino singular.",
+          "lemma": "lo",
+          "pos": "pronombre personal directo"
+        },
+        "bien": {
+          "lemma": "bien",
+          "pos": "adverbio",
+          "meaning": "好；合适",
+          "en": "well; fine",
+          "es": "De forma satisfactoria o adecuada."
+        },
+        "cincuenta": {
+          "meaning": "五十",
+          "en": "fifty",
+          "es": "Número que sigue al cuarenta y nueve.",
+          "lemma": "cincuenta",
+          "pos": "numeral"
+        },
+        "buen": {
+          "meaning": "好的",
+          "en": "good",
+          "es": "Forma de bueno ante un nombre masculino singular.",
+          "lemma": "bueno",
+          "pos": "adjetivo"
+        },
+        "cuánto": {
+          "meaning": "多少钱",
+          "en": "how much",
+          "es": "Pregunta por una cantidad o un precio.",
+          "lemma": "cuánto",
+          "pos": "interrogativo"
+        },
+        "pagar": {
+          "meaning": "付款",
+          "en": "pay",
+          "es": "Dar dinero por un producto o servicio.",
+          "lemma": "pagar",
+          "pos": "verbo infinitivo"
+        },
+        "qué": {
+          "lemma": "qué",
+          "pos": "pronombre o determinante interrogativo",
+          "meaning": "什么；哪种",
+          "en": "what",
+          "es": "Se usa para preguntar por algo."
+        },
+        "favor": {
+          "meaning": "帮忙（por favor：请）",
+          "en": "favor; please in por favor",
+          "es": "Ayuda que se pide; en por favor expresa cortesía.",
+          "lemma": "favor",
+          "pos": "sustantivo masculino"
+        },
+        "varios": {
+          "meaning": "好几种",
+          "en": "several",
+          "es": "Indica más de uno sin precisar el número.",
+          "lemma": "vario",
+          "pos": "cuantificador masculino plural"
+        },
+        "aquí": {
+          "lemma": "aquí",
+          "pos": "adverbio de lugar",
+          "meaning": "这里；在这里",
+          "en": "here",
+          "es": "En este lugar."
+        },
+        "llevar": {
+          "meaning": "带走",
+          "en": "take away",
+          "es": "Transportar algo a otro lugar.",
+          "lemma": "llevar",
+          "pos": "verbo infinitivo"
+        },
+        "pago": {
+          "meaning": "我付款",
+          "en": "I pay",
+          "es": "Doy dinero por lo que compro.",
+          "lemma": "pagar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "puede": {
+          "meaning": "您可以",
+          "en": "you can (formal)",
+          "es": "Tiene la posibilidad de hacer algo.",
+          "lemma": "poder",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "para": {
+          "meaning": "为了；供",
+          "en": "for; in order to",
+          "es": "Indica finalidad o destino.",
+          "lemma": "para",
+          "pos": "preposición"
+        },
+        "poco": {
+          "lemma": "poco",
+          "pos": "adverbio o cuantificador",
+          "meaning": "一点；少；逐渐（poco a poco）",
+          "en": "a little; little",
+          "es": "Indica cantidad o grado reducido."
+        },
+        "también": {
+          "meaning": "也",
+          "en": "also",
+          "es": "Añade otra cosa a lo dicho.",
+          "lemma": "también",
+          "pos": "adverbio"
+        }
+      },
+      "dict": {
+        "y": "和",
+        "o": "或者",
+        "sí": "是的；对",
+        "hasta": "直到；到",
+        "muy": "很；非常",
+        "de": "的；从；用于固定搭配",
+        "a": "向；到；在（时间）；引出补语",
+        "en": "在；用；处于",
+        "no": "不；没有；不是",
+        "el": "阳性单数定冠词",
+        "la": "阴性定冠词；她/它（直接宾语代词）",
+        "las": "阴性复数定冠词；她们/它们（直接宾语）",
+        "un": "一个；某个",
+        "una": "一个；某个（阴性）",
+        "euros": "欧元",
+        "efectivo": "现金",
+        "puedo": "我能；我可以",
+        "café": "咖啡",
+        "luego": "之后（hasta luego：回头见）",
+        "tomate": "番茄",
+        "clase": "课；课堂",
+        "tipos": "种类",
+        "son": "是；总价为",
+        "toma": "您吃；您喝",
+        "bocadillos": "夹馅面包",
+        "muchas": "很多（muchas gracias：非常感谢）",
+        "igualmente": "您也一样",
+        "zumo": "果汁",
+        "claro": "当然；清楚的",
+        "solo": "不加奶的（café solo）",
+        "naranja": "橙子",
+        "que": "祝愿句引导词（Que tenga...）",
+        "pedir": "点单；请求",
+        "gracias": "谢谢",
+        "le": "给您",
+        "tostadas": "烤面包片（复数）",
+        "buenos": "好的（问候语中）",
+        "cuatro": "四",
+        "más": "更多；更",
+        "tiene": "您有；这里给您",
+        "tenga": "祝您拥有（Que tenga...）",
+        "quiero": "我想要",
+        "con": "用；和",
+        "botella": "瓶子",
+        "tarjeta": "银行卡",
+        "desayuno": "早餐",
+        "mucho": "很多；mucho gusto 很高兴认识你",
+        "días": "天（复数）",
+        "nueve": "九",
+        "tengo": "我有；tengo que 我必须",
+        "por": "用于固定礼貌表达 por favor（请）",
+        "tiempo": "时间；tener tiempo 有空",
+        "día": "天；白天",
+        "tenemos": "我们有",
+        "tostada": "烤面包片",
+        "pongo": "我给您上（食物）",
+        "quiere": "您想要",
+        "porque": "因为",
+        "agua": "水",
+        "cuesta": "价格是",
+        "lo": "它（指早餐）",
+        "bien": "好；合适",
+        "cincuenta": "五十",
+        "buen": "好的",
+        "cuánto": "多少钱",
+        "pagar": "付款",
+        "qué": "什么；哪种",
+        "favor": "帮忙（por favor：请）",
+        "varios": "好几种",
+        "aquí": "这里；在这里",
+        "llevar": "带走",
+        "pago": "我付款",
+        "puede": "您可以",
+        "para": "为了；供",
+        "poco": "一点；少；逐渐（poco a poco）",
+        "también": "也"
+      },
+      "library": "core",
+      "core_key": "A1:3",
+      "id": "core-a1-04",
+      "source": {
+        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
+        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+        "date": "2026-11-26"
+      },
+      "cover": "covers/general.svg",
+      "quality": {
+        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
+        "estimated_level": "A1",
+        "authored": true
+      },
+      "audio": [
+        "audio/core-a1-04/08cba4b46c11a9c3.mp3",
+        "audio/core-a1-04/be6ce6d1a97278dd.mp3",
+        "audio/core-a1-04/1de74ed2200c8417.mp3",
+        "audio/core-a1-04/ab388ad7692a4c06.mp3",
+        "audio/core-a1-04/06438d9ea68ec620.mp3",
+        "audio/core-a1-04/324ab0f59c00c7ab.mp3",
+        "audio/core-a1-04/96e0acbf5e9b7d4f.mp3",
+        "audio/core-a1-04/a7723e34ce8e47ce.mp3",
+        "audio/core-a1-04/669a9fe7d247ec0c.mp3",
+        "audio/core-a1-04/74456b3e4c2a5999.mp3"
+      ],
+      "curriculum_version": "3.6",
+      "generated_on": "2026-11-26",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:41:59.311757+00:00",
+      "audio_text_sha256": [
+        "853757fa60e8caa06c2786061308ec79aa927db9427f2af51d215160a8a9f99f",
+        "674f5d2f3f615a2cbabd81728dcb6defbf2c351aff3323579f425c790a8aff37",
+        "a244829a3e9f3d8e84bbdfdd7d15ba384a786b8534989972e180f4d6d273c8b3",
+        "7d2b0496f3a66df3b3cdeaea7857d3f3dffed239160ae927a9445ebc9058ab7a",
+        "9f71283fb52eac4bb35edb17c9611f43bb9e329dd079594f62c9368079b11b0d",
+        "b6b4cdc8f80ab1cf96643e6477fbe8a8e189df7368f7b073cbe3bbfa795bd4f6",
+        "d4c87dcca4924bf04583650c265ded21f1f2069ee40da0bb6d67dc6155469929",
+        "1044bc066ea90ff170f29a1d2d06913df0c2f3ec782467719405bf2b9255fb48",
+        "93ba72307dd3f65454ac971b7b7b401f4e12e03e3333c6367012ee03c609e133",
+        "1583ae4ca693b81481fa6b6fd7fbf0ade1f5e75fddfc57a73fe26b38abc6bcb1"
+      ]
+    },
+    {
+      "level": "A1",
+      "genre": "routine",
+      "title": "课程 A1-05：带着预算去超市",
+      "esTitle": "La compra para la cena",
+      "pairs": [
+        [
+          "Esta tarde quiero preparar una cena sencilla para dos personas y tengo quince euros para la compra.",
+          "今天下午我想为两个人准备一顿简单的晚餐，有十五欧元的购物预算。"
+        ],
+        [
+          "Antes de salir de casa, hago una lista con las cosas que necesito.",
+          "出门前，我列了一张所需物品的清单。"
+        ],
+        [
+          "En el supermercado, busco primero las verduras porque están cerca de la entrada.",
+          "在超市，我先找蔬菜，因为它们就在入口附近。"
+        ],
+        [
+          "Compro un kilo de tomates, dos patatas y una cebolla para la sopa.",
+          "我买一公斤番茄、两个土豆和一个洋葱做汤。"
+        ],
+        [
+          "También quiero comprar pescado, pero hoy está un poco caro.",
+          "我还想买鱼，不过今天鱼有点贵。"
+        ],
+        [
+          "Al lado del pescado hay huevos de oferta, así que compro media docena.",
+          "鱼旁边有特价鸡蛋，所以我买了半打。"
+        ],
+        [
+          "Antes de pagar, miro la lista otra vez y veo que falta el pan.",
+          "付款前，我再看一遍清单，发现还缺面包。"
+        ],
+        [
+          "Al final pago doce euros y todavía tengo dinero para otro día.",
+          "最后我花了十二欧元，还剩下一些钱可以改天用。"
+        ]
+      ],
+      "grammar": "目标：说数量、价格及购物选择。① un kilo de + 食品；media docena = 六个。② estar + 价格/状态：está caro、están de oferta；hay 表示某处有某物。语块：hacer una lista 列清单；estar de oferta 打折；al final 最后；falta el pan 还缺面包。价格是教学设定。迁移：Compro medio kilo de arroz porque está de oferta.",
+      "questions": [
+        {
+          "q": "¿Para cuántas personas prepara la cena?",
+          "options": [
+            "Para cuatro.",
+            "Para dos.",
+            "Para seis."
+          ],
+          "answer": 1,
+          "evidence": "para dos personas"
+        },
+        {
+          "q": "¿Por qué compra huevos?",
+          "options": [
+            "Porque no hay verduras.",
+            "Porque no tiene patatas.",
+            "Porque están de oferta."
+          ],
+          "answer": 2,
+          "evidence": "hay huevos de oferta, así que compro media docena"
+        },
+        {
+          "q": "¿Qué falta antes de pagar?",
+          "options": [
+            "El pan.",
+            "El pescado.",
+            "La cebolla."
+          ],
+          "answer": 0,
+          "evidence": "falta el pan"
+        }
+      ],
+      "course": {
+        "level": "A1",
+        "sequence": 4,
+        "unit": 2,
+        "cycle": 1,
+        "phase": "transfer",
+        "unit_title": "Food and shopping",
+        "grammar": "gender, number, quantities, querer, costar",
+        "theme": "choosing groceries with a budget",
+        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+        "review_expressions": "me llamo; vivo en; a las; tengo que",
+        "objective": "Reuse earlier targets in a different situation"
+      },
+      "lexicon": {
+        "y": {
+          "meaning": "和",
+          "en": "and",
+          "es": "Une palabras o ideas.",
+          "lemma": "y",
+          "pos": "conjunción"
+        },
+        "pero": {
+          "lemma": "pero",
+          "pos": "conjunción",
+          "meaning": "但是",
+          "en": "but",
+          "es": "Introduce una idea que contrasta con la anterior."
+        },
+        "dos": {
+          "lemma": "dos",
+          "pos": "numeral cardinal",
+          "meaning": "二；两个",
+          "en": "two",
+          "es": "Número que sigue al uno."
+        },
+        "de": {
+          "lemma": "de",
+          "pos": "preposición",
+          "meaning": "的；从；用于固定搭配",
+          "en": "of; from; in fixed expressions",
+          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
+        },
+        "en": {
+          "lemma": "en",
+          "pos": "preposición",
+          "meaning": "在；用；处于",
+          "en": "in; on; at; by",
+          "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "el": {
+          "lemma": "el",
+          "pos": "artículo determinado masculino singular",
+          "meaning": "阳性单数定冠词",
+          "en": "the",
+          "es": "Determina un nombre masculino singular."
+        },
+        "la": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino",
+          "meaning": "阴性定冠词；她/它（直接宾语代词）",
+          "en": "the; her; it",
+          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
+        },
+        "las": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino plural",
+          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
+        },
+        "un": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado masculino singular",
+          "meaning": "一个；某个",
+          "en": "a; one",
+          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
+        },
+        "una": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado femenino singular",
+          "meaning": "一个；某个（阴性）",
+          "en": "a; one",
+          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
+        },
+        "euros": {
+          "meaning": "欧元",
+          "en": "euros",
+          "es": "Unidades de la moneda euro.",
+          "lemma": "euro",
+          "pos": "sustantivo masculino plural"
+        },
+        "otro": {
+          "meaning": "另一（阳性）",
+          "en": "another",
+          "es": "Indica algo distinto o adicional.",
+          "lemma": "otro",
+          "pos": "indefinido masculino singular"
+        },
+        "huevos": {
+          "meaning": "鸡蛋",
+          "en": "eggs",
+          "es": "Alimentos con cáscara, normalmente de gallina.",
+          "lemma": "huevo",
+          "pos": "sustantivo masculino plural"
+        },
+        "entrada": {
+          "meaning": "入口",
+          "en": "entrance",
+          "es": "Lugar por donde se entra.",
+          "lemma": "entrada",
+          "pos": "sustantivo femenino"
+        },
+        "final": {
+          "meaning": "最后（al final）",
+          "en": "end; in the end",
+          "es": "Última parte de algo.",
+          "lemma": "final",
+          "pos": "sustantivo masculino"
+        },
+        "caro": {
+          "meaning": "贵的",
+          "en": "expensive",
+          "es": "Tiene un precio alto.",
+          "lemma": "caro",
+          "pos": "adjetivo masculino singular"
+        },
+        "oferta": {
+          "meaning": "特价",
+          "en": "special offer",
+          "es": "Precio reducido durante una promoción.",
+          "lemma": "oferta",
+          "pos": "sustantivo femenino"
+        },
+        "compro": {
+          "meaning": "我买",
+          "en": "I buy",
+          "es": "Adquiero algo pagando.",
+          "lemma": "comprar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "salir": {
+          "meaning": "出去；离开",
+          "en": "to leave",
+          "es": "Ir de dentro hacia fuera.",
+          "lemma": "salir",
+          "pos": "verbo, infinitivo"
+        },
+        "supermercado": {
+          "meaning": "超市",
+          "en": "supermarket",
+          "es": "Tienda grande donde se venden alimentos y otros productos.",
+          "lemma": "supermercado",
+          "pos": "sustantivo masculino"
+        },
+        "quince": {
+          "meaning": "十五",
+          "en": "fifteen",
+          "es": "Número que sigue al catorce.",
+          "lemma": "quince",
+          "pos": "numeral"
+        },
+        "primero": {
+          "meaning": "首先",
+          "en": "first",
+          "es": "Antes que las demás acciones.",
+          "lemma": "primero",
+          "pos": "adverbio"
+        },
+        "que": {
+          "meaning": "关系词；连接词（así que：所以）",
+          "en": "that; so in así que",
+          "es": "Introduce una oración relativa o, en así que, una consecuencia.",
+          "lemma": "que",
+          "pos": "conjunción / pronombre relativo"
+        },
+        "pescado": {
+          "meaning": "鱼肉；食用鱼",
+          "en": "fish",
+          "es": "Pez preparado o destinado a la alimentación.",
+          "lemma": "pescado",
+          "pos": "sustantivo masculino"
+        },
+        "tarde": {
+          "lemma": "tarde",
+          "pos": "sustantivo femenino",
+          "meaning": "下午；傍晚",
+          "en": "afternoon",
+          "es": "Parte del día posterior al mediodía."
+        },
+        "compra": {
+          "meaning": "采购；购物",
+          "en": "shopping; purchase",
+          "es": "Acción de adquirir productos.",
+          "lemma": "compra",
+          "pos": "sustantivo femenino"
+        },
+        "al": {
+          "meaning": "去往；到",
+          "en": "to the",
+          "es": "Contracción de a y el.",
+          "lemma": "al",
+          "pos": "contracción"
+        },
+        "docena": {
+          "meaning": "一打",
+          "en": "dozen",
+          "es": "Conjunto de doce unidades.",
+          "lemma": "docena",
+          "pos": "sustantivo femenino"
+        },
+        "cena": {
+          "meaning": "晚餐",
+          "en": "dinner",
+          "es": "Comida que se toma por la noche.",
+          "lemma": "cena",
+          "pos": "sustantivo femenino"
+        },
+        "quiero": {
+          "meaning": "我想要",
+          "en": "I want",
+          "es": "Deseo algo o deseo hacer algo.",
+          "lemma": "querer",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "con": {
+          "meaning": "用；和",
+          "en": "with",
+          "es": "Indica compañía o medio.",
+          "lemma": "con",
+          "pos": "preposición"
+        },
+        "esta": {
+          "meaning": "这（阴性）",
+          "en": "this",
+          "es": "Señala algo cercano de género femenino.",
+          "lemma": "este",
+          "pos": "demostrativo femenino singular"
+        },
+        "casa": {
+          "lemma": "casa",
+          "pos": "sustantivo femenino",
+          "meaning": "家；住所",
+          "en": "home; house",
+          "es": "Lugar donde vive una persona."
+        },
+        "necesito": {
+          "meaning": "我需要",
+          "en": "I need",
+          "es": "Me hace falta algo.",
+          "lemma": "necesitar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "están": {
+          "meaning": "位于；处于",
+          "en": "are",
+          "es": "Indica situación o estado de varias cosas.",
+          "lemma": "estar",
+          "pos": "verbo presente 3.ª plural"
+        },
+        "todavía": {
+          "meaning": "仍然；还",
+          "en": "still",
+          "es": "Indica que una situación continúa.",
+          "lemma": "todavía",
+          "pos": "adverbio"
+        },
+        "cebolla": {
+          "meaning": "洋葱",
+          "en": "onion",
+          "es": "Hortaliza de capas que se usa para cocinar.",
+          "lemma": "cebolla",
+          "pos": "sustantivo femenino"
+        },
+        "preparar": {
+          "lemma": "preparar",
+          "pos": "verbo, infinitivo",
+          "meaning": "准备",
+          "en": "to prepare",
+          "es": "Dejar algo listo para su uso."
+        },
+        "cerca": {
+          "meaning": "附近",
+          "en": "near",
+          "es": "A poca distancia.",
+          "lemma": "cerca",
+          "pos": "adverbio"
+        },
+        "tengo": {
+          "lemma": "tener",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我有；tengo que 我必须",
+          "en": "I have; I have to",
+          "es": "Poseo algo; con que e infinitivo indica obligación."
+        },
+        "día": {
+          "lemma": "día",
+          "pos": "sustantivo masculino",
+          "meaning": "天；白天",
+          "en": "day",
+          "es": "Periodo de veinticuatro horas o parte con luz."
+        },
+        "antes": {
+          "meaning": "之前",
+          "en": "before",
+          "es": "En un momento anterior.",
+          "lemma": "antes",
+          "pos": "adverbio"
+        },
+        "pan": {
+          "meaning": "面包",
+          "en": "bread",
+          "es": "Alimento hecho normalmente con harina y agua.",
+          "lemma": "pan",
+          "pos": "sustantivo masculino"
+        },
+        "hoy": {
+          "meaning": "今天",
+          "en": "today",
+          "es": "En el día actual.",
+          "lemma": "hoy",
+          "pos": "adverbio"
+        },
+        "porque": {
+          "meaning": "因为",
+          "en": "because",
+          "es": "Introduce una causa o razón.",
+          "lemma": "porque",
+          "pos": "conjunción"
+        },
+        "kilo": {
+          "meaning": "公斤",
+          "en": "kilogram",
+          "es": "Unidad de masa de mil gramos.",
+          "lemma": "kilo",
+          "pos": "sustantivo masculino"
+        },
+        "personas": {
+          "meaning": "人",
+          "en": "people",
+          "es": "Seres humanos.",
+          "lemma": "persona",
+          "pos": "sustantivo femenino plural"
+        },
+        "otra": {
+          "meaning": "另一（阴性）",
+          "en": "another",
+          "es": "Indica una cosa distinta o adicional.",
+          "lemma": "otro",
+          "pos": "indefinido femenino singular"
+        },
+        "lista": {
+          "meaning": "清单",
+          "en": "list",
+          "es": "Serie escrita de cosas.",
+          "lemma": "lista",
+          "pos": "sustantivo femenino"
+        },
+        "busco": {
+          "meaning": "我寻找",
+          "en": "I look for",
+          "es": "Intento encontrar algo.",
+          "lemma": "buscar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "está": {
+          "lemma": "estar",
+          "pos": "verbo, presente, 3.ª persona singular",
+          "meaning": "位于；处于",
+          "en": "is; is located",
+          "es": "Indica el lugar o el estado de algo."
+        },
+        "tomates": {
+          "meaning": "番茄（复数）",
+          "en": "tomatoes",
+          "es": "Frutos usados en ensaladas y otros platos.",
+          "lemma": "tomate",
+          "pos": "sustantivo masculino plural"
+        },
+        "cosas": {
+          "meaning": "东西",
+          "en": "things",
+          "es": "Objetos o asuntos de los que se habla.",
+          "lemma": "cosa",
+          "pos": "sustantivo femenino plural"
+        },
+        "así": {
+          "lemma": "así",
+          "pos": "adverbio; en así que",
+          "meaning": "这样；así que 所以",
+          "en": "so; thus",
+          "es": "Indica manera; en así que introduce una consecuencia."
+        },
+        "media": {
+          "meaning": "半（media docena：半打）",
+          "en": "half",
+          "es": "La mitad de una cantidad.",
+          "lemma": "medio",
+          "pos": "cuantificador femenino singular"
+        },
+        "miro": {
+          "meaning": "我看",
+          "en": "I look at",
+          "es": "Dirijo la vista hacia algo.",
+          "lemma": "mirar",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "doce": {
+          "meaning": "十二",
+          "en": "twelve",
+          "es": "Número que sigue al once.",
+          "lemma": "doce",
+          "pos": "numeral"
+        },
+        "pagar": {
+          "meaning": "付款",
+          "en": "pay",
+          "es": "Dar dinero por un producto o servicio.",
+          "lemma": "pagar",
+          "pos": "verbo infinitivo"
+        },
+        "del": {
+          "lemma": "del",
+          "pos": "contracción",
+          "meaning": "de + el；……的；从",
+          "en": "of the; from the",
+          "es": "Contracción de la preposición de y el artículo el."
+        },
+        "dinero": {
+          "meaning": "钱",
+          "en": "money",
+          "es": "Medio que se usa para pagar.",
+          "lemma": "dinero",
+          "pos": "sustantivo masculino"
+        },
+        "sencilla": {
+          "meaning": "简单的",
+          "en": "simple",
+          "es": "Que no es complicada.",
+          "lemma": "sencillo",
+          "pos": "adjetivo femenino singular"
+        },
+        "verduras": {
+          "meaning": "蔬菜",
+          "en": "vegetables",
+          "es": "Hortalizas que se comen frescas o cocinadas.",
+          "lemma": "verdura",
+          "pos": "sustantivo femenino plural"
+        },
+        "patatas": {
+          "meaning": "土豆",
+          "en": "potatoes",
+          "es": "Tubérculos comestibles usados en cocina.",
+          "lemma": "patata",
+          "pos": "sustantivo femenino plural"
+        },
+        "sopa": {
+          "meaning": "汤",
+          "en": "soup",
+          "es": "Plato líquido que se toma normalmente caliente.",
+          "lemma": "sopa",
+          "pos": "sustantivo femenino"
+        },
+        "comprar": {
+          "meaning": "购买",
+          "en": "buy",
+          "es": "Obtener algo a cambio de dinero.",
+          "lemma": "comprar",
+          "pos": "verbo infinitivo"
+        },
+        "vez": {
+          "meaning": "次（otra vez：再一次）",
+          "en": "time; occasion",
+          "es": "Ocasión en que sucede algo.",
+          "lemma": "vez",
+          "pos": "sustantivo femenino"
+        },
+        "hago": {
+          "meaning": "我做",
+          "en": "I make",
+          "es": "Realizo o preparo algo.",
+          "lemma": "hacer",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "veo": {
+          "meaning": "我看到",
+          "en": "I see",
+          "es": "Percibo algo con la vista o me doy cuenta de ello.",
+          "lemma": "ver",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "hay": {
+          "meaning": "有",
+          "en": "there is; there are",
+          "es": "Indica que algo existe.",
+          "lemma": "haber",
+          "pos": "verbo, presente impersonal"
+        },
+        "pago": {
+          "meaning": "我付款",
+          "en": "I pay",
+          "es": "Doy dinero por lo que compro.",
+          "lemma": "pagar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "para": {
+          "meaning": "为了；供",
+          "en": "for; in order to",
+          "es": "Indica finalidad o destino.",
+          "lemma": "para",
+          "pos": "preposición"
+        },
+        "poco": {
+          "lemma": "poco",
+          "pos": "adverbio o cuantificador",
+          "meaning": "一点；少；逐渐（poco a poco）",
+          "en": "a little; little",
+          "es": "Indica cantidad o grado reducido."
+        },
+        "también": {
+          "meaning": "也",
+          "en": "also",
+          "es": "Añade otra cosa a lo dicho.",
+          "lemma": "también",
+          "pos": "adverbio"
+        },
+        "falta": {
+          "meaning": "缺少",
+          "en": "is missing",
+          "es": "No está algo necesario.",
+          "lemma": "faltar",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "lado": {
+          "lemma": "lado",
+          "pos": "sustantivo masculino",
+          "meaning": "一侧；旁边",
+          "en": "side",
+          "es": "Parte situada junto a algo."
+        }
+      },
+      "dict": {
+        "y": "和",
+        "pero": "但是",
+        "dos": "二；两个",
+        "de": "的；从；用于固定搭配",
+        "en": "在；用；处于",
+        "el": "阳性单数定冠词",
+        "la": "阴性定冠词；她/它（直接宾语代词）",
+        "las": "阴性复数定冠词；她们/它们（直接宾语）",
+        "un": "一个；某个",
+        "una": "一个；某个（阴性）",
+        "euros": "欧元",
+        "otro": "另一（阳性）",
+        "huevos": "鸡蛋",
+        "entrada": "入口",
+        "final": "最后（al final）",
+        "caro": "贵的",
+        "oferta": "特价",
+        "compro": "我买",
+        "salir": "出去；离开",
+        "supermercado": "超市",
+        "quince": "十五",
+        "primero": "首先",
+        "que": "关系词；连接词（así que：所以）",
+        "pescado": "鱼肉；食用鱼",
+        "tarde": "下午；傍晚",
+        "compra": "采购；购物",
+        "al": "去往；到",
+        "docena": "一打",
+        "cena": "晚餐",
+        "quiero": "我想要",
+        "con": "用；和",
+        "esta": "这（阴性）",
+        "casa": "家；住所",
+        "necesito": "我需要",
+        "están": "位于；处于",
+        "todavía": "仍然；还",
+        "cebolla": "洋葱",
+        "preparar": "准备",
+        "cerca": "附近",
+        "tengo": "我有；tengo que 我必须",
+        "día": "天；白天",
+        "antes": "之前",
+        "pan": "面包",
+        "hoy": "今天",
+        "porque": "因为",
+        "kilo": "公斤",
+        "personas": "人",
+        "otra": "另一（阴性）",
+        "lista": "清单",
+        "busco": "我寻找",
+        "está": "位于；处于",
+        "tomates": "番茄（复数）",
+        "cosas": "东西",
+        "así": "这样；así que 所以",
+        "media": "半（media docena：半打）",
+        "miro": "我看",
+        "doce": "十二",
+        "pagar": "付款",
+        "del": "de + el；……的；从",
+        "dinero": "钱",
+        "sencilla": "简单的",
+        "verduras": "蔬菜",
+        "patatas": "土豆",
+        "sopa": "汤",
+        "comprar": "购买",
+        "vez": "次（otra vez：再一次）",
+        "hago": "我做",
+        "veo": "我看到",
+        "hay": "有",
+        "pago": "我付款",
+        "para": "为了；供",
+        "poco": "一点；少；逐渐（poco a poco）",
+        "también": "也",
+        "falta": "缺少",
+        "lado": "一侧；旁边"
+      },
+      "library": "core",
+      "core_key": "A1:4",
+      "id": "core-a1-05",
+      "source": {
+        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
+        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+        "date": "2026-11-26"
+      },
+      "cover": "covers/general.svg",
+      "quality": {
+        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
+        "estimated_level": "A1",
+        "authored": true
+      },
+      "audio": [
+        "audio/core-a1-05/018f1cfe4c5cef38.mp3",
+        "audio/core-a1-05/376f47d8ff917e9f.mp3",
+        "audio/core-a1-05/98c8416179021d7c.mp3",
+        "audio/core-a1-05/a850d3d246c92c8e.mp3",
+        "audio/core-a1-05/70e2f8d9e5050d1e.mp3",
+        "audio/core-a1-05/13440b5208bedad4.mp3",
+        "audio/core-a1-05/a342ff49f52b61a9.mp3",
+        "audio/core-a1-05/abfcd73ca0dd051c.mp3"
+      ],
+      "curriculum_version": "3.6",
+      "generated_on": "2026-11-26",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:41:59.322561+00:00",
+      "audio_text_sha256": [
+        "f9f4c06f5cb0258cd1056af852d43102dcf1ec6f85953c3203f3d7add7ec62e8",
+        "bd3da79c218bc9f2b5e2345fac7bc2277a9666fe362e7654262ccc26541b4fd6",
+        "a4ef0c57f37f688f5c218ea0082503d760ab36345b4672b53553de59e098d8c7",
+        "beb5ecbcbfee3f1f97beff6f32f44663eb99e78be5160cae4a07ae6e51e006e8",
+        "15915c8185a9307ffd85c87d654d60b5781c0fe0e686533d80ee8999084bd743",
+        "176e5d6c0b756f92e88a4afbf67553a6c91059f28dc2a748799d81ca885d3cc6",
+        "273a61090b394ffdace0cd6eae74fe4f81e798673f8887933ba024e3cd21bfff",
+        "6d10d7d4e825bc4ef74ae335a6dfe27b435da39287eaab4911fd6bfdbfa5db81"
+      ]
+    },
+    {
+      "level": "A1",
+      "genre": "dialogue",
+      "title": "课程 A1-06：退换买错的商品",
+      "esTitle": "¿Puedo cambiar esta camiseta?",
+      "pairs": [
+        [
+          "Buenos días. Quiero cambiar esta camiseta porque es demasiado pequeña.",
+          "早上好，我想换这件T恤，因为它太小了。"
+        ],
+        [
+          "Buenos días. ¿Tiene el ticket de compra y la etiqueta de la camiseta?",
+          "早上好。您有购物小票和T恤的标签吗？"
+        ],
+        [
+          "Sí, tengo el ticket en el móvil y la etiqueta está aquí.",
+          "有的，小票在手机里，标签在这里。"
+        ],
+        [
+          "Muy bien. Puede cambiarla por otra talla. ¿Qué talla necesita?",
+          "好的。您可以换一个尺码。需要什么尺码？"
+        ],
+        [
+          "Necesito una talla mediana. ¿Tiene la misma camiseta en azul?",
+          "我需要中号。有同款蓝色T恤吗？"
+        ],
+        [
+          "Sí, hay una azul y otra blanca. Las dos cuestan lo mismo.",
+          "有，一件蓝色和一件白色，两件价格一样。"
+        ],
+        [
+          "Prefiero la azul. ¿Puedo probarla antes de cambiar la camiseta?",
+          "我更喜欢蓝色的。我可以先试穿再换吗？"
+        ],
+        [
+          "Por supuesto, los probadores están al fondo de la tienda, a la izquierda.",
+          "当然，试衣间在店铺最里面，左手边。"
+        ],
+        [
+          "Esta talla está bien. Quiero la azul, por favor.",
+          "这个尺码合适。请给我蓝色这件。"
+        ],
+        [
+          "Perfecto. No tiene que pagar nada más. Aquí tiene el nuevo ticket.",
+          "好的。您无需再付钱。这是新的小票。"
+        ]
+      ],
+      "grammar": "目标：描述商品和提出换货需求。① demasiado + 形容词：demasiado pequeña 太小；la misma camiseta 同款T恤。② ¿Tiene…? 与 ¿Puedo + 动词原形? 的礼貌用法。语块：el ticket de compra 购物小票；cambiar por 换成；lo mismo 相同；probarse la ropa 试穿衣服。迁移：Necesito otra talla. ¿Puedo probarla? 退换规则为模拟，不是实际商店政策。",
+      "questions": [
+        {
+          "q": "¿Qué problema tiene la primera camiseta?",
+          "options": [
+            "Es demasiado pequeña.",
+            "Es demasiado cara.",
+            "Es de color azul."
+          ],
+          "answer": 0,
+          "evidence": "es demasiado pequeña"
+        },
+        {
+          "q": "¿Dónde tiene el ticket la persona?",
+          "options": [
+            "En casa.",
+            "En la mochila de un amigo.",
+            "En el móvil."
+          ],
+          "answer": 2,
+          "evidence": "tengo el ticket en el móvil"
+        },
+        {
+          "q": "¿Qué color elige al final?",
+          "options": [
+            "Blanco.",
+            "Azul.",
+            "Verde."
+          ],
+          "answer": 1,
+          "evidence": "Quiero la azul"
+        }
+      ],
+      "course": {
+        "level": "A1",
+        "sequence": 5,
+        "unit": 2,
+        "cycle": 1,
+        "phase": "retrieve",
+        "unit_title": "Food and shopping",
+        "grammar": "gender, number, quantities, querer, costar",
+        "theme": "returning a wrong item and choosing another",
+        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+        "review_expressions": "me llamo; vivo en; a las; tengo que",
+        "objective": "Integrate unit targets and previous knowledge in a new task"
+      },
+      "lexicon": {
+        "y": {
+          "meaning": "和",
+          "en": "and",
+          "es": "Une palabras o ideas.",
+          "lemma": "y",
+          "pos": "conjunción"
+        },
+        "sí": {
+          "lemma": "sí",
+          "pos": "adverbio de afirmación",
+          "meaning": "是的；对",
+          "en": "yes",
+          "es": "Expresa una respuesta afirmativa."
+        },
+        "dos": {
+          "lemma": "dos",
+          "pos": "numeral cardinal",
+          "meaning": "二；两个",
+          "en": "two",
+          "es": "Número que sigue al uno."
+        },
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
+        },
+        "de": {
+          "lemma": "de",
+          "pos": "preposición",
+          "meaning": "的；从；用于固定搭配",
+          "en": "of; from; in fixed expressions",
+          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
+        },
+        "a": {
+          "lemma": "a",
+          "pos": "preposición",
+          "meaning": "向；到；在（时间）；引出补语",
+          "en": "to; at; marks certain complements",
+          "es": "Indica destino, hora o introduce determinados complementos."
+        },
+        "en": {
+          "lemma": "en",
+          "pos": "preposición",
+          "meaning": "在；用；处于",
+          "en": "in; on; at; by",
+          "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "no": {
+          "lemma": "no",
+          "pos": "adverbio de negación",
+          "meaning": "不；没有；不是",
+          "en": "no; not",
+          "es": "Niega una afirmación, acción o idea."
+        },
+        "el": {
+          "lemma": "el",
+          "pos": "artículo determinado masculino singular",
+          "meaning": "阳性单数定冠词",
+          "en": "the",
+          "es": "Determina un nombre masculino singular."
+        },
+        "la": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino",
+          "meaning": "阴性定冠词；她/它（直接宾语代词）",
+          "en": "the; her; it",
+          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
+        },
+        "las": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino plural",
+          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
+        },
+        "los": {
+          "lemma": "el",
+          "pos": "artículo determinado o pronombre átono masculino plural",
+          "meaning": "阳性复数定冠词；他们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres masculinos plurales o sustituye un complemento directo masculino plural."
+        },
+        "una": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado femenino singular",
+          "meaning": "一个；某个（阴性）",
+          "en": "a; one",
+          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
+        },
+        "puedo": {
+          "lemma": "poder",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我能；我可以",
+          "en": "I can",
+          "es": "Tengo capacidad o permiso para hacer algo."
+        },
+        "mismo": {
+          "meaning": "相同（lo mismo）",
+          "en": "the same",
+          "es": "Indica igualdad con otra cosa.",
+          "lemma": "mismo",
+          "pos": "adjetivo masculino singular"
+        },
+        "camiseta": {
+          "meaning": "T恤",
+          "en": "T-shirt",
+          "es": "Prenda de vestir que cubre el torso.",
+          "lemma": "camiseta",
+          "pos": "sustantivo femenino"
+        },
+        "necesita": {
+          "meaning": "您需要",
+          "en": "you need (formal)",
+          "es": "Le hace falta algo.",
+          "lemma": "necesitar",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "nada": {
+          "meaning": "没有任何东西",
+          "en": "nothing",
+          "es": "Indica ausencia de algo.",
+          "lemma": "nada",
+          "pos": "pronombre indefinido"
+        },
+        "supuesto": {
+          "meaning": "当然（por supuesto）",
+          "en": "of course (por supuesto)",
+          "es": "En por supuesto expresa acuerdo o certeza.",
+          "lemma": "supuesto",
+          "pos": "sustantivo en locución adverbial"
+        },
+        "pequeña": {
+          "meaning": "小的",
+          "en": "small",
+          "es": "De tamaño reducido.",
+          "lemma": "pequeño",
+          "pos": "adjetivo femenino singular"
+        },
+        "izquierda": {
+          "meaning": "左侧",
+          "en": "left",
+          "es": "Lado opuesto al derecho.",
+          "lemma": "izquierda",
+          "pos": "sustantivo femenino"
+        },
+        "que": {
+          "lemma": "que",
+          "pos": "conjunción o pronombre relativo",
+          "meaning": "引导从句；用于 tener que 表示必须",
+          "en": "that; which; have to",
+          "es": "Enlaza oraciones o forma parte de tener que + infinitivo."
+        },
+        "tiene": {
+          "meaning": "您有；您需要（tiene que）；给您（aquí tiene）",
+          "en": "you have; you have to; here you are",
+          "es": "Expresa posesión, obligación con que o entrega con aquí.",
+          "lemma": "tener",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "más": {
+          "lemma": "más",
+          "pos": "adverbio",
+          "meaning": "更多；更",
+          "en": "more",
+          "es": "Indica aumento de cantidad, grado o comparación."
+        },
+        "buenos": {
+          "meaning": "好的（问候语中）",
+          "en": "good",
+          "es": "Expresa un deseo positivo en el saludo.",
+          "lemma": "bueno",
+          "pos": "adjetivo masculino plural"
+        },
+        "cambiar": {
+          "meaning": "更换；退换",
+          "en": "exchange",
+          "es": "Sustituir un producto por otro.",
+          "lemma": "cambiar",
+          "pos": "verbo infinitivo"
+        },
+        "compra": {
+          "meaning": "采购；购物",
+          "en": "shopping; purchase",
+          "es": "Acción de adquirir productos.",
+          "lemma": "compra",
+          "pos": "sustantivo femenino"
+        },
+        "al": {
+          "meaning": "去往；到",
+          "en": "to the",
+          "es": "Contracción de a y el.",
+          "lemma": "al",
+          "pos": "contracción"
+        },
+        "quiero": {
+          "meaning": "我想要",
+          "en": "I want",
+          "es": "Deseo algo o deseo hacer algo.",
+          "lemma": "querer",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "esta": {
+          "meaning": "这（阴性）",
+          "en": "this",
+          "es": "Señala algo cercano de género femenino.",
+          "lemma": "este",
+          "pos": "demostrativo femenino singular"
+        },
+        "necesito": {
+          "meaning": "我需要",
+          "en": "I need",
+          "es": "Me hace falta algo.",
+          "lemma": "necesitar",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "demasiado": {
+          "meaning": "过于",
+          "en": "too",
+          "es": "Indica un exceso.",
+          "lemma": "demasiado",
+          "pos": "adverbio"
+        },
+        "están": {
+          "meaning": "位于；处于",
+          "en": "are",
+          "es": "Indica situación o estado de varias cosas.",
+          "lemma": "estar",
+          "pos": "verbo presente 3.ª plural"
+        },
+        "es": {
+          "lemma": "ser",
+          "pos": "verbo, presente, 3.ª persona singular",
+          "meaning": "是",
+          "en": "is",
+          "es": "Identifica o caracteriza a alguien o algo."
+        },
+        "fondo": {
+          "meaning": "最里面",
+          "en": "back",
+          "es": "Parte más alejada de la entrada.",
+          "lemma": "fondo",
+          "pos": "sustantivo masculino"
+        },
+        "móvil": {
+          "lemma": "móvil",
+          "pos": "sustantivo masculino",
+          "meaning": "手机",
+          "en": "mobile phone",
+          "es": "Teléfono portátil."
+        },
+        "días": {
+          "lemma": "día",
+          "pos": "sustantivo masculino plural",
+          "meaning": "天（复数）",
+          "en": "days",
+          "es": "Periodos de veinticuatro horas."
+        },
+        "probarla": {
+          "meaning": "试穿它",
+          "en": "try it on",
+          "es": "Ponerse la prenda para comprobar si queda bien.",
+          "lemma": "probar",
+          "pos": "infinitivo con pronombre la"
+        },
+        "tengo": {
+          "lemma": "tener",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我有；tengo que 我必须",
+          "en": "I have; I have to",
+          "es": "Poseo algo; con que e infinitivo indica obligación."
+        },
+        "por": {
+          "lemma": "por",
+          "pos": "preposición",
+          "meaning": "在（时段）；经过；由于",
+          "en": "during; through; because of",
+          "es": "Indica tiempo, lugar, medio o causa según el contexto."
+        },
+        "etiqueta": {
+          "meaning": "商品标签",
+          "en": "tag",
+          "es": "Pieza que contiene información de un producto.",
+          "lemma": "etiqueta",
+          "pos": "sustantivo femenino"
+        },
+        "antes": {
+          "meaning": "之前",
+          "en": "before",
+          "es": "En un momento anterior.",
+          "lemma": "antes",
+          "pos": "adverbio"
+        },
+        "porque": {
+          "meaning": "因为",
+          "en": "because",
+          "es": "Introduce una causa o razón.",
+          "lemma": "porque",
+          "pos": "conjunción"
+        },
+        "probadores": {
+          "meaning": "试衣间",
+          "en": "fitting rooms",
+          "es": "Espacios donde los clientes se prueban ropa.",
+          "lemma": "probador",
+          "pos": "sustantivo masculino plural"
+        },
+        "tienda": {
+          "meaning": "商店",
+          "en": "shop",
+          "es": "Lugar donde se venden productos.",
+          "lemma": "tienda",
+          "pos": "sustantivo femenino"
+        },
+        "prefiero": {
+          "meaning": "我更喜欢",
+          "en": "I prefer",
+          "es": "Elijo una opción antes que otra.",
+          "lemma": "preferir",
+          "pos": "verbo presente 1.ª singular"
+        },
+        "blanca": {
+          "meaning": "白色的",
+          "en": "white",
+          "es": "Del color de la nieve.",
+          "lemma": "blanco",
+          "pos": "adjetivo femenino singular"
+        },
+        "otra": {
+          "meaning": "另一（阴性）",
+          "en": "another",
+          "es": "Indica una cosa distinta o adicional.",
+          "lemma": "otro",
+          "pos": "indefinido femenino singular"
+        },
+        "nuevo": {
+          "meaning": "新的",
+          "en": "new",
+          "es": "Distinto del anterior o recién obtenido.",
+          "lemma": "nuevo",
+          "pos": "adjetivo masculino singular"
+        },
+        "está": {
+          "lemma": "estar",
+          "pos": "verbo, presente, 3.ª persona singular",
+          "meaning": "位于；处于",
+          "en": "is; is located",
+          "es": "Indica el lugar o el estado de algo."
+        },
+        "lo": {
+          "meaning": "构成 lo mismo（相同的东西/价格）",
+          "en": "the (in the same)",
+          "es": "Artículo neutro que forma la expresión lo mismo.",
+          "lemma": "lo",
+          "pos": "artículo neutro"
+        },
+        "mediana": {
+          "meaning": "中等的（尺码）",
+          "en": "medium",
+          "es": "De tamaño intermedio.",
+          "lemma": "mediano",
+          "pos": "adjetivo femenino singular"
+        },
+        "bien": {
+          "lemma": "bien",
+          "pos": "adverbio",
+          "meaning": "好；合适",
+          "en": "well; fine",
+          "es": "De forma satisfactoria o adecuada."
+        },
+        "cambiarla": {
+          "meaning": "把它换掉（指T恤）",
+          "en": "exchange it",
+          "es": "Cambiar la prenda mencionada.",
+          "lemma": "cambiar",
+          "pos": "infinitivo con pronombre la"
+        },
+        "azul": {
+          "meaning": "蓝色的；蓝色那件",
+          "en": "blue",
+          "es": "Del color del cielo despejado.",
+          "lemma": "azul",
+          "pos": "adjetivo"
+        },
+        "ticket": {
+          "meaning": "购物小票",
+          "en": "receipt",
+          "es": "Documento que acredita una compra.",
+          "lemma": "ticket",
+          "pos": "sustantivo masculino"
+        },
+        "misma": {
+          "meaning": "同一件；相同的",
+          "en": "same",
+          "es": "Indica identidad con algo mencionado.",
+          "lemma": "mismo",
+          "pos": "adjetivo femenino singular"
+        },
+        "pagar": {
+          "meaning": "付款",
+          "en": "pay",
+          "es": "Dar dinero por un producto o servicio.",
+          "lemma": "pagar",
+          "pos": "verbo infinitivo"
+        },
+        "cuestan": {
+          "meaning": "价格为（复数）",
+          "en": "cost",
+          "es": "Tienen un precio determinado.",
+          "lemma": "costar",
+          "pos": "verbo presente 3.ª plural"
+        },
+        "qué": {
+          "lemma": "qué",
+          "pos": "pronombre o determinante interrogativo",
+          "meaning": "什么；哪种",
+          "en": "what",
+          "es": "Se usa para preguntar por algo."
+        },
+        "favor": {
+          "meaning": "帮忙（por favor：请）",
+          "en": "favor; please in por favor",
+          "es": "Ayuda que se pide; en por favor expresa cortesía.",
+          "lemma": "favor",
+          "pos": "sustantivo masculino"
+        },
+        "aquí": {
+          "lemma": "aquí",
+          "pos": "adverbio de lugar",
+          "meaning": "这里；在这里",
+          "en": "here",
+          "es": "En este lugar."
+        },
+        "perfecto": {
+          "lemma": "perfecto",
+          "pos": "adjetivo; fórmula de aprobación",
+          "meaning": "太好了；完美的",
+          "en": "great; perfect",
+          "es": "En una respuesta indica que una propuesta resulta adecuada."
+        },
+        "hay": {
+          "meaning": "有",
+          "en": "there is; there are",
+          "es": "Indica que algo existe.",
+          "lemma": "haber",
+          "pos": "verbo, presente impersonal"
+        },
+        "puede": {
+          "meaning": "您可以",
+          "en": "you can (formal)",
+          "es": "Tiene la posibilidad de hacer algo.",
+          "lemma": "poder",
+          "pos": "verbo presente 3.ª singular"
+        },
+        "talla": {
+          "meaning": "尺码",
+          "en": "size",
+          "es": "Medida normalizada de una prenda.",
+          "lemma": "talla",
+          "pos": "sustantivo femenino"
+        }
+      },
+      "dict": {
+        "y": "和",
+        "sí": "是的；对",
+        "dos": "二；两个",
+        "muy": "很；非常",
+        "de": "的；从；用于固定搭配",
+        "a": "向；到；在（时间）；引出补语",
+        "en": "在；用；处于",
+        "no": "不；没有；不是",
+        "el": "阳性单数定冠词",
+        "la": "阴性定冠词；她/它（直接宾语代词）",
+        "las": "阴性复数定冠词；她们/它们（直接宾语）",
+        "los": "阳性复数定冠词；他们/它们（直接宾语）",
+        "una": "一个；某个（阴性）",
+        "puedo": "我能；我可以",
+        "mismo": "相同（lo mismo）",
+        "camiseta": "T恤",
+        "necesita": "您需要",
+        "nada": "没有任何东西",
+        "supuesto": "当然（por supuesto）",
+        "pequeña": "小的",
+        "izquierda": "左侧",
+        "que": "引导从句；用于 tener que 表示必须",
+        "tiene": "您有；您需要（tiene que）；给您（aquí tiene）",
+        "más": "更多；更",
+        "buenos": "好的（问候语中）",
+        "cambiar": "更换；退换",
+        "compra": "采购；购物",
+        "al": "去往；到",
+        "quiero": "我想要",
+        "esta": "这（阴性）",
+        "necesito": "我需要",
+        "demasiado": "过于",
+        "están": "位于；处于",
+        "es": "是",
+        "fondo": "最里面",
+        "móvil": "手机",
+        "días": "天（复数）",
+        "probarla": "试穿它",
+        "tengo": "我有；tengo que 我必须",
+        "por": "在（时段）；经过；由于",
+        "etiqueta": "商品标签",
+        "antes": "之前",
+        "porque": "因为",
+        "probadores": "试衣间",
+        "tienda": "商店",
+        "prefiero": "我更喜欢",
+        "blanca": "白色的",
+        "otra": "另一（阴性）",
+        "nuevo": "新的",
+        "está": "位于；处于",
+        "lo": "构成 lo mismo（相同的东西/价格）",
+        "mediana": "中等的（尺码）",
+        "bien": "好；合适",
+        "cambiarla": "把它换掉（指T恤）",
+        "azul": "蓝色的；蓝色那件",
+        "ticket": "购物小票",
+        "misma": "同一件；相同的",
+        "pagar": "付款",
+        "cuestan": "价格为（复数）",
+        "qué": "什么；哪种",
+        "favor": "帮忙（por favor：请）",
+        "aquí": "这里；在这里",
+        "perfecto": "太好了；完美的",
+        "hay": "有",
+        "puede": "您可以",
+        "talla": "尺码"
+      },
+      "library": "core",
+      "core_key": "A1:5",
+      "id": "core-a1-06",
+      "source": {
+        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
+        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+        "date": "2026-11-26"
+      },
+      "cover": "covers/general.svg",
+      "quality": {
+        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
+        "estimated_level": "A1",
+        "authored": true
+      },
+      "audio": [
+        "audio/core-a1-06/3323d43fe805e0b3.mp3",
+        "audio/core-a1-06/de6cdd7998bdb7f2.mp3",
+        "audio/core-a1-06/f62208e21370e221.mp3",
+        "audio/core-a1-06/a8842056539cd172.mp3",
+        "audio/core-a1-06/73005e7b951cdc4b.mp3",
+        "audio/core-a1-06/e8b3b5ad693204a0.mp3",
+        "audio/core-a1-06/ed71f9bc82babb1d.mp3",
+        "audio/core-a1-06/6aa8da821d4e8593.mp3",
+        "audio/core-a1-06/d7551fd1a48bf481.mp3",
+        "audio/core-a1-06/bb5c400641df8655.mp3"
+      ],
+      "curriculum_version": "3.6",
+      "generated_on": "2026-11-26",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:41:59.331520+00:00",
+      "audio_text_sha256": [
+        "de1f9c3e4b394915fabb25c9e186a243899dc0913d2074e07bed1563f7a821b6",
+        "d794ed2d8f654cdab406e3828c297d4658a67e24571e7ec8873de0fa1a0edb47",
+        "608c5cc2f1f9351babf952ddfc3aaf8f39dfa455d44ad8b548e1024105d5a524",
+        "d699ec9a1af04bf3884539ddc30c4d0e55612e58b52f069e1f191bc824c1e3f3",
+        "713d6924f7bf74034a5de7e14e1070b90676da1c62bc46d54b2dfa29b7cf8c75",
+        "2f7f273c2f12a6aa94d874786a0118eca72a8da4c77176ade0850ae4d622a207",
+        "7c0df89af2a3a767f7519983b9bac94e198b6a7fdd9d3327c1885f01808ab70c",
+        "0095c84607c0c397aaa47c44fae1c2dea10d40c39abb323e0b7ef1de80749091",
+        "8072220baba649c5635f94179d7abaa1fe6497ea0966b6521071f056d60a2bf3",
+        "20f59a979714a5c6c42cc702f72f554e781d45c3afaf5ee392e87708072b0492"
+      ]
+    },
+    {
       "id": "bne-2026",
       "title": "西班牙国家图书馆的宝藏",
       "esTitle": "Los tesoros de la Biblioteca Nacional",
@@ -2887,7 +5031,159 @@
       "tuve": "audio/shared/words/8da27ba5a3d1f8ec.mp3",
       "viernes": "audio/shared/words/5b456b3ff1dbe99a.mp3",
       "consejo": "audio/shared/words/55bbc228e0c7ca0b.mp3",
-      "desde": "audio/shared/words/1e06e6dac28b3890.mp3"
+      "desde": "audio/shared/words/1e06e6dac28b3890.mp3",
+      "barra": "audio/shared/words/84c7497f72a364db.mp3",
+      "dependienta": "audio/shared/words/e3f714b778a8b499.mp3",
+      "algo": "audio/shared/words/2f63f1edd8b2c392.mp3",
+      "digo": "audio/shared/words/123c6584bd1c8a7d.mp3",
+      "entro": "audio/shared/words/18cd7737cd6a5761.mp3",
+      "panadería": "audio/shared/words/fbc59399efce04cc.mp3",
+      "derecha": "audio/shared/words/1d59f535cb8485ec.mp3",
+      "banco": "audio/shared/words/74e724c91d2a99dc.mp3",
+      "dónde": "audio/shared/words/cd8781997b308c16.mp3",
+      "perdona": "audio/shared/words/edb0979932fde328.mp3",
+      "recto": "audio/shared/words/fa1c490c4d4bbedf.mp3",
+      "gira": "audio/shared/words/6649357466f20f68.mp3",
+      "bocadillos": "audio/shared/words/79d8d6d879f20e5e.mp3",
+      "botella": "audio/shared/words/423ef74f884b6b54.mp3",
+      "buenos": "audio/shared/words/c531354572569831.mp3",
+      "buen": "audio/shared/words/11f940fd70645269.mp3",
+      "cincuenta": "audio/shared/words/4a09b38890b1ec2c.mp3",
+      "cuesta": "audio/shared/words/3ad7fef99bde17cc.mp3",
+      "cuánto": "audio/shared/words/13f05111f201fce8.mp3",
+      "euros": "audio/shared/words/3f4c5abb2ecb43af.mp3",
+      "favor": "audio/shared/words/df2fc6e9c627881a.mp3",
+      "efectivo": "audio/shared/words/eedcc321751ac05f.mp3",
+      "le": "audio/shared/words/61098a4bf2a5e216.mp3",
+      "igualmente": "audio/shared/words/43c5c5d7d10fc197.mp3",
+      "llevar": "audio/shared/words/eb755e0530402f75.mp3",
+      "luego": "audio/shared/words/5ac675ba63c5648d.mp3",
+      "lo": "audio/shared/words/9294ab38039f60d2.mp3",
+      "naranja": "audio/shared/words/9be302ff7ed8dcad.mp3",
+      "pagar": "audio/shared/words/60bb0d14da79a54b.mp3",
+      "pedir": "audio/shared/words/16442e8138e94d94.mp3",
+      "pongo": "audio/shared/words/c32585352611e46a.mp3",
+      "quiere": "audio/shared/words/7d2a681c8c53752a.mp3",
+      "solo": "audio/shared/words/5364f2f2fc4f54e9.mp3",
+      "tenemos": "audio/shared/words/0274465c7bf0ae76.mp3",
+      "tenga": "audio/shared/words/09ebcfd5ac6eea06.mp3",
+      "tipos": "audio/shared/words/b51fb023f8912661.mp3",
+      "toma": "audio/shared/words/861ef6e67fa0aa2a.mp3",
+      "tomate": "audio/shared/words/cea70552116071b4.mp3",
+      "tostadas": "audio/shared/words/8fc21983ddaf456d.mp3",
+      "varios": "audio/shared/words/3190d6058f53dd34.mp3",
+      "zumo": "audio/shared/words/00da2e915279bc2b.mp3",
+      "busco": "audio/shared/words/8d323beb836e198a.mp3",
+      "caro": "audio/shared/words/0426491043cb32c4.mp3",
+      "cebolla": "audio/shared/words/fbe0280057de3545.mp3",
+      "cosas": "audio/shared/words/75358e7d1d70df67.mp3",
+      "doce": "audio/shared/words/dfc34170bbee650f.mp3",
+      "docena": "audio/shared/words/cb0641a5065420dd.mp3",
+      "falta": "audio/shared/words/6872a5ebdd18cdaa.mp3",
+      "kilo": "audio/shared/words/54c5ccf0f305a9a1.mp3",
+      "oferta": "audio/shared/words/a13fee0279d4aaaf.mp3",
+      "otra": "audio/shared/words/a138a1bc2fcb7314.mp3",
+      "otro": "audio/shared/words/c63a855fcfec62cc.mp3",
+      "patatas": "audio/shared/words/cf7e8e6bb7b9c6d2.mp3",
+      "pescado": "audio/shared/words/ac445d6161b84c3a.mp3",
+      "primero": "audio/shared/words/8ffbcf002e8ad0cf.mp3",
+      "quince": "audio/shared/words/4f67642c07d4c8a3.mp3",
+      "todavía": "audio/shared/words/8cc40274110af6a8.mp3",
+      "tomates": "audio/shared/words/0828c73dae1170ba.mp3",
+      "veo": "audio/shared/words/61b77e47289aa9c2.mp3",
+      "vez": "audio/shared/words/77be241a2753a09a.mp3",
+      "azul": "audio/shared/words/a4bd1d3a69aa0ea6.mp3",
+      "blanca": "audio/shared/words/91262d0ed191e423.mp3",
+      "cambiar": "audio/shared/words/d3fd787ac1c5e27f.mp3",
+      "camiseta": "audio/shared/words/d9b7f7bc1ca5aff9.mp3",
+      "cambiarla": "audio/shared/words/83c38590e7a81a4e.mp3",
+      "cuestan": "audio/shared/words/42bcf9d7a8793481.mp3",
+      "etiqueta": "audio/shared/words/47a662da55f03a2b.mp3",
+      "demasiado": "audio/shared/words/24bf0100e340222a.mp3",
+      "fondo": "audio/shared/words/fae66f6a6fa32ca5.mp3",
+      "izquierda": "audio/shared/words/fc58cf9386be931e.mp3",
+      "mediana": "audio/shared/words/2c2fd6ffc55b0d0b.mp3",
+      "misma": "audio/shared/words/a83fe6d9532c9857.mp3",
+      "nada": "audio/shared/words/41a698236b03374c.mp3",
+      "mismo": "audio/shared/words/7850454930a3573c.mp3",
+      "necesita": "audio/shared/words/04ee3146aaf3d551.mp3",
+      "probarla": "audio/shared/words/5eec9d8bd8b34428.mp3",
+      "probadores": "audio/shared/words/d5e3f9d10b2c3465.mp3",
+      "supuesto": "audio/shared/words/b5f19f4af8c97438.mp3",
+      "talla": "audio/shared/words/48c96bd517cd603c.mp3",
+      "ticket": "audio/shared/words/14069429150abcbf.mp3",
+      "duele": "audio/shared/words/1889236da23e54f0.mp3",
+      "farmacia": "audio/shared/words/871218d9cd73fe0c.mp3",
+      "farmacéutica": "audio/shared/words/cdf04e51c6426d53.mp3",
+      "garganta": "audio/shared/words/ab07f6b269243caf.mp3",
+      "mejoro": "audio/shared/words/c20c7ef697976e34.mp3",
+      "médico": "audio/shared/words/44f298fd2581e17e.mp3",
+      "recomienda": "audio/shared/words/3a01aa07942cd0b0.mp3",
+      "buscando": "audio/shared/words/617aec0902c30dc8.mp3",
+      "contrato": "audio/shared/words/4a4d23ddfbfedeca.mp3",
+      "empadronarme": "audio/shared/words/51af3d76cbba6e48.mp3",
+      "firmar": "audio/shared/words/758a7f95bd78e0e8.mp3",
+      "habitación": "audio/shared/words/b61071ff601cea13.mp3",
+      "gastos": "audio/shared/words/7ba727f2b6ce42c6.mp3",
+      "luminosa": "audio/shared/words/70d142e1ebb51b53.mp3",
+      "pregunto": "audio/shared/words/017adca124a5803f.mp3",
+      "ahora": "audio/shared/words/078f91fbc884d703.mp3",
+      "aprendido": "audio/shared/words/cb44e57d09b85435.mp3",
+      "apunto": "audio/shared/words/ae7a94b41bc242f8.mp3",
+      "aunque": "audio/shared/words/83b5f381c8de7353.mp3",
+      "cometer": "audio/shared/words/dfa1e4d2e3c80bed.mp3",
+      "comprender": "audio/shared/words/b647db14b50809f2.mp3",
+      "cortos": "audio/shared/words/f1b30c8e120d0823.mp3",
+      "cómoda": "audio/shared/words/19b486191c029391.mp3",
+      "daba": "audio/shared/words/3f8e71b218885a84.mp3",
+      "entender": "audio/shared/words/da48d173329454cf.mp3",
+      "entiendo": "audio/shared/words/0cec8d4b3d74ac87.mp3",
+      "errores": "audio/shared/words/7bf97f56bf6d9738.mp3",
+      "escribo": "audio/shared/words/ea6750e4e9aa058e.mp3",
+      "escuchar": "audio/shared/words/3ba5486a28f4fcf9.mp3",
+      "escucho": "audio/shared/words/2031f93071bf9c82.mp3",
+      "fines": "audio/shared/words/b0a25adcae7ff0c5.mp3",
+      "frase": "audio/shared/words/045dd549f003a581.mp3",
+      "he": "audio/shared/words/372f7e2fd2d01ce2.mp3",
+      "intento": "audio/shared/words/f7fecfeceaf4e184.mp3",
+      "interesan": "audio/shared/words/2f5c5d989cc8ecc1.mp3",
+      "mirar": "audio/shared/words/d57ff0a999cb3ba3.mp3",
+      "mis": "audio/shared/words/d5519d3c29a3b2a2.mp3",
+      "nueva": "audio/shared/words/dda7c108693f29df.mp3",
+      "palabra": "audio/shared/words/2381f1805955736a.mp3",
+      "pequeño": "audio/shared/words/8d34b7b6ceef2e25.mp3",
+      "principal": "audio/shared/words/69e03750027e6b1e.mp3",
+      "principio": "audio/shared/words/5c17c959563167b0.mp3",
+      "repaso": "audio/shared/words/4b176cbba41bb049.mp3",
+      "repito": "audio/shared/words/80107c101f45a7e9.mp3",
+      "resumen": "audio/shared/words/61fab33486de3674.mp3",
+      "siento": "audio/shared/words/f0446ca184185aeb.mp3",
+      "sobre": "audio/shared/words/6919d6353a2a0be0.mp3",
+      "temas": "audio/shared/words/3152e45ffdb66a02.mp3",
+      "texto": "audio/shared/words/f46e3b17a6b639e5.mp3",
+      "textos": "audio/shared/words/192ea590f87d7d9c.mp3",
+      "vecinos": "audio/shared/words/bf9b431bcb849334.mp3",
+      "vergüenza": "audio/shared/words/7fb10be2383d5edc.mp3",
+      "sigue": "audio/shared/words/19cf095284f78c30.mp3",
+      "todo": "audio/shared/words/602fae580f5863ab.mp3",
+      "tu": "audio/shared/words/764c4c7b78d6fd3b.mp3",
+      "abre": "audio/shared/words/9a4e7b17985f9236.mp3",
+      "estudiar": "audio/shared/words/efaed1fbd9353a1f.mp3",
+      "algunos": "audio/shared/words/04bbfc0c2d5f0453.mp3",
+      "ordenador": "audio/shared/words/7fc696a77653337b.mp3",
+      "sitio": "audio/shared/words/87060a31554168f2.mp3",
+      "tranquilo": "audio/shared/words/cbc7a5cc3f33617d.mp3",
+      "chaqueta": "audio/shared/words/38dc2ff19889f5db.mp3",
+      "invierno": "audio/shared/words/25cab50dac64c386.mp3",
+      "grande": "audio/shared/words/34ca6bb1036d148d.mp3",
+      "probármela": "audio/shared/words/b416cdb1580214f4.mp3",
+      "abrigo": "audio/shared/words/fea54baa81db92d3.mp3",
+      "bufanda": "audio/shared/words/67fd334347beff6b.mp3",
+      "caminar": "audio/shared/words/efb62f29e81e401a.mp3",
+      "frío": "audio/shared/words/fa54a38a73dc2dab.mp3",
+      "hace": "audio/shared/words/bdef2a7f659a324e.mp3",
+      "viento": "audio/shared/words/ea05f5848a683d2f.mp3",
+      "algún": "audio/shared/words/536a838438885e5a.mp3"
     },
     "sentences": {
       "Después voy a una cafetería cerca de la universidad.": "audio/shared/sentences/159a2c64ac779bab.mp3",
@@ -5110,262 +7406,6 @@
       ]
     },
     {
-      "level": "A1",
-      "genre": "dialogue",
-      "title": "课程 A1-04：在咖啡馆点早餐",
-      "esTitle": "Un desayuno para llevar",
-      "pairs": [
-        [
-          "Buenos días. ¿Qué le pongo? Tenemos tostadas, bocadillos y varios tipos de café.",
-          "早上好。您要点什么？我们有烤面包、三明治和几种咖啡。"
-        ],
-        [
-          "Quiero un café solo y una tostada con tomate, por favor.",
-          "请给我一杯黑咖啡和一份番茄烤面包。"
-        ],
-        [
-          "¿Toma el desayuno aquí o lo quiere para llevar?",
-          "您在这里吃早餐还是打包带走？"
-        ],
-        [
-          "Para llevar, porque tengo clase a las nueve y no tengo mucho tiempo.",
-          "打包，因为我九点有课，时间不多。"
-        ],
-        [
-          "Muy bien. ¿Quiere también un zumo de naranja o una botella de agua?",
-          "好的。您还想要一杯橙汁或一瓶水吗？"
-        ],
-        [
-          "No, gracias. ¿Cuánto cuesta el café con la tostada?",
-          "不用了，谢谢。咖啡加烤面包多少钱？"
-        ],
-        [
-          "Son cuatro euros con cincuenta. Puede pagar aquí con tarjeta o en efectivo.",
-          "四欧元五十分。您可以在这里刷卡或付现金。"
-        ],
-        [
-          "Pago con tarjeta. ¿Puedo pedir un poco más de tomate en la tostada?",
-          "我刷卡。可以在烤面包上多加一点番茄吗？"
-        ],
-        [
-          "Sí, claro. Aquí tiene el café y la tostada. Que tenga un buen día.",
-          "当然。这是您的咖啡和烤面包。祝您今天愉快。"
-        ],
-        [
-          "Muchas gracias, igualmente. Hasta luego.",
-          "非常感谢，也祝您愉快。再见。"
-        ]
-      ],
-      "grammar": "目标：点餐、询价、选择堂食或外带。① Quiero + 名词；¿Cuánto cuesta + 单数名词? ② con/sin + 食材表示含有或不含。语块：para llevar 外带；aquí tiene 给您；en efectivo 现金支付；un poco más de 再多一点。Que tenga un buen día 是礼貌告别固定语，不要求A1独立掌握虚拟式。价格为模拟。迁移：Quiero un té sin azúcar, para llevar.",
-      "questions": [
-        {
-          "q": "¿Qué café pide la persona?",
-          "options": [
-            "Un café solo.",
-            "Un café con leche.",
-            "Un café con hielo."
-          ],
-          "answer": 0,
-          "evidence": "Quiero un café solo"
-        },
-        {
-          "q": "¿Por qué pide el desayuno para llevar?",
-          "options": [
-            "Porque el café está frío.",
-            "Porque tiene clase a las nueve.",
-            "Porque no tiene tarjeta."
-          ],
-          "answer": 1,
-          "evidence": "porque tengo clase a las nueve"
-        },
-        {
-          "q": "¿Cómo paga?",
-          "options": [
-            "En efectivo.",
-            "Con un cheque.",
-            "Con tarjeta."
-          ],
-          "answer": 2,
-          "evidence": "Pago con tarjeta"
-        }
-      ],
-      "course": {
-        "level": "A1",
-        "sequence": 3,
-        "unit": 2,
-        "cycle": 1,
-        "phase": "introduce",
-        "unit_title": "Food and shopping",
-        "grammar": "gender, number, quantities, querer, costar",
-        "theme": "ordering breakfast and asking about ingredients",
-        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "review_expressions": "me llamo; vivo en; a las; tengo que",
-        "objective": "Introduce target expressions naturally"
-      },
-      "lexicon": {
-        "y": {
-          "meaning": "和",
-          "en": "and",
-          "es": "Une palabras o ideas.",
-          "lemma": "y",
-          "pos": "conjunción"
-        },
-        "o": {
-          "lemma": "o",
-          "pos": "conjunción disyuntiva",
-          "meaning": "或者",
-          "en": "or",
-          "es": "Presenta alternativas."
-        },
-        "sí": {
-          "lemma": "sí",
-          "pos": "adverbio de afirmación",
-          "meaning": "是的；对",
-          "en": "yes",
-          "es": "Expresa una respuesta afirmativa."
-        },
-        "hasta": {
-          "lemma": "hasta",
-          "pos": "preposición",
-          "meaning": "直到；到",
-          "en": "until; to",
-          "es": "Indica un límite espacial o temporal."
-        },
-        "muy": {
-          "lemma": "muy",
-          "pos": "adverbio de grado",
-          "meaning": "很；非常",
-          "en": "very",
-          "es": "Intensifica el significado de un adjetivo o adverbio."
-        },
-        "de": {
-          "lemma": "de",
-          "pos": "preposición",
-          "meaning": "的；从；用于固定搭配",
-          "en": "of; from; in fixed expressions",
-          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
-        },
-        "a": {
-          "lemma": "a",
-          "pos": "preposición",
-          "meaning": "向；到；在（时间）；引出补语",
-          "en": "to; at; marks certain complements",
-          "es": "Indica destino, hora o introduce determinados complementos."
-        },
-        "en": {
-          "lemma": "en",
-          "pos": "preposición",
-          "meaning": "在；用；处于",
-          "en": "in; on; at; by",
-          "es": "Indica lugar, situación, medio u otras relaciones."
-        },
-        "no": {
-          "lemma": "no",
-          "pos": "adverbio de negación",
-          "meaning": "不；没有；不是",
-          "en": "no; not",
-          "es": "Niega una afirmación, acción o idea."
-        },
-        "el": {
-          "lemma": "el",
-          "pos": "artículo determinado masculino singular",
-          "meaning": "阳性单数定冠词",
-          "en": "the",
-          "es": "Determina un nombre masculino singular."
-        },
-        "la": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino",
-          "meaning": "阴性定冠词；她/它（直接宾语代词）",
-          "en": "the; her; it",
-          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
-        },
-        "las": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino plural",
-          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
-          "en": "the; them",
-          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
-        },
-        "un": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado masculino singular",
-          "meaning": "一个；某个",
-          "en": "a; one",
-          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
-        },
-        "una": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado femenino singular",
-          "meaning": "一个；某个（阴性）",
-          "en": "a; one",
-          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
-        }
-      },
-      "dict": {
-        "y": "和",
-        "o": "或者",
-        "sí": "是的；对",
-        "hasta": "直到；到",
-        "muy": "很；非常",
-        "de": "的；从；用于固定搭配",
-        "a": "向；到；在（时间）；引出补语",
-        "en": "在；用；处于",
-        "no": "不；没有；不是",
-        "el": "阳性单数定冠词",
-        "la": "阴性定冠词；她/它（直接宾语代词）",
-        "las": "阴性复数定冠词；她们/它们（直接宾语）",
-        "un": "一个；某个",
-        "una": "一个；某个（阴性）"
-      },
-      "library": "core",
-      "core_key": "A1:3",
-      "_rich_v32": true,
-      "id": "core-a1-04",
-      "source": {
-        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
-        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
-        "date": "2026-11-26"
-      },
-      "cover": "covers/general.svg",
-      "quality": {
-        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
-        "estimated_level": "A1",
-        "authored": true
-      },
-      "_reviewed": true,
-      "_source": {
-        "kind": "original",
-        "name": "原创教学",
-        "title": "Un desayuno para llevar",
-        "course": {
-          "level": "A1",
-          "sequence": 3,
-          "unit": 2,
-          "cycle": 1,
-          "phase": "introduce",
-          "unit_title": "Food and shopping",
-          "grammar": "gender, number, quantities, querer, costar",
-          "theme": "ordering breakfast and asking about ingredients",
-          "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "review_expressions": "me llamo; vivo en; a las; tengo que",
-          "objective": "Introduce target expressions naturally"
-        }
-      },
-      "audio": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
       "level": "A2",
       "genre": "dialogue",
       "title": "课程 A2-03：分享一次难忘的日常经历",
@@ -6140,88 +8180,96 @@
     },
     {
       "level": "A1",
-      "genre": "routine",
-      "title": "课程 A1-05：带着预算去超市",
-      "esTitle": "La compra para la cena",
+      "genre": "dialogue",
+      "title": "课程 A1-07：在地铁站询问方向",
+      "esTitle": "¿Por dónde se va a la línea verde?",
       "pairs": [
         [
-          "Esta tarde quiero preparar una cena sencilla para dos personas y tengo quince euros para la compra.",
-          "今天下午我想为两个人准备一顿简单的晚餐，有十五欧元的购物预算。"
+          "Perdone, quiero ir al centro, pero no encuentro la línea verde del metro.",
+          "打扰一下，我想去市中心，但是找不到地铁绿线。"
         ],
         [
-          "Antes de salir de casa, hago una lista con las cosas que necesito.",
-          "出门前，我列了一张所需物品的清单。"
+          "Está en otra planta. Ahora estamos en la entrada de la línea roja.",
+          "在另一层。我们现在在红线的入口处。"
         ],
         [
-          "En el supermercado, busco primero las verduras porque están cerca de la entrada.",
-          "在超市，我先找蔬菜，因为它们就在入口附近。"
+          "¿Tengo que salir de la estación para cambiar de línea?",
+          "我需要离开车站才能换乘吗？"
         ],
         [
-          "Compro un kilo de tomates, dos patatas y una cebolla para la sopa.",
-          "我买一公斤番茄、两个土豆和一个洋葱做汤。"
+          "No, puede hacer el cambio dentro de la estación. Siga las señales verdes.",
+          "不用，您可以在站内换乘。请沿着绿色标志走。"
         ],
         [
-          "También quiero comprar pescado, pero hoy está un poco caro.",
-          "我还想买鱼，不过今天鱼有点贵。"
+          "¿Hay un ascensor? Llevo una maleta grande y las escaleras son un problema.",
+          "有电梯吗？我带着一个大行李箱，走楼梯不方便。"
         ],
         [
-          "Al lado del pescado hay huevos de oferta, así que compro media docena.",
-          "鱼旁边有特价鸡蛋，所以我买了半打。"
+          "Sí, hay uno al final del pasillo, a la derecha de las máquinas de billetes.",
+          "有，在走廊尽头，售票机右侧有一部。"
         ],
         [
-          "Antes de pagar, miro la lista otra vez y veo que falta el pan.",
-          "付款前，我再看一遍清单，发现还缺面包。"
+          "Muchas gracias. ¿La línea verde está muy lejos de aquí?",
+          "非常感谢。绿线离这里很远吗？"
         ],
         [
-          "Al final pago doce euros y todavía tengo dinero para otro día.",
-          "最后我花了十二欧元，还剩下一些钱可以改天用。"
+          "No, está a unos cinco minutos a pie. Puede bajar en el ascensor.",
+          "不远，走路大约五分钟。您可以乘电梯下去。"
+        ],
+        [
+          "Perfecto, entonces sigo por este pasillo. Gracias por su ayuda.",
+          "太好了，那我就沿着这条走廊走。谢谢您的帮助。"
+        ],
+        [
+          "De nada. Mire las pantallas antes de subir al tren.",
+          "不客气。上车前请看看显示屏。"
         ]
       ],
-      "grammar": "目标：说数量、价格及购物选择。① un kilo de + 食品；media docena = 六个。② estar + 价格/状态：está caro、están de oferta；hay 表示某处有某物。语块：hacer una lista 列清单；estar de oferta 打折；al final 最后；falta el pan 还缺面包。价格是教学设定。迁移：Compro medio kilo de arroz porque está de oferta.",
+      "grammar": "目标：在车站问路和确认设施。① hay + 不定名词表示存在，está + 地点表示位置。② tener que + 原形表示必须；puede + 原形表示可以。语块：cambiar de línea 换乘；al final del pasillo 走廊尽头；a la derecha de 在……右边；subir al tren 上车。Siga/Mire 作为常见指路公式接触，不要求掌握完整命令式。场景及距离为模拟。迁移：¿Hay un ascensor cerca de la salida?",
       "questions": [
         {
-          "q": "¿Para cuántas personas prepara la cena?",
+          "q": "¿Qué línea busca la persona?",
           "options": [
-            "Para cuatro.",
-            "Para dos.",
-            "Para seis."
-          ],
-          "answer": 1,
-          "evidence": "para dos personas"
-        },
-        {
-          "q": "¿Por qué compra huevos?",
-          "options": [
-            "Porque no hay verduras.",
-            "Porque no tiene patatas.",
-            "Porque están de oferta."
+            "La roja.",
+            "La azul.",
+            "La verde."
           ],
           "answer": 2,
-          "evidence": "hay huevos de oferta, así que compro media docena"
+          "evidence": "no encuentro la línea verde del metro"
         },
         {
-          "q": "¿Qué falta antes de pagar?",
+          "q": "¿Por qué pregunta por un ascensor?",
           "options": [
-            "El pan.",
-            "El pescado.",
-            "La cebolla."
+            "Porque no tiene billete.",
+            "Porque lleva una maleta grande.",
+            "Porque quiere comprar comida."
+          ],
+          "answer": 1,
+          "evidence": "Llevo una maleta grande"
+        },
+        {
+          "q": "¿Dónde está el ascensor?",
+          "options": [
+            "A la derecha de las máquinas de billetes.",
+            "Fuera de la estación.",
+            "Junto a un restaurante."
           ],
           "answer": 0,
-          "evidence": "falta el pan"
+          "evidence": "a la derecha de las máquinas de billetes"
         }
       ],
       "course": {
         "level": "A1",
-        "sequence": 4,
-        "unit": 2,
+        "sequence": 6,
+        "unit": 3,
         "cycle": 1,
-        "phase": "transfer",
-        "unit_title": "Food and shopping",
-        "grammar": "gender, number, quantities, querer, costar",
-        "theme": "choosing groceries with a budget",
-        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "review_expressions": "me llamo; vivo en; a las; tengo que",
-        "objective": "Reuse earlier targets in a different situation"
+        "phase": "introduce",
+        "unit_title": "Getting around",
+        "grammar": "ir a, hay, estar, basic directions",
+        "theme": "asking for directions inside a metro station",
+        "expressions": "al lado de; cerca de; hay que; a la derecha",
+        "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+        "objective": "Introduce target expressions naturally"
       },
       "lexicon": {
         "y": {
@@ -6238,12 +8286,19 @@
           "en": "but",
           "es": "Introduce una idea que contrasta con la anterior."
         },
-        "dos": {
-          "lemma": "dos",
-          "pos": "numeral cardinal",
-          "meaning": "二；两个",
-          "en": "two",
-          "es": "Número que sigue al uno."
+        "sí": {
+          "lemma": "sí",
+          "pos": "adverbio de afirmación",
+          "meaning": "是的；对",
+          "en": "yes",
+          "es": "Expresa una respuesta afirmativa."
+        },
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
         },
         "de": {
           "lemma": "de",
@@ -6252,12 +8307,26 @@
           "en": "of; from; in fixed expressions",
           "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
         },
+        "a": {
+          "lemma": "a",
+          "pos": "preposición",
+          "meaning": "向；到；在（时间）；引出补语",
+          "en": "to; at; marks certain complements",
+          "es": "Indica destino, hora o introduce determinados complementos."
+        },
         "en": {
           "lemma": "en",
           "pos": "preposición",
           "meaning": "在；用；处于",
           "en": "in; on; at; by",
           "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "no": {
+          "lemma": "no",
+          "pos": "adverbio de negación",
+          "meaning": "不；没有；不是",
+          "en": "no; not",
+          "es": "Niega una afirmación, acción o idea."
         },
         "el": {
           "lemma": "el",
@@ -6298,9 +8367,12 @@
       "dict": {
         "y": "和",
         "pero": "但是",
-        "dos": "二；两个",
+        "sí": "是的；对",
+        "muy": "很；非常",
         "de": "的；从；用于固定搭配",
+        "a": "向；到；在（时间）；引出补语",
         "en": "在；用；处于",
+        "no": "不；没有；不是",
         "el": "阳性单数定冠词",
         "la": "阴性定冠词；她/它（直接宾语代词）",
         "las": "阴性复数定冠词；她们/它们（直接宾语）",
@@ -6308,9 +8380,9 @@
         "una": "一个；某个（阴性）"
       },
       "library": "core",
-      "core_key": "A1:4",
+      "core_key": "A1:6",
       "_rich_v32": true,
-      "id": "core-a1-05",
+      "id": "core-a1-07",
       "source": {
         "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
         "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
@@ -6326,22 +8398,24 @@
       "_source": {
         "kind": "original",
         "name": "原创教学",
-        "title": "La compra para la cena",
+        "title": "¿Por dónde se va a la línea verde?",
         "course": {
           "level": "A1",
-          "sequence": 4,
-          "unit": 2,
+          "sequence": 6,
+          "unit": 3,
           "cycle": 1,
-          "phase": "transfer",
-          "unit_title": "Food and shopping",
-          "grammar": "gender, number, quantities, querer, costar",
-          "theme": "choosing groceries with a budget",
-          "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "review_expressions": "me llamo; vivo en; a las; tengo que",
-          "objective": "Reuse earlier targets in a different situation"
+          "phase": "introduce",
+          "unit_title": "Getting around",
+          "grammar": "ir a, hay, estar, basic directions",
+          "theme": "asking for directions inside a metro station",
+          "expressions": "al lado de; cerca de; hay que; a la derecha",
+          "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+          "objective": "Introduce target expressions naturally"
         }
       },
       "audio": [
+        "",
+        "",
         "",
         "",
         "",
@@ -6869,96 +8943,88 @@
     },
     {
       "level": "A1",
-      "genre": "dialogue",
-      "title": "课程 A1-06：退换买错的商品",
-      "esTitle": "¿Puedo cambiar esta camiseta?",
+      "genre": "routine",
+      "title": "课程 A1-08：和朋友计划坐火车出游",
+      "esTitle": "Un plan para el sábado",
       "pairs": [
         [
-          "Buenos días. Quiero cambiar esta camiseta porque es demasiado pequeña.",
-          "早上好，我想换这件T恤，因为它太小了。"
+          "El sábado quiero pasar el día fuera de la ciudad con una amiga de la universidad.",
+          "周六我想和一位大学朋友去城外玩一天。"
         ],
         [
-          "Buenos días. ¿Tiene el ticket de compra y la etiqueta de la camiseta?",
-          "早上好。您有购物小票和T恤的标签吗？"
+          "Las dos tenemos una tarjeta de transporte y queremos viajar en tren.",
+          "我们俩都有交通卡，想乘火车出行。"
         ],
         [
-          "Sí, tengo el ticket en el móvil y la etiqueta está aquí.",
-          "有的，小票在手机里，标签在这里。"
+          "Antes de salir, miramos el horario y comprobamos si necesitamos otro billete.",
+          "出发前，我们查看时刻表，确认是否需要另一张车票。"
         ],
         [
-          "Muy bien. Puede cambiarla por otra talla. ¿Qué talla necesita?",
-          "好的。您可以换一个尺码。需要什么尺码？"
+          "Queremos llegar a la estación a las nueve, porque el tren sale poco después.",
+          "我们想九点到车站，因为火车不久后就开了。"
         ],
         [
-          "Necesito una talla mediana. ¿Tiene la misma camiseta en azul?",
-          "我需要中号。有同款蓝色T恤吗？"
+          "En el pueblo hay una plaza grande y un camino cerca del río.",
+          "小镇里有一个大广场，还有一条河边的小路。"
         ],
         [
-          "Sí, hay una azul y otra blanca. Las dos cuestan lo mismo.",
-          "有，一件蓝色和一件白色，两件价格一样。"
+          "Primero vamos a dar un paseo y después vamos a comer en la plaza.",
+          "我们打算先散步，然后在广场上吃饭。"
         ],
         [
-          "Prefiero la azul. ¿Puedo probarla antes de cambiar la camiseta?",
-          "我更喜欢蓝色的。我可以先试穿再换吗？"
+          "Por la tarde queremos visitar una tienda pequeña y volver antes de las ocho.",
+          "下午我们想逛一家小店，八点之前回来。"
         ],
         [
-          "Por supuesto, los probadores están al fondo de la tienda, a la izquierda.",
-          "当然，试衣间在店铺最里面，左手边。"
-        ],
-        [
-          "Esta talla está bien. Quiero la azul, por favor.",
-          "这个尺码合适。请给我蓝色这件。"
-        ],
-        [
-          "Perfecto. No tiene que pagar nada más. Aquí tiene el nuevo ticket.",
-          "好的。您无需再付钱。这是新的小票。"
+          "Llevo agua y algo de comer en la mochila, y mi amiga lleva un mapa.",
+          "我在背包里带水和一些食物，我朋友带地图。"
         ]
       ],
-      "grammar": "目标：描述商品和提出换货需求。① demasiado + 形容词：demasiado pequeña 太小；la misma camiseta 同款T恤。② ¿Tiene…? 与 ¿Puedo + 动词原形? 的礼貌用法。语块：el ticket de compra 购物小票；cambiar por 换成；lo mismo 相同；probarse la ropa 试穿衣服。迁移：Necesito otra talla. ¿Puedo probarla? 退换规则为模拟，不是实际商店政策。",
+      "grammar": "目标：安排一次出游并说明计划。① ir a + 动词原形：vamos a dar un paseo、vamos a comer。② antes de + 名词/原形表示在……之前；después 表示之后。语块：pasar el día 度过一天；mirar el horario 查看时刻表；dar un paseo 散步；volver antes de las ocho 八点前回来。交通安排为教学模拟，实际出行需查票务。迁移：El domingo voy a visitar un museo con una amiga.",
       "questions": [
         {
-          "q": "¿Qué problema tiene la primera camiseta?",
+          "q": "¿Cómo quieren viajar?",
           "options": [
-            "Es demasiado pequeña.",
-            "Es demasiado cara.",
-            "Es de color azul."
-          ],
-          "answer": 0,
-          "evidence": "es demasiado pequeña"
-        },
-        {
-          "q": "¿Dónde tiene el ticket la persona?",
-          "options": [
-            "En casa.",
-            "En la mochila de un amigo.",
-            "En el móvil."
-          ],
-          "answer": 2,
-          "evidence": "tengo el ticket en el móvil"
-        },
-        {
-          "q": "¿Qué color elige al final?",
-          "options": [
-            "Blanco.",
-            "Azul.",
-            "Verde."
+            "En avión.",
+            "En tren.",
+            "En coche."
           ],
           "answer": 1,
-          "evidence": "Quiero la azul"
+          "evidence": "queremos viajar en tren"
+        },
+        {
+          "q": "¿Qué quieren hacer primero en el pueblo?",
+          "options": [
+            "Dar un paseo.",
+            "Comprar zapatos.",
+            "Coger otro tren."
+          ],
+          "answer": 0,
+          "evidence": "Primero vamos a dar un paseo"
+        },
+        {
+          "q": "¿Quién lleva un mapa?",
+          "options": [
+            "El conductor.",
+            "La persona que cuenta la historia.",
+            "La amiga."
+          ],
+          "answer": 2,
+          "evidence": "mi amiga lleva un mapa"
         }
       ],
       "course": {
         "level": "A1",
-        "sequence": 5,
-        "unit": 2,
+        "sequence": 7,
+        "unit": 3,
         "cycle": 1,
-        "phase": "retrieve",
-        "unit_title": "Food and shopping",
-        "grammar": "gender, number, quantities, querer, costar",
-        "theme": "returning a wrong item and choosing another",
-        "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "review_expressions": "me llamo; vivo en; a las; tengo que",
-        "objective": "Integrate unit targets and previous knowledge in a new task"
+        "phase": "transfer",
+        "unit_title": "Getting around",
+        "grammar": "ir a, hay, estar, basic directions",
+        "theme": "planning a train trip with a friend",
+        "expressions": "al lado de; cerca de; hay que; a la derecha",
+        "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+        "objective": "Reuse earlier targets in a different situation"
       },
       "lexicon": {
         "y": {
@@ -6968,12 +9034,12 @@
           "lemma": "y",
           "pos": "conjunción"
         },
-        "sí": {
-          "lemma": "sí",
-          "pos": "adverbio de afirmación",
-          "meaning": "是的；对",
-          "en": "yes",
-          "es": "Expresa una respuesta afirmativa."
+        "después": {
+          "lemma": "después",
+          "pos": "adverbio",
+          "meaning": "之后；然后",
+          "en": "afterwards; later",
+          "es": "En un momento posterior."
         },
         "dos": {
           "lemma": "dos",
@@ -6982,12 +9048,12 @@
           "en": "two",
           "es": "Número que sigue al uno."
         },
-        "muy": {
-          "lemma": "muy",
-          "pos": "adverbio de grado",
-          "meaning": "很；非常",
-          "en": "very",
-          "es": "Intensifica el significado de un adjetivo o adverbio."
+        "ocho": {
+          "lemma": "ocho",
+          "pos": "numeral cardinal",
+          "meaning": "八",
+          "en": "eight",
+          "es": "Número que sigue al siete."
         },
         "de": {
           "lemma": "de",
@@ -7010,13 +9076,6 @@
           "en": "in; on; at; by",
           "es": "Indica lugar, situación, medio u otras relaciones."
         },
-        "no": {
-          "lemma": "no",
-          "pos": "adverbio de negación",
-          "meaning": "不；没有；不是",
-          "en": "no; not",
-          "es": "Niega una afirmación, acción o idea."
-        },
         "el": {
           "lemma": "el",
           "pos": "artículo determinado masculino singular",
@@ -7038,12 +9097,12 @@
           "en": "the; them",
           "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
         },
-        "los": {
-          "lemma": "el",
-          "pos": "artículo determinado o pronombre átono masculino plural",
-          "meaning": "阳性复数定冠词；他们/它们（直接宾语）",
-          "en": "the; them",
-          "es": "Determina nombres masculinos plurales o sustituye un complemento directo masculino plural."
+        "un": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado masculino singular",
+          "meaning": "一个；某个",
+          "en": "a; one",
+          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
         },
         "una": {
           "lemma": "uno",
@@ -7055,23 +9114,22 @@
       },
       "dict": {
         "y": "和",
-        "sí": "是的；对",
+        "después": "之后；然后",
         "dos": "二；两个",
-        "muy": "很；非常",
+        "ocho": "八",
         "de": "的；从；用于固定搭配",
         "a": "向；到；在（时间）；引出补语",
         "en": "在；用；处于",
-        "no": "不；没有；不是",
         "el": "阳性单数定冠词",
         "la": "阴性定冠词；她/它（直接宾语代词）",
         "las": "阴性复数定冠词；她们/它们（直接宾语）",
-        "los": "阳性复数定冠词；他们/它们（直接宾语）",
+        "un": "一个；某个",
         "una": "一个；某个（阴性）"
       },
       "library": "core",
-      "core_key": "A1:5",
+      "core_key": "A1:7",
       "_rich_v32": true,
-      "id": "core-a1-06",
+      "id": "core-a1-08",
       "source": {
         "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
         "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
@@ -7087,24 +9145,22 @@
       "_source": {
         "kind": "original",
         "name": "原创教学",
-        "title": "¿Puedo cambiar esta camiseta?",
+        "title": "Un plan para el sábado",
         "course": {
           "level": "A1",
-          "sequence": 5,
-          "unit": 2,
+          "sequence": 7,
+          "unit": 3,
           "cycle": 1,
-          "phase": "retrieve",
-          "unit_title": "Food and shopping",
-          "grammar": "gender, number, quantities, querer, costar",
-          "theme": "returning a wrong item and choosing another",
-          "expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "review_expressions": "me llamo; vivo en; a las; tengo que",
-          "objective": "Integrate unit targets and previous knowledge in a new task"
+          "phase": "transfer",
+          "unit_title": "Getting around",
+          "grammar": "ir a, hay, estar, basic directions",
+          "theme": "planning a train trip with a friend",
+          "expressions": "al lado de; cerca de; hay que; a la derecha",
+          "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
+          "objective": "Reuse earlier targets in a different situation"
         }
       },
       "audio": [
-        "",
-        "",
         "",
         "",
         "",
@@ -7633,95 +9689,91 @@
     {
       "level": "A1",
       "genre": "dialogue",
-      "title": "课程 A1-07：在地铁站询问方向",
-      "esTitle": "¿Por dónde se va a la línea verde?",
+      "title": "课程 A1-09：坐过站后寻找替代路线",
+      "esTitle": "Una parada de más",
       "pairs": [
         [
-          "Perdone, quiero ir al centro, pero no encuentro la línea verde del metro.",
-          "打扰一下，我想去市中心，但是找不到地铁绿线。"
+          "Perdone, estoy un poco perdido. Quiero ir a la biblioteca y estoy en la estación equivocada.",
+          "打扰一下，我有点迷路。我想去图书馆，却到了错误的车站。"
         ],
         [
-          "Está en otra planta. Ahora estamos en la entrada de la línea roja.",
-          "在另一层。我们现在在红线的入口处。"
+          "¿La biblioteca que está cerca de la plaza central? Entonces está una parada más allá.",
+          "是中心广场附近的图书馆吗？那您多坐了一站。"
         ],
         [
-          "¿Tengo que salir de la estación para cambiar de línea?",
-          "我需要离开车站才能换乘吗？"
+          "Sí, esa biblioteca. Tengo una cita allí a las once y cuarto.",
+          "对，就是那家图书馆。我十一点一刻在那里有个约会。"
         ],
         [
-          "No, puede hacer el cambio dentro de la estación. Siga las señales verdes.",
-          "不用，您可以在站内换乘。请沿着绿色标志走。"
+          "Ahora son las once menos diez. Tiene tiempo, no se preocupe.",
+          "现在是十点五十分。您还有时间，别担心。"
         ],
         [
-          "¿Hay un ascensor? Llevo una maleta grande y las escaleras son un problema.",
-          "有电梯吗？我带着一个大行李箱，走楼梯不方便。"
+          "¿Puedo volver en el metro o hay un autobús directo desde aquí?",
+          "我可以坐地铁返回吗，还是这里有直达公交？"
         ],
         [
-          "Sí, hay uno al final del pasillo, a la derecha de las máquinas de billetes.",
-          "有，在走廊尽头，售票机右侧有一部。"
+          "Puede coger el metro en la dirección contraria. Es la opción más rápida.",
+          "您可以坐反方向的地铁。这是最快的选择。"
         ],
         [
-          "Muchas gracias. ¿La línea verde está muy lejos de aquí?",
-          "非常感谢。绿线离这里很远吗？"
+          "Muy bien. ¿Tengo que comprar otro billete para volver una parada?",
+          "好的。我返回一站需要另买车票吗？"
         ],
         [
-          "No, está a unos cinco minutos a pie. Puede bajar en el ascensor.",
-          "不远，走路大约五分钟。您可以乘电梯下去。"
+          "En este caso, no. Puede cambiar de andén aquí dentro, sin salir a la calle.",
+          "在这种情况下不用。您可以在这里换站台，不用走到街上。"
         ],
         [
-          "Perfecto, entonces sigo por este pasillo. Gracias por su ayuda.",
-          "太好了，那我就沿着这条走廊走。谢谢您的帮助。"
-        ],
-        [
-          "De nada. Mire las pantallas antes de subir al tren.",
-          "不客气。上车前请看看显示屏。"
+          "Gracias. Voy a mirar la pantalla para comprobar el nombre de la siguiente estación.",
+          "谢谢。我去看显示屏确认下一站的名字。"
         ]
       ],
-      "grammar": "目标：在车站问路和确认设施。① hay + 不定名词表示存在，está + 地点表示位置。② tener que + 原形表示必须；puede + 原形表示可以。语块：cambiar de línea 换乘；al final del pasillo 走廊尽头；a la derecha de 在……右边；subir al tren 上车。Siga/Mire 作为常见指路公式接触，不要求掌握完整命令式。场景及距离为模拟。迁移：¿Hay un ascensor cerca de la salida?",
+      "grammar": "目标：遇到坐过站时确认方向和时间。① querer + 原形表示意图；tener que + 原形询问是否必须。② las once menos diez = 10:50；las once y cuarto = 11:15。语块：estar perdido 迷路；la dirección contraria 反方向；cambiar de andén 换站台；sin salir 不出去。票务信息为模拟，不是实际地铁规则。迁移：Estoy en la estación equivocada. ¿Cómo puedo volver?",
       "questions": [
         {
-          "q": "¿Qué línea busca la persona?",
+          "q": "¿Adónde quiere ir la persona?",
           "options": [
-            "La roja.",
-            "La azul.",
-            "La verde."
-          ],
-          "answer": 2,
-          "evidence": "no encuentro la línea verde del metro"
-        },
-        {
-          "q": "¿Por qué pregunta por un ascensor?",
-          "options": [
-            "Porque no tiene billete.",
-            "Porque lleva una maleta grande.",
-            "Porque quiere comprar comida."
-          ],
-          "answer": 1,
-          "evidence": "Llevo una maleta grande"
-        },
-        {
-          "q": "¿Dónde está el ascensor?",
-          "options": [
-            "A la derecha de las máquinas de billetes.",
-            "Fuera de la estación.",
-            "Junto a un restaurante."
+            "A la biblioteca.",
+            "Al aeropuerto.",
+            "Al hospital."
           ],
           "answer": 0,
-          "evidence": "a la derecha de las máquinas de billetes"
+          "evidence": "Quiero ir a la biblioteca"
+        },
+        {
+          "q": "¿A qué hora tiene la cita?",
+          "options": [
+            "A las diez.",
+            "A las doce y media.",
+            "A las once y cuarto."
+          ],
+          "answer": 2,
+          "evidence": "Tengo una cita allí a las once y cuarto"
+        },
+        {
+          "q": "¿Qué opción es más rápida?",
+          "options": [
+            "El autobús.",
+            "El metro en la dirección contraria.",
+            "Ir a pie."
+          ],
+          "answer": 1,
+          "evidence": "Puede coger el metro en la dirección contraria"
         }
       ],
       "course": {
         "level": "A1",
-        "sequence": 6,
+        "sequence": 8,
         "unit": 3,
         "cycle": 1,
-        "phase": "introduce",
+        "phase": "retrieve",
         "unit_title": "Getting around",
         "grammar": "ir a, hay, estar, basic directions",
-        "theme": "asking for directions inside a metro station",
+        "theme": "finding an alternative route after a missed stop",
         "expressions": "al lado de; cerca de; hay que; a la derecha",
         "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "objective": "Introduce target expressions naturally"
+        "objective": "Integrate unit targets and previous knowledge in a new task"
       },
       "lexicon": {
         "y": {
@@ -7731,12 +9783,12 @@
           "lemma": "y",
           "pos": "conjunción"
         },
-        "pero": {
-          "lemma": "pero",
-          "pos": "conjunción",
-          "meaning": "但是",
-          "en": "but",
-          "es": "Introduce una idea que contrasta con la anterior."
+        "o": {
+          "lemma": "o",
+          "pos": "conjunción disyuntiva",
+          "meaning": "或者",
+          "en": "or",
+          "es": "Presenta alternativas."
         },
         "sí": {
           "lemma": "sí",
@@ -7744,6 +9796,13 @@
           "meaning": "是的；对",
           "en": "yes",
           "es": "Expresa una respuesta afirmativa."
+        },
+        "sin": {
+          "lemma": "sin",
+          "pos": "preposición",
+          "meaning": "没有；不……",
+          "en": "without",
+          "es": "Indica ausencia de algo o de una acción."
         },
         "muy": {
           "lemma": "muy",
@@ -7818,8 +9877,9 @@
       },
       "dict": {
         "y": "和",
-        "pero": "但是",
+        "o": "或者",
         "sí": "是的；对",
+        "sin": "没有；不……",
         "muy": "很；非常",
         "de": "的；从；用于固定搭配",
         "a": "向；到；在（时间）；引出补语",
@@ -7832,9 +9892,9 @@
         "una": "一个；某个（阴性）"
       },
       "library": "core",
-      "core_key": "A1:6",
+      "core_key": "A1:8",
       "_rich_v32": true,
-      "id": "core-a1-07",
+      "id": "core-a1-09",
       "source": {
         "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
         "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
@@ -7850,23 +9910,22 @@
       "_source": {
         "kind": "original",
         "name": "原创教学",
-        "title": "¿Por dónde se va a la línea verde?",
+        "title": "Una parada de más",
         "course": {
           "level": "A1",
-          "sequence": 6,
+          "sequence": 8,
           "unit": 3,
           "cycle": 1,
-          "phase": "introduce",
+          "phase": "retrieve",
           "unit_title": "Getting around",
           "grammar": "ir a, hay, estar, basic directions",
-          "theme": "asking for directions inside a metro station",
+          "theme": "finding an alternative route after a missed stop",
           "expressions": "al lado de; cerca de; hay que; a la derecha",
           "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "objective": "Introduce target expressions naturally"
+          "objective": "Integrate unit targets and previous knowledge in a new task"
         }
       },
       "audio": [
-        "",
         "",
         "",
         "",
@@ -8152,88 +10211,96 @@
     },
     {
       "level": "A1",
-      "genre": "routine",
-      "title": "课程 A1-08：和朋友计划坐火车出游",
-      "esTitle": "Un plan para el sábado",
+      "genre": "dialogue",
+      "title": "课程 A1-10：寻找合适的房间",
+      "esTitle": "Una habitación cerca de la universidad",
       "pairs": [
         [
-          "El sábado quiero pasar el día fuera de la ciudad con una amiga de la universidad.",
-          "周六我想和一位大学朋友去城外玩一天。"
+          "Buenos días, llamo por la habitación del anuncio. ¿Todavía está libre?",
+          "早上好，我为广告上的房间打电话。房间还空着吗？"
         ],
         [
-          "Las dos tenemos una tarjeta de transporte y queremos viajar en tren.",
-          "我们俩都有交通卡，想乘火车出行。"
+          "Sí, está libre. Es una habitación pequeña, pero tiene una ventana grande.",
+          "是的，还空着。房间比较小，但有一扇大窗户。"
         ],
         [
-          "Antes de salir, miramos el horario y comprobamos si necesitamos otro billete.",
-          "出发前，我们查看时刻表，确认是否需要另一张车票。"
+          "¿Hay un escritorio? Estudio en casa varios días a la semana y necesito una mesa.",
+          "有书桌吗？我每周有好几天在家学习，需要一张桌子。"
         ],
         [
-          "Queremos llegar a la estación a las nueve, porque el tren sale poco después.",
-          "我们想九点到车站，因为火车不久后就开了。"
+          "Sí, tiene escritorio, armario y cama. La cocina es para todas las personas del piso.",
+          "有书桌、衣柜和床。厨房是整套房子的人共用的。"
         ],
         [
-          "En el pueblo hay una plaza grande y un camino cerca del río.",
-          "小镇里有一个大广场，还有一条河边的小路。"
+          "¿Y el baño? ¿Cuántas personas viven ahora en el piso?",
+          "浴室呢？现在套房里住着几个人？"
         ],
         [
-          "Primero vamos a dar un paseo y después vamos a comer en la plaza.",
-          "我们打算先散步，然后在广场上吃饭。"
+          "Viven dos estudiantes. Hay un baño y una sala de estar bastante grande.",
+          "住着两位学生。有一个浴室和一间挺大的客厅。"
         ],
         [
-          "Por la tarde queremos visitar una tienda pequeña y volver antes de las ocho.",
-          "下午我们想逛一家小店，八点之前回来。"
+          "Muy bien. ¿Cuánto cuesta la habitación al mes? ¿Está incluida la conexión a internet?",
+          "很好。这个房间每月多少钱？包含网络费吗？"
         ],
         [
-          "Llevo agua y algo de comer en la mochila, y mi amiga lleva un mapa.",
-          "我在背包里带水和一些食物，我朋友带地图。"
+          "Cuesta quinientos euros al mes. La conexión a internet está incluida, pero la luz no.",
+          "每月五百欧元。网络费包含在内，但电费不包含。"
+        ],
+        [
+          "Me interesa. ¿Puedo visitar el piso mañana por la tarde?",
+          "我感兴趣。明天下午可以看房吗？"
+        ],
+        [
+          "Sí, a partir de las cinco. Podemos quedar delante del edificio.",
+          "可以，从五点开始。我们可以在楼前见面。"
         ]
       ],
-      "grammar": "目标：安排一次出游并说明计划。① ir a + 动词原形：vamos a dar un paseo、vamos a comer。② antes de + 名词/原形表示在……之前；después 表示之后。语块：pasar el día 度过一天；mirar el horario 查看时刻表；dar un paseo 散步；volver antes de las ocho 八点前回来。交通安排为教学模拟，实际出行需查票务。迁移：El domingo voy a visitar un museo con una amiga.",
+      "grammar": "目标：问房间设施、费用及看房时间。① tener 描述设施，hay 说明是否存在。② está incluido 表示包含在内；¿cuánto cuesta… al mes? 询问月费用。语块：llamar por 因……打电话；la sala de estar 客厅；a partir de 从……开始；me interesa 我感兴趣。房租和设施为模拟。迁移：¿Hay calefacción? ¿Está incluida en el precio?",
       "questions": [
         {
-          "q": "¿Cómo quieren viajar?",
+          "q": "¿Qué necesita para estudiar en casa?",
           "options": [
-            "En avión.",
-            "En tren.",
-            "En coche."
-          ],
-          "answer": 1,
-          "evidence": "queremos viajar en tren"
-        },
-        {
-          "q": "¿Qué quieren hacer primero en el pueblo?",
-          "options": [
-            "Dar un paseo.",
-            "Comprar zapatos.",
-            "Coger otro tren."
-          ],
-          "answer": 0,
-          "evidence": "Primero vamos a dar un paseo"
-        },
-        {
-          "q": "¿Quién lleva un mapa?",
-          "options": [
-            "El conductor.",
-            "La persona que cuenta la historia.",
-            "La amiga."
+            "Una televisión.",
+            "Un sofá.",
+            "Un escritorio."
           ],
           "answer": 2,
-          "evidence": "mi amiga lleva un mapa"
+          "evidence": "necesito una mesa"
+        },
+        {
+          "q": "¿Cuántas personas viven en el piso ahora?",
+          "options": [
+            "Una.",
+            "Dos.",
+            "Cuatro."
+          ],
+          "answer": 1,
+          "evidence": "Viven dos estudiantes"
+        },
+        {
+          "q": "¿Qué gasto no está incluido?",
+          "options": [
+            "La luz.",
+            "La conexión a internet.",
+            "La cama."
+          ],
+          "answer": 0,
+          "evidence": "La conexión a internet está incluida, pero la luz no"
         }
       ],
       "course": {
         "level": "A1",
-        "sequence": 7,
-        "unit": 3,
+        "sequence": 9,
+        "unit": 4,
         "cycle": 1,
-        "phase": "transfer",
-        "unit_title": "Getting around",
-        "grammar": "ir a, hay, estar, basic directions",
-        "theme": "planning a train trip with a friend",
-        "expressions": "al lado de; cerca de; hay que; a la derecha",
-        "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "objective": "Reuse earlier targets in a different situation"
+        "phase": "introduce",
+        "unit_title": "Home and appointments",
+        "grammar": "possessives, poder, necesitar, time expressions",
+        "theme": "describing a room and its facilities",
+        "expressions": "se puede; necesito; a partir de; me viene bien",
+        "review_expressions": "al lado de; cerca de; hay que; a la derecha",
+        "objective": "Introduce target expressions naturally"
       },
       "lexicon": {
         "y": {
@@ -8243,12 +10310,19 @@
           "lemma": "y",
           "pos": "conjunción"
         },
-        "después": {
-          "lemma": "después",
-          "pos": "adverbio",
-          "meaning": "之后；然后",
-          "en": "afterwards; later",
-          "es": "En un momento posterior."
+        "pero": {
+          "lemma": "pero",
+          "pos": "conjunción",
+          "meaning": "但是",
+          "en": "but",
+          "es": "Introduce una idea que contrasta con la anterior."
+        },
+        "sí": {
+          "lemma": "sí",
+          "pos": "adverbio de afirmación",
+          "meaning": "是的；对",
+          "en": "yes",
+          "es": "Expresa una respuesta afirmativa."
         },
         "dos": {
           "lemma": "dos",
@@ -8257,12 +10331,12 @@
           "en": "two",
           "es": "Número que sigue al uno."
         },
-        "ocho": {
-          "lemma": "ocho",
-          "pos": "numeral cardinal",
-          "meaning": "八",
-          "en": "eight",
-          "es": "Número que sigue al siete."
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
         },
         "de": {
           "lemma": "de",
@@ -8284,6 +10358,13 @@
           "meaning": "在；用；处于",
           "en": "in; on; at; by",
           "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "no": {
+          "lemma": "no",
+          "pos": "adverbio de negación",
+          "meaning": "不；没有；不是",
+          "en": "no; not",
+          "es": "Niega una afirmación, acción o idea."
         },
         "el": {
           "lemma": "el",
@@ -8323,12 +10404,14 @@
       },
       "dict": {
         "y": "和",
-        "después": "之后；然后",
+        "pero": "但是",
+        "sí": "是的；对",
         "dos": "二；两个",
-        "ocho": "八",
+        "muy": "很；非常",
         "de": "的；从；用于固定搭配",
         "a": "向；到；在（时间）；引出补语",
         "en": "在；用；处于",
+        "no": "不；没有；不是",
         "el": "阳性单数定冠词",
         "la": "阴性定冠词；她/它（直接宾语代词）",
         "las": "阴性复数定冠词；她们/它们（直接宾语）",
@@ -8336,9 +10419,9 @@
         "una": "一个；某个（阴性）"
       },
       "library": "core",
-      "core_key": "A1:7",
+      "core_key": "A1:9",
       "_rich_v32": true,
-      "id": "core-a1-08",
+      "id": "core-a1-10",
       "source": {
         "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
         "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
@@ -8354,22 +10437,24 @@
       "_source": {
         "kind": "original",
         "name": "原创教学",
-        "title": "Un plan para el sábado",
+        "title": "Una habitación cerca de la universidad",
         "course": {
           "level": "A1",
-          "sequence": 7,
-          "unit": 3,
+          "sequence": 9,
+          "unit": 4,
           "cycle": 1,
-          "phase": "transfer",
-          "unit_title": "Getting around",
-          "grammar": "ir a, hay, estar, basic directions",
-          "theme": "planning a train trip with a friend",
-          "expressions": "al lado de; cerca de; hay que; a la derecha",
-          "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "objective": "Reuse earlier targets in a different situation"
+          "phase": "introduce",
+          "unit_title": "Home and appointments",
+          "grammar": "possessives, poder, necesitar, time expressions",
+          "theme": "describing a room and its facilities",
+          "expressions": "se puede; necesito; a partir de; me viene bien",
+          "review_expressions": "al lado de; cerca de; hay que; a la derecha",
+          "objective": "Introduce target expressions naturally"
         }
       },
       "audio": [
+        "",
+        "",
         "",
         "",
         "",
@@ -8634,91 +10719,95 @@
     {
       "level": "A1",
       "genre": "dialogue",
-      "title": "课程 A1-09：坐过站后寻找替代路线",
-      "esTitle": "Una parada de más",
+      "title": "课程 A1-11：调整网球课程时间",
+      "esTitle": "Una clase de tenis después del trabajo",
       "pairs": [
         [
-          "Perdone, estoy un poco perdido. Quiero ir a la biblioteca y estoy en la estación equivocada.",
-          "打扰一下，我有点迷路。我想去图书馆，却到了错误的车站。"
+          "Hola, buenas tardes. Tengo una clase de tenis los jueves a las cuatro y media.",
+          "你好，下午好。我每周四四点半有一节网球课。"
         ],
         [
-          "¿La biblioteca que está cerca de la plaza central? Entonces está una parada más allá.",
-          "是中心广场附近的图书馆吗？那您多坐了一站。"
+          "Hola. Sí, veo tu nombre en la lista. ¿Qué necesitas?",
+          "你好。是的，我在名单上看到你的名字了。你需要什么？"
         ],
         [
-          "Sí, esa biblioteca. Tengo una cita allí a las once y cuarto.",
-          "对，就是那家图书馆。我十一点一刻在那里有个约会。"
+          "Ahora trabajo hasta las cinco y media, así que necesito otra hora para la clase.",
+          "现在我工作到五点半，所以需要换一个上课时间。"
         ],
         [
-          "Ahora son las once menos diez. Tiene tiempo, no se preocupe.",
-          "现在是十点五十分。您还有时间，别担心。"
+          "Los jueves hay otro grupo a las seis y media. ¿Te viene bien esa hora?",
+          "周四六点半还有另一个班。这个时间适合你吗？"
         ],
         [
-          "¿Puedo volver en el metro o hay un autobús directo desde aquí?",
-          "我可以坐地铁返回吗，还是这里有直达公交？"
+          "Sí, me viene mucho mejor. ¿La clase dura una hora?",
+          "是的，这个时间更适合我。课程持续一个小时吗？"
         ],
         [
-          "Puede coger el metro en la dirección contraria. Es la opción más rápida.",
-          "您可以坐反方向的地铁。这是最快的选择。"
+          "Sí, de seis y media a siete y media. También hay una clase los martes.",
+          "是的，从六点半到七点半。周二也有一节课。"
         ],
         [
-          "Muy bien. ¿Tengo que comprar otro billete para volver una parada?",
-          "好的。我返回一站需要另买车票吗？"
+          "Prefiero el jueves porque ese día trabajo cerca del club de tenis.",
+          "我更喜欢周四，因为那天我在网球俱乐部附近工作。"
         ],
         [
-          "En este caso, no. Puede cambiar de andén aquí dentro, sin salir a la calle.",
-          "在这种情况下不用。您可以在这里换站台，不用走到街上。"
+          "Perfecto. Hay una plaza libre en el grupo del jueves por la tarde.",
+          "太好了。周四下午的班还有一个空位。"
         ],
         [
-          "Gracias. Voy a mirar la pantalla para comprobar el nombre de la siguiente estación.",
-          "谢谢。我去看显示屏确认下一站的名字。"
+          "Estupendo. ¿Puedo empezar con el nuevo grupo la semana que viene?",
+          "太棒了。我可以下周开始加入新班吗？"
+        ],
+        [
+          "Sí, claro. Te veo el jueves a las seis y media.",
+          "当然可以。周四六点半见。"
         ]
       ],
-      "grammar": "目标：遇到坐过站时确认方向和时间。① querer + 原形表示意图；tener que + 原形询问是否必须。② las once menos diez = 10:50；las once y cuarto = 11:15。语块：estar perdido 迷路；la dirección contraria 反方向；cambiar de andén 换站台；sin salir 不出去。票务信息为模拟，不是实际地铁规则。迁移：Estoy en la estación equivocada. ¿Cómo puedo volver?",
+      "grammar": "目标：协调课时并表达偏好。① de… a… 表示起止时间；hasta 表示直到。② preferir：prefiero；me viene bien 适合我的时间。语块：otra hora 另一个时间；una plaza libre 一个空位；la semana que viene 下周；durar una hora 持续一小时。迁移：¿Te viene bien el martes a las siete? 课程信息为模拟。",
       "questions": [
         {
-          "q": "¿Adónde quiere ir la persona?",
+          "q": "¿Por qué necesita cambiar la clase?",
           "options": [
-            "A la biblioteca.",
-            "Al aeropuerto.",
-            "Al hospital."
-          ],
-          "answer": 0,
-          "evidence": "Quiero ir a la biblioteca"
-        },
-        {
-          "q": "¿A qué hora tiene la cita?",
-          "options": [
-            "A las diez.",
-            "A las doce y media.",
-            "A las once y cuarto."
-          ],
-          "answer": 2,
-          "evidence": "Tengo una cita allí a las once y cuarto"
-        },
-        {
-          "q": "¿Qué opción es más rápida?",
-          "options": [
-            "El autobús.",
-            "El metro en la dirección contraria.",
-            "Ir a pie."
+            "Porque no le gusta el tenis.",
+            "Porque trabaja hasta las cinco y media.",
+            "Porque el club está cerrado."
           ],
           "answer": 1,
-          "evidence": "Puede coger el metro en la dirección contraria"
+          "evidence": "trabajo hasta las cinco y media"
+        },
+        {
+          "q": "¿A qué hora es el nuevo grupo del jueves?",
+          "options": [
+            "A las seis y media.",
+            "A las cuatro y media.",
+            "A las ocho y media."
+          ],
+          "answer": 0,
+          "evidence": "otro grupo a las seis y media"
+        },
+        {
+          "q": "¿Qué día prefiere?",
+          "options": [
+            "El martes.",
+            "El sábado.",
+            "El jueves."
+          ],
+          "answer": 2,
+          "evidence": "Prefiero el jueves"
         }
       ],
       "course": {
         "level": "A1",
-        "sequence": 8,
-        "unit": 3,
+        "sequence": 10,
+        "unit": 4,
         "cycle": 1,
-        "phase": "retrieve",
-        "unit_title": "Getting around",
-        "grammar": "ir a, hay, estar, basic directions",
-        "theme": "finding an alternative route after a missed stop",
-        "expressions": "al lado de; cerca de; hay que; a la derecha",
-        "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-        "objective": "Integrate unit targets and previous knowledge in a new task"
+        "phase": "transfer",
+        "unit_title": "Home and appointments",
+        "grammar": "possessives, poder, necesitar, time expressions",
+        "theme": "booking a tennis lesson around work",
+        "expressions": "se puede; necesito; a partir de; me viene bien",
+        "review_expressions": "al lado de; cerca de; hay que; a la derecha",
+        "objective": "Reuse earlier targets in a different situation"
       },
       "lexicon": {
         "y": {
@@ -8728,13 +10817,6 @@
           "lemma": "y",
           "pos": "conjunción"
         },
-        "o": {
-          "lemma": "o",
-          "pos": "conjunción disyuntiva",
-          "meaning": "或者",
-          "en": "or",
-          "es": "Presenta alternativas."
-        },
         "sí": {
           "lemma": "sí",
           "pos": "adverbio de afirmación",
@@ -8742,19 +10824,26 @@
           "en": "yes",
           "es": "Expresa una respuesta afirmativa."
         },
-        "sin": {
-          "lemma": "sin",
+        "hasta": {
+          "lemma": "hasta",
           "pos": "preposición",
-          "meaning": "没有；不……",
-          "en": "without",
-          "es": "Indica ausencia de algo o de una acción."
+          "meaning": "直到；到",
+          "en": "until; to",
+          "es": "Indica un límite espacial o temporal."
         },
-        "muy": {
-          "lemma": "muy",
-          "pos": "adverbio de grado",
-          "meaning": "很；非常",
-          "en": "very",
-          "es": "Intensifica el significado de un adjetivo o adverbio."
+        "seis": {
+          "lemma": "seis",
+          "pos": "numeral cardinal",
+          "meaning": "六",
+          "en": "six",
+          "es": "Número que sigue al cinco."
+        },
+        "hola": {
+          "lemma": "hola",
+          "pos": "interjección",
+          "meaning": "你好",
+          "en": "hello",
+          "es": "Saludo habitual al encontrarse con alguien."
         },
         "de": {
           "lemma": "de",
@@ -8777,13 +10866,6 @@
           "en": "in; on; at; by",
           "es": "Indica lugar, situación, medio u otras relaciones."
         },
-        "no": {
-          "lemma": "no",
-          "pos": "adverbio de negación",
-          "meaning": "不；没有；不是",
-          "en": "no; not",
-          "es": "Niega una afirmación, acción o idea."
-        },
         "el": {
           "lemma": "el",
           "pos": "artículo determinado masculino singular",
@@ -8805,12 +10887,12 @@
           "en": "the; them",
           "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
         },
-        "un": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado masculino singular",
-          "meaning": "一个；某个",
-          "en": "a; one",
-          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
+        "los": {
+          "lemma": "el",
+          "pos": "artículo determinado o pronombre átono masculino plural",
+          "meaning": "阳性复数定冠词；他们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres masculinos plurales o sustituye un complemento directo masculino plural."
         },
         "una": {
           "lemma": "uno",
@@ -8822,24 +10904,23 @@
       },
       "dict": {
         "y": "和",
-        "o": "或者",
         "sí": "是的；对",
-        "sin": "没有；不……",
-        "muy": "很；非常",
+        "hasta": "直到；到",
+        "seis": "六",
+        "hola": "你好",
         "de": "的；从；用于固定搭配",
         "a": "向；到；在（时间）；引出补语",
         "en": "在；用；处于",
-        "no": "不；没有；不是",
         "el": "阳性单数定冠词",
         "la": "阴性定冠词；她/它（直接宾语代词）",
         "las": "阴性复数定冠词；她们/它们（直接宾语）",
-        "un": "一个；某个",
+        "los": "阳性复数定冠词；他们/它们（直接宾语）",
         "una": "一个；某个（阴性）"
       },
       "library": "core",
-      "core_key": "A1:8",
+      "core_key": "A1:10",
       "_rich_v32": true,
-      "id": "core-a1-09",
+      "id": "core-a1-11",
       "source": {
         "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
         "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
@@ -8855,22 +10936,23 @@
       "_source": {
         "kind": "original",
         "name": "原创教学",
-        "title": "Una parada de más",
+        "title": "Una clase de tenis después del trabajo",
         "course": {
           "level": "A1",
-          "sequence": 8,
-          "unit": 3,
+          "sequence": 10,
+          "unit": 4,
           "cycle": 1,
-          "phase": "retrieve",
-          "unit_title": "Getting around",
-          "grammar": "ir a, hay, estar, basic directions",
-          "theme": "finding an alternative route after a missed stop",
-          "expressions": "al lado de; cerca de; hay que; a la derecha",
-          "review_expressions": "cuánto cuesta; un kilo de; para llevar; de oferta",
-          "objective": "Integrate unit targets and previous knowledge in a new task"
+          "phase": "transfer",
+          "unit_title": "Home and appointments",
+          "grammar": "possessives, poder, necesitar, time expressions",
+          "theme": "booking a tennis lesson around work",
+          "expressions": "se puede; necesito; a partir de; me viene bien",
+          "review_expressions": "al lado de; cerca de; hay que; a la derecha",
+          "objective": "Reuse earlier targets in a different situation"
         }
       },
       "audio": [
+        "",
         "",
         "",
         "",
@@ -9152,510 +11234,6 @@
     {
       "level": "A1",
       "genre": "dialogue",
-      "title": "课程 A1-10：寻找合适的房间",
-      "esTitle": "Una habitación cerca de la universidad",
-      "pairs": [
-        [
-          "Buenos días, llamo por la habitación del anuncio. ¿Todavía está libre?",
-          "早上好，我为广告上的房间打电话。房间还空着吗？"
-        ],
-        [
-          "Sí, está libre. Es una habitación pequeña, pero tiene una ventana grande.",
-          "是的，还空着。房间比较小，但有一扇大窗户。"
-        ],
-        [
-          "¿Hay un escritorio? Estudio en casa varios días a la semana y necesito una mesa.",
-          "有书桌吗？我每周有好几天在家学习，需要一张桌子。"
-        ],
-        [
-          "Sí, tiene escritorio, armario y cama. La cocina es para todas las personas del piso.",
-          "有书桌、衣柜和床。厨房是整套房子的人共用的。"
-        ],
-        [
-          "¿Y el baño? ¿Cuántas personas viven ahora en el piso?",
-          "浴室呢？现在套房里住着几个人？"
-        ],
-        [
-          "Viven dos estudiantes. Hay un baño y una sala de estar bastante grande.",
-          "住着两位学生。有一个浴室和一间挺大的客厅。"
-        ],
-        [
-          "Muy bien. ¿Cuánto cuesta la habitación al mes? ¿Está incluida la conexión a internet?",
-          "很好。这个房间每月多少钱？包含网络费吗？"
-        ],
-        [
-          "Cuesta quinientos euros al mes. La conexión a internet está incluida, pero la luz no.",
-          "每月五百欧元。网络费包含在内，但电费不包含。"
-        ],
-        [
-          "Me interesa. ¿Puedo visitar el piso mañana por la tarde?",
-          "我感兴趣。明天下午可以看房吗？"
-        ],
-        [
-          "Sí, a partir de las cinco. Podemos quedar delante del edificio.",
-          "可以，从五点开始。我们可以在楼前见面。"
-        ]
-      ],
-      "grammar": "目标：问房间设施、费用及看房时间。① tener 描述设施，hay 说明是否存在。② está incluido 表示包含在内；¿cuánto cuesta… al mes? 询问月费用。语块：llamar por 因……打电话；la sala de estar 客厅；a partir de 从……开始；me interesa 我感兴趣。房租和设施为模拟。迁移：¿Hay calefacción? ¿Está incluida en el precio?",
-      "questions": [
-        {
-          "q": "¿Qué necesita para estudiar en casa?",
-          "options": [
-            "Una televisión.",
-            "Un sofá.",
-            "Un escritorio."
-          ],
-          "answer": 2,
-          "evidence": "necesito una mesa"
-        },
-        {
-          "q": "¿Cuántas personas viven en el piso ahora?",
-          "options": [
-            "Una.",
-            "Dos.",
-            "Cuatro."
-          ],
-          "answer": 1,
-          "evidence": "Viven dos estudiantes"
-        },
-        {
-          "q": "¿Qué gasto no está incluido?",
-          "options": [
-            "La luz.",
-            "La conexión a internet.",
-            "La cama."
-          ],
-          "answer": 0,
-          "evidence": "La conexión a internet está incluida, pero la luz no"
-        }
-      ],
-      "course": {
-        "level": "A1",
-        "sequence": 9,
-        "unit": 4,
-        "cycle": 1,
-        "phase": "introduce",
-        "unit_title": "Home and appointments",
-        "grammar": "possessives, poder, necesitar, time expressions",
-        "theme": "describing a room and its facilities",
-        "expressions": "se puede; necesito; a partir de; me viene bien",
-        "review_expressions": "al lado de; cerca de; hay que; a la derecha",
-        "objective": "Introduce target expressions naturally"
-      },
-      "lexicon": {
-        "y": {
-          "meaning": "和",
-          "en": "and",
-          "es": "Une palabras o ideas.",
-          "lemma": "y",
-          "pos": "conjunción"
-        },
-        "pero": {
-          "lemma": "pero",
-          "pos": "conjunción",
-          "meaning": "但是",
-          "en": "but",
-          "es": "Introduce una idea que contrasta con la anterior."
-        },
-        "sí": {
-          "lemma": "sí",
-          "pos": "adverbio de afirmación",
-          "meaning": "是的；对",
-          "en": "yes",
-          "es": "Expresa una respuesta afirmativa."
-        },
-        "dos": {
-          "lemma": "dos",
-          "pos": "numeral cardinal",
-          "meaning": "二；两个",
-          "en": "two",
-          "es": "Número que sigue al uno."
-        },
-        "muy": {
-          "lemma": "muy",
-          "pos": "adverbio de grado",
-          "meaning": "很；非常",
-          "en": "very",
-          "es": "Intensifica el significado de un adjetivo o adverbio."
-        },
-        "de": {
-          "lemma": "de",
-          "pos": "preposición",
-          "meaning": "的；从；用于固定搭配",
-          "en": "of; from; in fixed expressions",
-          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
-        },
-        "a": {
-          "lemma": "a",
-          "pos": "preposición",
-          "meaning": "向；到；在（时间）；引出补语",
-          "en": "to; at; marks certain complements",
-          "es": "Indica destino, hora o introduce determinados complementos."
-        },
-        "en": {
-          "lemma": "en",
-          "pos": "preposición",
-          "meaning": "在；用；处于",
-          "en": "in; on; at; by",
-          "es": "Indica lugar, situación, medio u otras relaciones."
-        },
-        "no": {
-          "lemma": "no",
-          "pos": "adverbio de negación",
-          "meaning": "不；没有；不是",
-          "en": "no; not",
-          "es": "Niega una afirmación, acción o idea."
-        },
-        "el": {
-          "lemma": "el",
-          "pos": "artículo determinado masculino singular",
-          "meaning": "阳性单数定冠词",
-          "en": "the",
-          "es": "Determina un nombre masculino singular."
-        },
-        "la": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino",
-          "meaning": "阴性定冠词；她/它（直接宾语代词）",
-          "en": "the; her; it",
-          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
-        },
-        "las": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino plural",
-          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
-          "en": "the; them",
-          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
-        },
-        "un": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado masculino singular",
-          "meaning": "一个；某个",
-          "en": "a; one",
-          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
-        },
-        "una": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado femenino singular",
-          "meaning": "一个；某个（阴性）",
-          "en": "a; one",
-          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
-        }
-      },
-      "dict": {
-        "y": "和",
-        "pero": "但是",
-        "sí": "是的；对",
-        "dos": "二；两个",
-        "muy": "很；非常",
-        "de": "的；从；用于固定搭配",
-        "a": "向；到；在（时间）；引出补语",
-        "en": "在；用；处于",
-        "no": "不；没有；不是",
-        "el": "阳性单数定冠词",
-        "la": "阴性定冠词；她/它（直接宾语代词）",
-        "las": "阴性复数定冠词；她们/它们（直接宾语）",
-        "un": "一个；某个",
-        "una": "一个；某个（阴性）"
-      },
-      "library": "core",
-      "core_key": "A1:9",
-      "_rich_v32": true,
-      "id": "core-a1-10",
-      "source": {
-        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
-        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
-        "date": "2026-11-26"
-      },
-      "cover": "covers/general.svg",
-      "quality": {
-        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
-        "estimated_level": "A1",
-        "authored": true
-      },
-      "_reviewed": true,
-      "_source": {
-        "kind": "original",
-        "name": "原创教学",
-        "title": "Una habitación cerca de la universidad",
-        "course": {
-          "level": "A1",
-          "sequence": 9,
-          "unit": 4,
-          "cycle": 1,
-          "phase": "introduce",
-          "unit_title": "Home and appointments",
-          "grammar": "possessives, poder, necesitar, time expressions",
-          "theme": "describing a room and its facilities",
-          "expressions": "se puede; necesito; a partir de; me viene bien",
-          "review_expressions": "al lado de; cerca de; hay que; a la derecha",
-          "objective": "Introduce target expressions naturally"
-        }
-      },
-      "audio": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "level": "A1",
-      "genre": "dialogue",
-      "title": "课程 A1-11：调整网球课程时间",
-      "esTitle": "Una clase de tenis después del trabajo",
-      "pairs": [
-        [
-          "Hola, buenas tardes. Tengo una clase de tenis los jueves a las cuatro y media.",
-          "你好，下午好。我每周四四点半有一节网球课。"
-        ],
-        [
-          "Hola. Sí, veo tu nombre en la lista. ¿Qué necesitas?",
-          "你好。是的，我在名单上看到你的名字了。你需要什么？"
-        ],
-        [
-          "Ahora trabajo hasta las cinco y media, así que necesito otra hora para la clase.",
-          "现在我工作到五点半，所以需要换一个上课时间。"
-        ],
-        [
-          "Los jueves hay otro grupo a las seis y media. ¿Te viene bien esa hora?",
-          "周四六点半还有另一个班。这个时间适合你吗？"
-        ],
-        [
-          "Sí, me viene mucho mejor. ¿La clase dura una hora?",
-          "是的，这个时间更适合我。课程持续一个小时吗？"
-        ],
-        [
-          "Sí, de seis y media a siete y media. También hay una clase los martes.",
-          "是的，从六点半到七点半。周二也有一节课。"
-        ],
-        [
-          "Prefiero el jueves porque ese día trabajo cerca del club de tenis.",
-          "我更喜欢周四，因为那天我在网球俱乐部附近工作。"
-        ],
-        [
-          "Perfecto. Hay una plaza libre en el grupo del jueves por la tarde.",
-          "太好了。周四下午的班还有一个空位。"
-        ],
-        [
-          "Estupendo. ¿Puedo empezar con el nuevo grupo la semana que viene?",
-          "太棒了。我可以下周开始加入新班吗？"
-        ],
-        [
-          "Sí, claro. Te veo el jueves a las seis y media.",
-          "当然可以。周四六点半见。"
-        ]
-      ],
-      "grammar": "目标：协调课时并表达偏好。① de… a… 表示起止时间；hasta 表示直到。② preferir：prefiero；me viene bien 适合我的时间。语块：otra hora 另一个时间；una plaza libre 一个空位；la semana que viene 下周；durar una hora 持续一小时。迁移：¿Te viene bien el martes a las siete? 课程信息为模拟。",
-      "questions": [
-        {
-          "q": "¿Por qué necesita cambiar la clase?",
-          "options": [
-            "Porque no le gusta el tenis.",
-            "Porque trabaja hasta las cinco y media.",
-            "Porque el club está cerrado."
-          ],
-          "answer": 1,
-          "evidence": "trabajo hasta las cinco y media"
-        },
-        {
-          "q": "¿A qué hora es el nuevo grupo del jueves?",
-          "options": [
-            "A las seis y media.",
-            "A las cuatro y media.",
-            "A las ocho y media."
-          ],
-          "answer": 0,
-          "evidence": "otro grupo a las seis y media"
-        },
-        {
-          "q": "¿Qué día prefiere?",
-          "options": [
-            "El martes.",
-            "El sábado.",
-            "El jueves."
-          ],
-          "answer": 2,
-          "evidence": "Prefiero el jueves"
-        }
-      ],
-      "course": {
-        "level": "A1",
-        "sequence": 10,
-        "unit": 4,
-        "cycle": 1,
-        "phase": "transfer",
-        "unit_title": "Home and appointments",
-        "grammar": "possessives, poder, necesitar, time expressions",
-        "theme": "booking a tennis lesson around work",
-        "expressions": "se puede; necesito; a partir de; me viene bien",
-        "review_expressions": "al lado de; cerca de; hay que; a la derecha",
-        "objective": "Reuse earlier targets in a different situation"
-      },
-      "lexicon": {
-        "y": {
-          "meaning": "和",
-          "en": "and",
-          "es": "Une palabras o ideas.",
-          "lemma": "y",
-          "pos": "conjunción"
-        },
-        "sí": {
-          "lemma": "sí",
-          "pos": "adverbio de afirmación",
-          "meaning": "是的；对",
-          "en": "yes",
-          "es": "Expresa una respuesta afirmativa."
-        },
-        "hasta": {
-          "lemma": "hasta",
-          "pos": "preposición",
-          "meaning": "直到；到",
-          "en": "until; to",
-          "es": "Indica un límite espacial o temporal."
-        },
-        "seis": {
-          "lemma": "seis",
-          "pos": "numeral cardinal",
-          "meaning": "六",
-          "en": "six",
-          "es": "Número que sigue al cinco."
-        },
-        "hola": {
-          "lemma": "hola",
-          "pos": "interjección",
-          "meaning": "你好",
-          "en": "hello",
-          "es": "Saludo habitual al encontrarse con alguien."
-        },
-        "de": {
-          "lemma": "de",
-          "pos": "preposición",
-          "meaning": "的；从；用于固定搭配",
-          "en": "of; from; in fixed expressions",
-          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
-        },
-        "a": {
-          "lemma": "a",
-          "pos": "preposición",
-          "meaning": "向；到；在（时间）；引出补语",
-          "en": "to; at; marks certain complements",
-          "es": "Indica destino, hora o introduce determinados complementos."
-        },
-        "en": {
-          "lemma": "en",
-          "pos": "preposición",
-          "meaning": "在；用；处于",
-          "en": "in; on; at; by",
-          "es": "Indica lugar, situación, medio u otras relaciones."
-        },
-        "el": {
-          "lemma": "el",
-          "pos": "artículo determinado masculino singular",
-          "meaning": "阳性单数定冠词",
-          "en": "the",
-          "es": "Determina un nombre masculino singular."
-        },
-        "la": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino",
-          "meaning": "阴性定冠词；她/它（直接宾语代词）",
-          "en": "the; her; it",
-          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
-        },
-        "las": {
-          "lemma": "el / la",
-          "pos": "artículo determinado o pronombre átono femenino plural",
-          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
-          "en": "the; them",
-          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
-        },
-        "los": {
-          "lemma": "el",
-          "pos": "artículo determinado o pronombre átono masculino plural",
-          "meaning": "阳性复数定冠词；他们/它们（直接宾语）",
-          "en": "the; them",
-          "es": "Determina nombres masculinos plurales o sustituye un complemento directo masculino plural."
-        },
-        "una": {
-          "lemma": "uno",
-          "pos": "artículo indeterminado femenino singular",
-          "meaning": "一个；某个（阴性）",
-          "en": "a; one",
-          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
-        }
-      },
-      "dict": {
-        "y": "和",
-        "sí": "是的；对",
-        "hasta": "直到；到",
-        "seis": "六",
-        "hola": "你好",
-        "de": "的；从；用于固定搭配",
-        "a": "向；到；在（时间）；引出补语",
-        "en": "在；用；处于",
-        "el": "阳性单数定冠词",
-        "la": "阴性定冠词；她/它（直接宾语代词）",
-        "las": "阴性复数定冠词；她们/它们（直接宾语）",
-        "los": "阳性复数定冠词；他们/它们（直接宾语）",
-        "una": "一个；某个（阴性）"
-      },
-      "library": "core",
-      "core_key": "A1:10",
-      "_rich_v32": true,
-      "id": "core-a1-11",
-      "source": {
-        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
-        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
-        "date": "2026-11-26"
-      },
-      "cover": "covers/general.svg",
-      "quality": {
-        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
-        "estimated_level": "A1",
-        "authored": true
-      },
-      "_reviewed": true,
-      "_source": {
-        "kind": "original",
-        "name": "原创教学",
-        "title": "Una clase de tenis después del trabajo",
-        "course": {
-          "level": "A1",
-          "sequence": 10,
-          "unit": 4,
-          "cycle": 1,
-          "phase": "transfer",
-          "unit_title": "Home and appointments",
-          "grammar": "possessives, poder, necesitar, time expressions",
-          "theme": "booking a tennis lesson around work",
-          "expressions": "se puede; necesito; a partir de; me viene bien",
-          "review_expressions": "al lado de; cerca de; hay que; a la derecha",
-          "objective": "Reuse earlier targets in a different situation"
-        }
-      },
-      "audio": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "level": "A1",
-      "genre": "dialogue",
       "title": "课程 A1-12：和房东约看房并确认费用",
       "esTitle": "Una visita al piso",
       "pairs": [
@@ -9911,7 +11489,7 @@
     }
   ],
   "course_progress_v33": {
-    "A1": 3,
+    "A1": 6,
     "A2": 0,
     "B1": 0,
     "B2": 0,
@@ -9925,11 +11503,11 @@
   "course_status_v34": {
     "authored_total": 30,
     "fixed_target": 96,
-    "authored_published": 3,
-    "fixed_published": 3,
+    "authored_published": 6,
+    "fixed_published": 6,
     "daily_retained": 2,
     "per_level": {
-      "A1": 3,
+      "A1": 6,
       "A2": 0,
       "B1": 0,
       "B2": 0,
