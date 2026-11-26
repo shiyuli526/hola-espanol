@@ -1,6 +1,810 @@
 {
   "articles": [
     {
+      "level": "A1",
+      "genre": "dialogue",
+      "title": "课程 A1-01：第一次参加语言交换",
+      "esTitle": "Mi primer intercambio de idiomas",
+      "pairs": [
+        [
+          "Hola, buenas tardes. ¿Es aquí el intercambio de idiomas de los jueves?",
+          "你好，下午好。每周四的语言交换是在这里吗？"
+        ],
+        [
+          "Sí, es aquí. Me llamo Pablo y soy uno de los participantes.",
+          "是的，就在这里。我叫巴勃罗，是参加者之一。"
+        ],
+        [
+          "Mucho gusto. Me llamo Lin, soy de China y vivo en Barcelona.",
+          "很高兴认识你。我叫林，来自中国，住在巴塞罗那。"
+        ],
+        [
+          "¿Qué haces en Barcelona? ¿Trabajas o estudias en la ciudad?",
+          "你在巴塞罗那做什么？你在这里工作还是学习？"
+        ],
+        [
+          "Estudio en la universidad y tengo clase de español dos días a la semana.",
+          "我在大学学习，每周上两天西语课。"
+        ],
+        [
+          "Yo trabajo cerca de aquí. Normalmente llego a las seis, después del trabajo.",
+          "我在这附近工作。通常下班后六点到这里。"
+        ],
+        [
+          "Hoy tengo tiempo hasta las ocho. Quiero practicar español y conocer a otras personas.",
+          "今天我有空到八点。我想练习西语并认识其他人。"
+        ],
+        [
+          "Perfecto. Podemos hablar un poco en español y después en inglés.",
+          "太好了。我们可以先用西语聊一会儿，然后用英语聊。"
+        ],
+        [
+          "Muy bien, pero hablo despacio. ¿Puedes repetir las palabras nuevas?",
+          "很好，不过我说得很慢。你能重复一下新单词吗？"
+        ],
+        [
+          "Claro, sin problema. Hay dos sillas libres junto a la ventana.",
+          "当然，没问题。窗边有两把空椅子。"
+        ]
+      ],
+      "grammar": "目标：介绍自己并请求重复。① Me llamo + 名字；soy de + 出身；vivo en + 居住地。② a las seis 表示六点，hasta las ocho 表示直到八点。语块：dos días a la semana 每周两天；después del trabajo 下班后；¿Puedes repetir…? 你能重复……吗？迁移：说出自己的住处及空闲时间，例如 Vivo en Barcelona y tengo tiempo hasta las siete.",
+      "questions": [
+        {
+          "q": "¿De dónde es Lin?",
+          "options": [
+            "De China.",
+            "De España.",
+            "De Francia."
+          ],
+          "answer": 0,
+          "evidence": "soy de China"
+        },
+        {
+          "q": "¿A qué hora llega normalmente Pablo?",
+          "options": [
+            "A las cuatro.",
+            "A las ocho.",
+            "A las seis."
+          ],
+          "answer": 2,
+          "evidence": "Normalmente llego a las seis"
+        },
+        {
+          "q": "¿Qué quiere practicar Lin?",
+          "options": [
+            "Pintura.",
+            "Español.",
+            "Tenis."
+          ],
+          "answer": 1,
+          "evidence": "Quiero practicar español"
+        }
+      ],
+      "course": {
+        "level": "A1",
+        "sequence": 0,
+        "unit": 1,
+        "cycle": 1,
+        "phase": "introduce",
+        "unit_title": "Introductions and daily life",
+        "grammar": "present of ser, estar, tener, llamarse; time and place",
+        "theme": "introducing yourself at a language exchange",
+        "expressions": "me llamo; vivo en; a las; tengo que",
+        "review_expressions": "",
+        "objective": "Introduce target expressions naturally"
+      },
+      "lexicon": {
+        "a": {
+          "lemma": "a",
+          "pos": "preposición",
+          "meaning": "在（时间）；向；到",
+          "en": "at; to",
+          "es": "Introduce destino, hora o dirección."
+        },
+        "barcelona": {
+          "lemma": "Barcelona",
+          "pos": "nombre propio",
+          "meaning": "巴塞罗那",
+          "en": "Barcelona",
+          "es": "Ciudad de España."
+        },
+        "bien": {
+          "lemma": "bien",
+          "pos": "adverbio",
+          "meaning": "好；合适",
+          "en": "well; fine",
+          "es": "De forma satisfactoria o adecuada."
+        },
+        "cerca": {
+          "meaning": "附近",
+          "en": "near",
+          "es": "A poca distancia.",
+          "lemma": "cerca",
+          "pos": "adverbio"
+        },
+        "clase": {
+          "lemma": "clase",
+          "pos": "sustantivo femenino",
+          "meaning": "课；课堂",
+          "en": "class",
+          "es": "Sesión en la que se enseña algo."
+        },
+        "de": {
+          "meaning": "的；从；用于 antes de",
+          "en": "of; from",
+          "es": "Relaciona palabras o indica origen.",
+          "lemma": "de",
+          "pos": "preposición"
+        },
+        "del": {
+          "lemma": "del",
+          "pos": "contracción",
+          "meaning": "de + el；……的；从",
+          "en": "of the; from the",
+          "es": "Contracción de la preposición de y el artículo el."
+        },
+        "despacio": {
+          "lemma": "despacio",
+          "pos": "adverbio",
+          "meaning": "慢慢地",
+          "en": "slowly",
+          "es": "A poca velocidad."
+        },
+        "después": {
+          "lemma": "después",
+          "pos": "adverbio",
+          "meaning": "之后；然后",
+          "en": "afterwards; later",
+          "es": "En un momento posterior."
+        },
+        "dos": {
+          "lemma": "dos",
+          "pos": "numeral cardinal",
+          "meaning": "二；两个",
+          "en": "two",
+          "es": "Número que sigue al uno."
+        },
+        "días": {
+          "lemma": "día",
+          "pos": "sustantivo masculino plural",
+          "meaning": "天（复数）",
+          "en": "days",
+          "es": "Periodos de veinticuatro horas."
+        },
+        "el": {
+          "meaning": "定冠词（阳性单数）",
+          "en": "the",
+          "es": "Acompaña a un nombre masculino singular conocido.",
+          "lemma": "el",
+          "pos": "artículo determinado masculino"
+        },
+        "en": {
+          "meaning": "在",
+          "en": "in; at",
+          "es": "Indica un lugar o situación.",
+          "lemma": "en",
+          "pos": "preposición"
+        },
+        "es": {
+          "lemma": "ser",
+          "pos": "verbo, presente, 3.ª persona singular",
+          "meaning": "是",
+          "en": "is",
+          "es": "Identifica o caracteriza a alguien o algo."
+        },
+        "español": {
+          "lemma": "español",
+          "pos": "sustantivo masculino",
+          "meaning": "西班牙语",
+          "en": "Spanish",
+          "es": "Lengua que se habla en España y otros países."
+        },
+        "estudio": {
+          "lemma": "estudiar",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我学习",
+          "en": "I study",
+          "es": "Dedico tiempo a aprender."
+        },
+        "hablar": {
+          "lemma": "hablar",
+          "pos": "verbo, infinitivo",
+          "meaning": "说话；讲",
+          "en": "to speak; to talk",
+          "es": "Comunicarse mediante palabras."
+        },
+        "hasta": {
+          "lemma": "hasta",
+          "pos": "preposición",
+          "meaning": "直到；到",
+          "en": "until; to",
+          "es": "Indica un límite espacial o temporal."
+        },
+        "hay": {
+          "meaning": "有",
+          "en": "there is; there are",
+          "es": "Indica que algo existe.",
+          "lemma": "haber",
+          "pos": "verbo, presente impersonal"
+        },
+        "hoy": {
+          "meaning": "今天",
+          "en": "today",
+          "es": "En el día actual.",
+          "lemma": "hoy",
+          "pos": "adverbio"
+        },
+        "idiomas": {
+          "lemma": "idioma",
+          "pos": "sustantivo masculino plural",
+          "meaning": "语言",
+          "en": "languages",
+          "es": "Lenguas utilizadas para comunicarse."
+        },
+        "intercambio": {
+          "lemma": "intercambio",
+          "pos": "sustantivo masculino",
+          "meaning": "交换；交流活动",
+          "en": "exchange",
+          "es": "Actividad en la que se comparte algo mutuamente."
+        },
+        "jueves": {
+          "lemma": "jueves",
+          "pos": "sustantivo masculino",
+          "meaning": "星期四",
+          "en": "Thursday",
+          "es": "Día de la semana entre miércoles y viernes."
+        },
+        "la": {
+          "meaning": "定冠词（阴性单数）",
+          "en": "the",
+          "es": "Acompaña a un nombre femenino singular conocido.",
+          "lemma": "el",
+          "pos": "artículo determinado femenino"
+        },
+        "las": {
+          "meaning": "定冠词（阴性复数）",
+          "en": "the",
+          "es": "Acompaña a nombres femeninos plurales conocidos.",
+          "lemma": "el",
+          "pos": "artículo determinado femenino plural"
+        },
+        "llego": {
+          "lemma": "llegar",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我到达",
+          "en": "I arrive",
+          "es": "Alcanzo un lugar de destino."
+        },
+        "los": {
+          "meaning": "定冠词（阳性复数）",
+          "en": "the",
+          "es": "Acompaña a nombres masculinos plurales conocidos.",
+          "lemma": "el",
+          "pos": "artículo determinado masculino plural"
+        },
+        "me": {
+          "lemma": "yo",
+          "pos": "pronombre personal átono",
+          "meaning": "我；向我；自复动作中的我",
+          "en": "me; to me; myself",
+          "es": "Pronombre átono de primera persona singular, complemento o marca pronominal."
+        },
+        "ocho": {
+          "lemma": "ocho",
+          "pos": "numeral cardinal",
+          "meaning": "八",
+          "en": "eight",
+          "es": "Número que sigue al siete."
+        },
+        "palabras": {
+          "lemma": "palabra",
+          "pos": "sustantivo femenino plural",
+          "meaning": "单词（复数）",
+          "en": "words",
+          "es": "Unidades lingüísticas con significado o función."
+        },
+        "pero": {
+          "lemma": "pero",
+          "pos": "conjunción",
+          "meaning": "但是",
+          "en": "but",
+          "es": "Introduce una idea que contrasta con la anterior."
+        },
+        "personas": {
+          "meaning": "人",
+          "en": "people",
+          "es": "Seres humanos.",
+          "lemma": "persona",
+          "pos": "sustantivo femenino plural"
+        },
+        "poco": {
+          "lemma": "poco",
+          "pos": "adverbio o cuantificador",
+          "meaning": "一点；少；逐渐（poco a poco）",
+          "en": "a little; little",
+          "es": "Indica cantidad o grado reducido."
+        },
+        "practicar": {
+          "lemma": "practicar",
+          "pos": "verbo, infinitivo",
+          "meaning": "练习",
+          "en": "to practise",
+          "es": "Repetir una actividad para mejorar."
+        },
+        "quiero": {
+          "meaning": "我想要",
+          "en": "I want",
+          "es": "Deseo algo o deseo hacer algo.",
+          "lemma": "querer",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "seis": {
+          "lemma": "seis",
+          "pos": "numeral cardinal",
+          "meaning": "六",
+          "en": "six",
+          "es": "Número que sigue al cinco."
+        },
+        "semana": {
+          "lemma": "semana",
+          "pos": "sustantivo femenino",
+          "meaning": "星期；周",
+          "en": "week",
+          "es": "Periodo de siete días."
+        },
+        "sin": {
+          "lemma": "sin",
+          "pos": "preposición",
+          "meaning": "没有；不……",
+          "en": "without",
+          "es": "Indica ausencia de algo o de una acción."
+        },
+        "tengo": {
+          "meaning": "我有",
+          "en": "I have",
+          "es": "Poseo algo.",
+          "lemma": "tener",
+          "pos": "verbo, presente, 1.ª persona singular"
+        },
+        "un": {
+          "lemma": "uno",
+          "pos": "artículo indefinido masculino singular",
+          "meaning": "一个（阳性）",
+          "en": "a; one",
+          "es": "Artículo indefinido ante un nombre masculino singular."
+        },
+        "universidad": {
+          "lemma": "universidad",
+          "pos": "sustantivo femenino",
+          "meaning": "大学",
+          "en": "university",
+          "es": "Institución de enseñanza superior."
+        },
+        "ventana": {
+          "lemma": "ventana",
+          "pos": "sustantivo femenino",
+          "meaning": "窗户",
+          "en": "window",
+          "es": "Abertura que permite la entrada de luz o aire."
+        },
+        "vivo": {
+          "lemma": "vivir",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我居住",
+          "en": "I live",
+          "es": "Resido en un lugar."
+        },
+        "y": {
+          "meaning": "和",
+          "en": "and",
+          "es": "Une palabras o ideas.",
+          "lemma": "y",
+          "pos": "conjunción"
+        },
+        "yo": {
+          "lemma": "yo",
+          "pos": "pronombre",
+          "meaning": "我",
+          "en": "I",
+          "es": "Pronombre de primera persona singular usado como sujeto."
+        },
+        "aquí": {
+          "lemma": "aquí",
+          "pos": "adverbio de lugar",
+          "meaning": "这里；在这里",
+          "en": "here",
+          "es": "En este lugar."
+        },
+        "buenas": {
+          "lemma": "bueno",
+          "pos": "adjetivo, femenino plural",
+          "meaning": "好的；buenas tardes 下午好",
+          "en": "good; good afternoon in the greeting",
+          "es": "Forma femenina plural de bueno, usada en el saludo buenas tardes."
+        },
+        "china": {
+          "lemma": "China",
+          "pos": "nombre propio",
+          "meaning": "中国",
+          "en": "China",
+          "es": "País de Asia."
+        },
+        "ciudad": {
+          "lemma": "ciudad",
+          "pos": "sustantivo femenino",
+          "meaning": "城市",
+          "en": "city",
+          "es": "Lugar urbano donde vive mucha gente."
+        },
+        "claro": {
+          "lemma": "claro",
+          "pos": "adjetivo; fórmula de afirmación",
+          "meaning": "当然；清楚的",
+          "en": "of course; sure",
+          "es": "En una respuesta, expresa acuerdo o confirmación."
+        },
+        "conocer": {
+          "lemma": "conocer",
+          "pos": "verbo, infinitivo",
+          "meaning": "认识（人）；结识",
+          "en": "to meet; to get to know",
+          "es": "Empezar a tener trato con una persona."
+        },
+        "estudias": {
+          "lemma": "estudiar",
+          "pos": "verbo, presente, 2.ª persona singular",
+          "meaning": "你学习",
+          "en": "you study",
+          "es": "Dedicas tiempo a aprender."
+        },
+        "gusto": {
+          "lemma": "gusto",
+          "pos": "sustantivo masculino",
+          "meaning": "高兴；mucho gusto 很高兴认识你",
+          "en": "pleasure",
+          "es": "Sensación agradable; en mucho gusto se expresa alegría por conocer a alguien."
+        },
+        "hablo": {
+          "lemma": "hablar",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我说话；我讲",
+          "en": "I speak",
+          "es": "Me comunico mediante palabras."
+        },
+        "haces": {
+          "lemma": "hacer",
+          "pos": "verbo, presente, 2.ª persona singular",
+          "meaning": "你做",
+          "en": "you do",
+          "es": "Realizas una actividad."
+        },
+        "hola": {
+          "lemma": "hola",
+          "pos": "interjección",
+          "meaning": "你好",
+          "en": "hello",
+          "es": "Saludo habitual al encontrarse con alguien."
+        },
+        "inglés": {
+          "lemma": "inglés",
+          "pos": "sustantivo masculino",
+          "meaning": "英语",
+          "en": "English",
+          "es": "Lengua que se habla en numerosos países."
+        },
+        "junto": {
+          "lemma": "junto",
+          "pos": "adverbio, en junto a",
+          "meaning": "紧挨着；junto a 在……旁边",
+          "en": "next to",
+          "es": "En la expresión junto a indica proximidad."
+        },
+        "libres": {
+          "lemma": "libre",
+          "pos": "adjetivo, plural",
+          "meaning": "空着的；可用的",
+          "en": "free; available",
+          "es": "Que no están ocupadas, en este caso las sillas."
+        },
+        "lin": {
+          "lemma": "Lin",
+          "pos": "nombre propio",
+          "meaning": "林（人名）",
+          "en": "Lin",
+          "es": "Nombre de una de las personas del diálogo."
+        },
+        "llamo": {
+          "lemma": "llamarse / llamar",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "me llamo 我叫……",
+          "en": "my name is; I am called",
+          "es": "En me llamo, indico mi nombre."
+        },
+        "mucho": {
+          "lemma": "mucho",
+          "pos": "cuantificador masculino singular",
+          "meaning": "很多；mucho gusto 很高兴认识你",
+          "en": "much; a lot",
+          "es": "Indica una cantidad o intensidad grande; forma parte del saludo mucho gusto."
+        },
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
+        },
+        "normalmente": {
+          "lemma": "normalmente",
+          "pos": "adverbio",
+          "meaning": "通常",
+          "en": "usually",
+          "es": "De manera habitual."
+        },
+        "nuevas": {
+          "lemma": "nuevo",
+          "pos": "adjetivo femenino plural",
+          "meaning": "新的",
+          "en": "new",
+          "es": "Que son nuevas para la persona, como las palabras que aún aprende."
+        },
+        "o": {
+          "lemma": "o",
+          "pos": "conjunción disyuntiva",
+          "meaning": "或者",
+          "en": "or",
+          "es": "Presenta alternativas."
+        },
+        "otras": {
+          "lemma": "otro",
+          "pos": "determinante indefinido femenino plural",
+          "meaning": "其他的",
+          "en": "other",
+          "es": "Indica personas o cosas distintas de las mencionadas."
+        },
+        "pablo": {
+          "lemma": "Pablo",
+          "pos": "nombre propio",
+          "meaning": "巴勃罗（人名）",
+          "en": "Pablo",
+          "es": "Nombre de uno de los participantes del diálogo."
+        },
+        "participantes": {
+          "lemma": "participante",
+          "pos": "sustantivo común en cuanto al género, plural",
+          "meaning": "参加者",
+          "en": "participants",
+          "es": "Personas que toman parte en una actividad."
+        },
+        "perfecto": {
+          "lemma": "perfecto",
+          "pos": "adjetivo; fórmula de aprobación",
+          "meaning": "太好了；完美的",
+          "en": "great; perfect",
+          "es": "En una respuesta indica que una propuesta resulta adecuada."
+        },
+        "podemos": {
+          "lemma": "poder",
+          "pos": "verbo, presente, 1.ª persona plural",
+          "meaning": "我们可以",
+          "en": "we can",
+          "es": "Tenemos la posibilidad de hacer algo."
+        },
+        "problema": {
+          "lemma": "problema",
+          "pos": "sustantivo masculino",
+          "meaning": "问题；sin problema 没问题",
+          "en": "problem",
+          "es": "Dificultad; sin problema indica que algo se puede hacer sin dificultad."
+        },
+        "puedes": {
+          "lemma": "poder",
+          "pos": "verbo, presente, 2.ª persona singular",
+          "meaning": "你可以；你能",
+          "en": "you can",
+          "es": "Tienes la posibilidad de hacer algo."
+        },
+        "qué": {
+          "lemma": "qué",
+          "pos": "pronombre o determinante interrogativo",
+          "meaning": "什么；哪种",
+          "en": "what",
+          "es": "Se usa para preguntar por algo."
+        },
+        "repetir": {
+          "lemma": "repetir",
+          "pos": "verbo, infinitivo",
+          "meaning": "重复；再说一遍",
+          "en": "to repeat",
+          "es": "Volver a decir o hacer algo."
+        },
+        "sillas": {
+          "lemma": "silla",
+          "pos": "sustantivo femenino plural",
+          "meaning": "椅子（复数）",
+          "en": "chairs",
+          "es": "Asientos para una persona, normalmente con respaldo."
+        },
+        "soy": {
+          "lemma": "ser",
+          "pos": "verbo, presente, 1.ª persona singular",
+          "meaning": "我是；soy de 我来自",
+          "en": "I am; I am from",
+          "es": "Identifico mi persona o indico mi origen."
+        },
+        "sí": {
+          "lemma": "sí",
+          "pos": "adverbio de afirmación",
+          "meaning": "是的；对",
+          "en": "yes",
+          "es": "Expresa una respuesta afirmativa."
+        },
+        "tardes": {
+          "lemma": "tarde",
+          "pos": "sustantivo femenino plural",
+          "meaning": "下午；buenas tardes 下午好",
+          "en": "afternoons; good afternoon",
+          "es": "Partes del día entre el mediodía y la noche; se usa en el saludo buenas tardes."
+        },
+        "tiempo": {
+          "lemma": "tiempo",
+          "pos": "sustantivo masculino",
+          "meaning": "时间；tener tiempo 有空",
+          "en": "time",
+          "es": "Duración disponible para hacer algo."
+        },
+        "trabajas": {
+          "lemma": "trabajar",
+          "pos": "verbo, presente, 2.ª persona singular",
+          "meaning": "你工作",
+          "en": "you work",
+          "es": "Realizas una actividad laboral."
+        },
+        "trabajo": {
+          "lemma": "trabajar / trabajo",
+          "pos": "verbo, presente, 1.ª persona singular; sustantivo masculino",
+          "meaning": "我工作（Yo trabajo）；工作（del trabajo）",
+          "en": "I work; work",
+          "es": "Como verbo expresa que realizo una actividad laboral; como nombre designa esa actividad."
+        },
+        "uno": {
+          "lemma": "uno",
+          "pos": "pronombre indefinido masculino",
+          "meaning": "其中一个；uno de… ……之一",
+          "en": "one; one of",
+          "es": "Indica una persona o cosa dentro de un grupo."
+        }
+      },
+      "dict": {
+        "a": "在（时间）；向；到",
+        "barcelona": "巴塞罗那",
+        "bien": "好；合适",
+        "cerca": "附近",
+        "clase": "课；课堂",
+        "de": "的；从；用于 antes de",
+        "del": "de + el；……的；从",
+        "despacio": "慢慢地",
+        "después": "之后；然后",
+        "dos": "二；两个",
+        "días": "天（复数）",
+        "el": "定冠词（阳性单数）",
+        "en": "在",
+        "es": "是",
+        "español": "西班牙语",
+        "estudio": "我学习",
+        "hablar": "说话；讲",
+        "hasta": "直到；到",
+        "hay": "有",
+        "hoy": "今天",
+        "idiomas": "语言",
+        "intercambio": "交换；交流活动",
+        "jueves": "星期四",
+        "la": "定冠词（阴性单数）",
+        "las": "定冠词（阴性复数）",
+        "llego": "我到达",
+        "los": "定冠词（阳性复数）",
+        "me": "我；向我；自复动作中的我",
+        "ocho": "八",
+        "palabras": "单词（复数）",
+        "pero": "但是",
+        "personas": "人",
+        "poco": "一点；少；逐渐（poco a poco）",
+        "practicar": "练习",
+        "quiero": "我想要",
+        "seis": "六",
+        "semana": "星期；周",
+        "sin": "没有；不……",
+        "tengo": "我有",
+        "un": "一个（阳性）",
+        "universidad": "大学",
+        "ventana": "窗户",
+        "vivo": "我居住",
+        "y": "和",
+        "yo": "我",
+        "aquí": "这里；在这里",
+        "buenas": "好的；buenas tardes 下午好",
+        "china": "中国",
+        "ciudad": "城市",
+        "claro": "当然；清楚的",
+        "conocer": "认识（人）；结识",
+        "estudias": "你学习",
+        "gusto": "高兴；mucho gusto 很高兴认识你",
+        "hablo": "我说话；我讲",
+        "haces": "你做",
+        "hola": "你好",
+        "inglés": "英语",
+        "junto": "紧挨着；junto a 在……旁边",
+        "libres": "空着的；可用的",
+        "lin": "林（人名）",
+        "llamo": "me llamo 我叫……",
+        "mucho": "很多；mucho gusto 很高兴认识你",
+        "muy": "很；非常",
+        "normalmente": "通常",
+        "nuevas": "新的",
+        "o": "或者",
+        "otras": "其他的",
+        "pablo": "巴勃罗（人名）",
+        "participantes": "参加者",
+        "perfecto": "太好了；完美的",
+        "podemos": "我们可以",
+        "problema": "问题；sin problema 没问题",
+        "puedes": "你可以；你能",
+        "qué": "什么；哪种",
+        "repetir": "重复；再说一遍",
+        "sillas": "椅子（复数）",
+        "soy": "我是；soy de 我来自",
+        "sí": "是的；对",
+        "tardes": "下午；buenas tardes 下午好",
+        "tiempo": "时间；tener tiempo 有空",
+        "trabajas": "你工作",
+        "trabajo": "我工作（Yo trabajo）；工作（del trabajo）",
+        "uno": "其中一个；uno de… ……之一"
+      },
+      "library": "core",
+      "core_key": "A1:0",
+      "id": "core-a1-01",
+      "source": {
+        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
+        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+        "date": "2026-11-26"
+      },
+      "cover": "covers/general.svg",
+      "quality": {
+        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
+        "estimated_level": "A1",
+        "authored": true
+      },
+      "audio": [
+        "audio/core-a1-01/602b1a0e12ed2004.mp3",
+        "audio/core-a1-01/bdc98532c7c0ba7b.mp3",
+        "audio/core-a1-01/3fa48290dfdc05ac.mp3",
+        "audio/core-a1-01/3806de18ed4acb73.mp3",
+        "audio/core-a1-01/a7406b67207ed083.mp3",
+        "audio/core-a1-01/090ee32899662a9c.mp3",
+        "audio/core-a1-01/230a22da0a7af5aa.mp3",
+        "audio/core-a1-01/bdcbb7b325328ad7.mp3",
+        "audio/core-a1-01/380757de314645a3.mp3",
+        "audio/core-a1-01/269d073b52d3d01c.mp3"
+      ],
+      "curriculum_version": "3.4",
+      "generated_on": "2026-11-26",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:25:22.478764+00:00",
+      "audio_text_sha256": [
+        "f52f580ddef40f026ab24f3ab5edaa19244e20729fa7022288ed3e6ed5372092",
+        "fe41b254509031d9d6aea6ee74b4a03186623a3a6470d52d990be047310c2a04",
+        "bc9bea089edda903c9ae91ef27a9fda534ac7b880253e91b294096b4c035218d",
+        "6118df16c44188a1579ec92373429c77dbab56218fd478c4a07a034455aba754",
+        "901fdbf582d919f4bac4904893c3c6f9186aa8c68ee08661882dada79f8c66ab",
+        "61f1a374d53cbbce4112ab7bacbe031aa5c5acb05b84a934dfd598b56ea52192",
+        "14d471d5af065e2fedf73688b6cdbcce7f78fdfa9725060d878f9e0aa888f374",
+        "e71857a389660ea0c382a5da9882f52d8aa702f4e2a580df0d7e2f977a8e3ce8",
+        "d8c68f9e1ee7a2e981838fc470fb22bc926beebc2634a28c949d3f86dad4ae62",
+        "11615e23c54d1fb9c06dc144bd7e17d0e31be40839efe8ecdcbc5ed3aee76a10"
+      ]
+    },
+    {
       "id": "bne-2026",
       "title": "西班牙国家图书馆的宝藏",
       "esTitle": "Los tesoros de la Biblioteca Nacional",
@@ -94,7 +898,17 @@
           "answer": 0
         }
       ],
-      "word_audio": {}
+      "word_audio": {},
+      "audio": [
+        "audio/shared/sentences/9ad7b30cf6f48545.mp3",
+        "audio/shared/sentences/a6e783d287475901.mp3",
+        "audio/shared/sentences/c036f6060331080d.mp3",
+        "audio/shared/sentences/80fc0a99c19baea5.mp3",
+        "audio/shared/sentences/6a963bc05ea55f51.mp3",
+        "audio/shared/sentences/2fdf679189ff41b3.mp3",
+        "audio/shared/sentences/48f6639ae21052af.mp3",
+        "audio/shared/sentences/668c3314a1b07cbd.mp3"
+      ]
     },
     {
       "skip": false,
@@ -357,7 +1171,117 @@
       "ocho": "audio/shared/words/7812878c847f514a.mp3",
       "saluda": "audio/shared/words/f17ef23d64206160.mp3",
       "muchas": "audio/shared/words/f30e08be1ec02834.mp3",
-      "compran": "audio/shared/words/66b222f35f9cbdb6.mp3"
+      "compran": "audio/shared/words/66b222f35f9cbdb6.mp3",
+      "antes": "audio/shared/words/60a6c2661df4be46.mp3",
+      "amiga": "audio/shared/words/d0711972e2a8e2e4.mp3",
+      "clase": "audio/shared/words/af197166e4f59bf6.mp3",
+      "con": "audio/shared/words/1143da2bc54c495c.mp3",
+      "empezar": "audio/shared/words/9414d9d81d9e9cc4.mp3",
+      "día": "audio/shared/words/bfbf44740f41554d.mp3",
+      "gusta": "audio/shared/words/a3d13a81280d5b68.mp3",
+      "hablamos": "audio/shared/words/321d90499f4cd351.mp3",
+      "me": "audio/shared/words/2744ccd10c7533bd.mp3",
+      "pan": "audio/shared/words/00e37ffae0562ab6.mp3",
+      "poco": "audio/shared/words/7bb813331895b1bf.mp3",
+      "prefiero": "audio/shared/words/85970e17a4602870.mp3",
+      "semana": "audio/shared/words/02fe327721518939.mp3",
+      "prisa": "audio/shared/words/869e83f030e0dd83.mp3",
+      "sentarme": "audio/shared/words/a96dac6991b135f1.mp3",
+      "trabajar": "audio/shared/words/b0a4d86b9ce8fcde.mp3",
+      "vamos": "audio/shared/words/06b557a84d9e50cb.mp3",
+      "ventana": "audio/shared/words/67a6ddae1cc397ab.mp3",
+      "sin": "audio/shared/words/cccc68c7928e63fe.mp3",
+      "yo": "audio/shared/words/e9058ab198f6908f.mp3",
+      "al": "audio/shared/words/6351825030155836.mp3",
+      "ahorrar": "audio/shared/words/38039a482174b4cf.mp3",
+      "arroz": "audio/shared/words/b4441a9b8bc3f080.mp3",
+      "caja": "audio/shared/words/f88fa5ec367813bc.mp3",
+      "bolsa": "audio/shared/words/7d4cdc7e8879cf09.mp3",
+      "cena": "audio/shared/words/507f8ded27f5b96f.mp3",
+      "compra": "audio/shared/words/4e1e2290413bf00e.mp3",
+      "cajera": "audio/shared/words/149187bcd0a53401.mp3",
+      "comprar": "audio/shared/words/37e4f313e9259898.mp3",
+      "compro": "audio/shared/words/315da70d41501549.mp3",
+      "delante": "audio/shared/words/6a63fd77f3e05e9d.mp3",
+      "dinero": "audio/shared/words/51a2cff68ef42585.mp3",
+      "están": "audio/shared/words/72be774d2df7e3c3.mp3",
+      "fruta": "audio/shared/words/842eac58c5ac51e1.mp3",
+      "frutas": "audio/shared/words/c2a59c1125219bd1.mp3",
+      "hago": "audio/shared/words/513392b9b02ffab7.mp3",
+      "aquí": "audio/shared/words/1ccb3618344e9ce3.mp3",
+      "barcelona": "audio/shared/words/e647708a52060743.mp3",
+      "bien": "audio/shared/words/48b3f8392fb766ae.mp3",
+      "buenas": "audio/shared/words/bbee64540489243e.mp3",
+      "china": "audio/shared/words/50c0152c2952082a.mp3",
+      "ciudad": "audio/shared/words/3838ff14766fc5f9.mp3",
+      "claro": "audio/shared/words/bdae5d555cce9e9b.mp3",
+      "del": "audio/shared/words/75e3090289e2955d.mp3",
+      "dos": "audio/shared/words/c1299854f2b20963.mp3",
+      "despacio": "audio/shared/words/3d9d76375e115725.mp3",
+      "español": "audio/shared/words/0c7ab686d80cf896.mp3",
+      "días": "audio/shared/words/8ac39ca2f489c023.mp3",
+      "estudias": "audio/shared/words/d473b284045874ab.mp3",
+      "gusto": "audio/shared/words/95f3aff4188f8ccf.mp3",
+      "hablar": "audio/shared/words/2d6e0ba0758e3b61.mp3",
+      "hablo": "audio/shared/words/a918a975a10c62af.mp3",
+      "hasta": "audio/shared/words/b513bb817ef5d4ec.mp3",
+      "haces": "audio/shared/words/e1419610a2be3321.mp3",
+      "hola": "audio/shared/words/b221d9dbb083a7f3.mp3",
+      "hoy": "audio/shared/words/b40f9b6bd61659f9.mp3",
+      "idiomas": "audio/shared/words/60510246b0955622.mp3",
+      "inglés": "audio/shared/words/995d014f191de371.mp3",
+      "intercambio": "audio/shared/words/2e03955b44cff5ec.mp3",
+      "jueves": "audio/shared/words/15b84102a789f8bd.mp3",
+      "junto": "audio/shared/words/0a6196d024f4a165.mp3",
+      "libres": "audio/shared/words/a95bb8af58e00a32.mp3",
+      "llamo": "audio/shared/words/72dc3729054b1860.mp3",
+      "lin": "audio/shared/words/2f48b881ea7073f1.mp3",
+      "llego": "audio/shared/words/e28a62e9c6b595b0.mp3",
+      "muy": "audio/shared/words/6e52ce99f4b85377.mp3",
+      "mucho": "audio/shared/words/68faa687ba9a097f.mp3",
+      "normalmente": "audio/shared/words/6b4f985b58eef113.mp3",
+      "o": "audio/shared/words/65c74c15a686187b.mp3",
+      "nuevas": "audio/shared/words/099d1c39c5cb2463.mp3",
+      "palabras": "audio/shared/words/0445fa154f15efab.mp3",
+      "pablo": "audio/shared/words/26079e41910bcde0.mp3",
+      "otras": "audio/shared/words/7ee3538c588487fe.mp3",
+      "participantes": "audio/shared/words/d50f38f7a42f688e.mp3",
+      "perfecto": "audio/shared/words/e7058bef6aea4d1d.mp3",
+      "podemos": "audio/shared/words/9068ad181722fa31.mp3",
+      "practicar": "audio/shared/words/f45669299f61b00c.mp3",
+      "pero": "audio/shared/words/0db9df7d8e7ff24a.mp3",
+      "problema": "audio/shared/words/835b578bd545a1bb.mp3",
+      "quiero": "audio/shared/words/2812cc950d042106.mp3",
+      "puedes": "audio/shared/words/a8f581759d9df081.mp3",
+      "qué": "audio/shared/words/9030c4df6adca92b.mp3",
+      "seis": "audio/shared/words/061b38e441371bac.mp3",
+      "repetir": "audio/shared/words/4b56d912aa76d05b.mp3",
+      "sillas": "audio/shared/words/95bde96ca42a3a01.mp3",
+      "soy": "audio/shared/words/e676b5103a4f9d93.mp3",
+      "sí": "audio/shared/words/4f87498b67d58967.mp3",
+      "tengo": "audio/shared/words/34f2bd9e1e7cec53.mp3",
+      "tiempo": "audio/shared/words/666a9f67617f9f9a.mp3",
+      "tardes": "audio/shared/words/7e81e114dcc6756d.mp3",
+      "trabajas": "audio/shared/words/b5593a4818d644e9.mp3",
+      "trabajo": "audio/shared/words/96c39f73a9331a24.mp3",
+      "uno": "audio/shared/words/bf0ec3694e122e06.mp3",
+      "vivo": "audio/shared/words/69337578b2468a88.mp3",
+      "leche": "audio/shared/words/25e4131c13c551a8.mp3",
+      "huevos": "audio/shared/words/d956e9ff8fa3c1e5.mp3",
+      "lista": "audio/shared/words/0296c43c240aa12c.mp3",
+      "manzanas": "audio/shared/words/a0dcfa5cc3612989.mp3",
+      "miro": "audio/shared/words/e402bd4f0a138c71.mp3",
+      "mochila": "audio/shared/words/a4f6433a1b183ba0.mp3",
+      "mí": "audio/shared/words/843ef75728ee3b47.mp3",
+      "naranjas": "audio/shared/words/282b826c468f0808.mp3",
+      "necesito": "audio/shared/words/8dc394c8c7b64a65.mp3",
+      "porque": "audio/shared/words/0ecb91a89d8d53ae.mp3",
+      "pago": "audio/shared/words/399a124ec174a04c.mp3",
+      "precios": "audio/shared/words/ccfaa93e77af3a6f.mp3",
+      "salir": "audio/shared/words/045c42e8a7f1075d.mp3",
+      "pregunta": "audio/shared/words/f480c3e5d39026e7.mp3",
+      "si": "audio/shared/words/97a62ad21d79c01c.mp3",
+      "supermercado": "audio/shared/words/cc22b26e63fe9768.mp3"
     },
     "sentences": {
       "Después voy a una cafetería cerca de la universidad.": "audio/shared/sentences/159a2c64ac779bab.mp3",
@@ -477,5 +1401,300 @@
       "Así gano confianza poco a poco.": "audio/shared/sentences/872bbe8fe7753af6.mp3"
     }
   },
-  "audio_recovery_v29": true
+  "audio_recovery_v29": true,
+  "teaching_pending": [
+    {
+      "level": "A2",
+      "genre": "account",
+      "title": "课程 A2-01：周末出游的一次小意外",
+      "esTitle": "Un sábado sin prisas",
+      "pairs": [
+        [
+          "Este fin de semana he salido de Barcelona con mi amiga Eva para visitar un pueblo que no conocíamos.",
+          "这个周末，我和朋友埃娃离开巴塞罗那，去一个我们以前没去过的小镇。"
+        ],
+        [
+          "El sábado salimos temprano porque queríamos aprovechar el día y volver a casa antes de las ocho.",
+          "周六我们很早出发，想充分利用这一天，并在八点前回家。"
+        ],
+        [
+          "Hacía buen tiempo cuando llegamos a la estación, pero al poco rato empezó a llover.",
+          "我们到车站时天气很好，但没过多久就下起了雨。"
+        ],
+        [
+          "Por suerte, Eva llevaba un paraguas grande y pudimos llegar a una cafetería sin mojarnos demasiado.",
+          "幸好埃娃带了一把大雨伞，我们走到一家咖啡馆时没有淋得太湿。"
+        ],
+        [
+          "Pedimos dos cafés y decidimos cambiar el plan, porque el camino junto al río estaba lleno de agua.",
+          "我们点了两杯咖啡，决定改变计划，因为河边的路积满了水。"
+        ],
+        [
+          "En vez de hacer la excursión, visitamos una librería y encontramos varios libros de segunda mano.",
+          "我们没有远足，而是去了一家书店，找到了几本二手书。"
+        ],
+        [
+          "Después de comer, salió el sol y dimos un paseo corto por las calles del centro.",
+          "午饭后太阳出来了，我们在镇中心的街道上散了一会儿步。"
+        ],
+        [
+          "Antes de volver compré una postal para mi hermana, que no pudo venir con nosotras.",
+          "回去前，我给没能和我们一起来的姐姐买了一张明信片。"
+        ],
+        [
+          "Al final lo pasamos muy bien, aunque no hicimos todo lo que teníamos previsto.",
+          "最后我们玩得很开心，虽然没能完成原先计划的所有事情。"
+        ]
+      ],
+      "grammar": "目标：用过去时叙述经历。① Este fin de semana he salido 表示与当下关联的经历；El sábado salimos、pedimos 表示已完成事件。西班牙各地过去时选择有所差异。② hacía、llevaba、estaba 描写当时背景。语块：aprovechar el día 充分利用一天；por suerte 幸好；en vez de 代替；al final 最后。volver antes de las ocho 八点前回来。迁移：Ayer llovía, así que cambiamos el plan.",
+      "questions": [
+        {
+          "q": "¿Por qué cambiaron el plan?",
+          "options": [
+            "Porque perdieron el tren de vuelta.",
+            "Porque Eva no quería salir de Barcelona.",
+            "Porque el camino junto al río estaba lleno de agua."
+          ],
+          "answer": 2,
+          "evidence": "el camino junto al río estaba lleno de agua"
+        },
+        {
+          "q": "¿Qué hicieron en vez de la excursión?",
+          "options": [
+            "Visitaron una librería.",
+            "Volvieron directamente a casa.",
+            "Compraron un paraguas."
+          ],
+          "answer": 0,
+          "evidence": "En vez de hacer la excursión, visitamos una librería"
+        },
+        {
+          "q": "¿Cómo valora la narradora el día?",
+          "options": [
+            "Cree que fue un día perdido.",
+            "Lo pasó bien a pesar del cambio.",
+            "Dice que no pudo salir de casa."
+          ],
+          "answer": 1,
+          "evidence": "Al final lo pasamos muy bien, aunque no hicimos todo lo que teníamos previsto"
+        }
+      ],
+      "course": {
+        "level": "A2",
+        "sequence": 0,
+        "unit": 1,
+        "cycle": 1,
+        "phase": "introduce",
+        "unit_title": "Experiences",
+        "grammar": "pretérito perfecto and indefinido in Spain usage",
+        "theme": "a recent weekend trip",
+        "expressions": "esta semana; ayer; al final; por suerte",
+        "review_expressions": "",
+        "objective": "Introduce target expressions naturally"
+      },
+      "lexicon": {
+        "y": {
+          "meaning": "和",
+          "en": "and",
+          "es": "Une palabras o ideas.",
+          "lemma": "y",
+          "pos": "conjunción"
+        },
+        "pero": {
+          "lemma": "pero",
+          "pos": "conjunción",
+          "meaning": "但是",
+          "en": "but",
+          "es": "Introduce una idea que contrasta con la anterior."
+        },
+        "sin": {
+          "lemma": "sin",
+          "pos": "preposición",
+          "meaning": "没有；不……",
+          "en": "without",
+          "es": "Indica ausencia de algo o de una acción."
+        },
+        "después": {
+          "lemma": "después",
+          "pos": "adverbio",
+          "meaning": "之后；然后",
+          "en": "afterwards; later",
+          "es": "En un momento posterior."
+        },
+        "dos": {
+          "lemma": "dos",
+          "pos": "numeral cardinal",
+          "meaning": "二；两个",
+          "en": "two",
+          "es": "Número que sigue al uno."
+        },
+        "ocho": {
+          "lemma": "ocho",
+          "pos": "numeral cardinal",
+          "meaning": "八",
+          "en": "eight",
+          "es": "Número que sigue al siete."
+        },
+        "muy": {
+          "lemma": "muy",
+          "pos": "adverbio de grado",
+          "meaning": "很；非常",
+          "en": "very",
+          "es": "Intensifica el significado de un adjetivo o adverbio."
+        },
+        "de": {
+          "lemma": "de",
+          "pos": "preposición",
+          "meaning": "的；从；用于固定搭配",
+          "en": "of; from; in fixed expressions",
+          "es": "Relaciona elementos, indica origen, pertenencia u otras relaciones."
+        },
+        "a": {
+          "lemma": "a",
+          "pos": "preposición",
+          "meaning": "向；到；在（时间）；引出补语",
+          "en": "to; at; marks certain complements",
+          "es": "Indica destino, hora o introduce determinados complementos."
+        },
+        "en": {
+          "lemma": "en",
+          "pos": "preposición",
+          "meaning": "在；用；处于",
+          "en": "in; on; at; by",
+          "es": "Indica lugar, situación, medio u otras relaciones."
+        },
+        "no": {
+          "lemma": "no",
+          "pos": "adverbio de negación",
+          "meaning": "不；没有；不是",
+          "en": "no; not",
+          "es": "Niega una afirmación, acción o idea."
+        },
+        "el": {
+          "lemma": "el",
+          "pos": "artículo determinado masculino singular",
+          "meaning": "阳性单数定冠词",
+          "en": "the",
+          "es": "Determina un nombre masculino singular."
+        },
+        "la": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino",
+          "meaning": "阴性定冠词；她/它（直接宾语代词）",
+          "en": "the; her; it",
+          "es": "Determina un nombre femenino o sustituye un complemento directo femenino."
+        },
+        "las": {
+          "lemma": "el / la",
+          "pos": "artículo determinado o pronombre átono femenino plural",
+          "meaning": "阴性复数定冠词；她们/它们（直接宾语）",
+          "en": "the; them",
+          "es": "Determina nombres femeninos plurales o sustituye un complemento directo femenino plural."
+        },
+        "un": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado masculino singular",
+          "meaning": "一个；某个",
+          "en": "a; one",
+          "es": "Introduce un nombre masculino singular no identificado o indica una unidad."
+        },
+        "una": {
+          "lemma": "uno",
+          "pos": "artículo indeterminado femenino singular",
+          "meaning": "一个；某个（阴性）",
+          "en": "a; one",
+          "es": "Introduce un nombre femenino singular no identificado o indica una unidad."
+        }
+      },
+      "dict": {
+        "y": "和",
+        "pero": "但是",
+        "sin": "没有；不……",
+        "después": "之后；然后",
+        "dos": "二；两个",
+        "ocho": "八",
+        "muy": "很；非常",
+        "de": "的；从；用于固定搭配",
+        "a": "向；到；在（时间）；引出补语",
+        "en": "在；用；处于",
+        "no": "不；没有；不是",
+        "el": "阳性单数定冠词",
+        "la": "阴性定冠词；她/它（直接宾语代词）",
+        "las": "阴性复数定冠词；她们/它们（直接宾语）",
+        "un": "一个；某个",
+        "una": "一个；某个（阴性）"
+      },
+      "library": "core",
+      "core_key": "A2:0",
+      "_rich_v32": true,
+      "id": "core-a2-01",
+      "source": {
+        "name": "原创固定课程 · CEFR/PCIC分级参考（非新闻）",
+        "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+        "date": "2026-11-26"
+      },
+      "cover": "covers/general.svg",
+      "quality": {
+        "rubric": "CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified",
+        "estimated_level": "A2",
+        "authored": true
+      },
+      "_reviewed": true,
+      "_source": {
+        "kind": "original",
+        "name": "原创教学",
+        "title": "Un sábado sin prisas",
+        "course": {
+          "level": "A2",
+          "sequence": 0,
+          "unit": 1,
+          "cycle": 1,
+          "phase": "introduce",
+          "unit_title": "Experiences",
+          "grammar": "pretérito perfecto and indefinido in Spain usage",
+          "theme": "a recent weekend trip",
+          "expressions": "esta semana; ayer; al final; por suerte",
+          "review_expressions": "",
+          "objective": "Introduce target expressions naturally"
+        }
+      },
+      "audio": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "course_progress_v33": {
+    "A1": 1,
+    "A2": 0,
+    "B1": 0,
+    "B2": 0,
+    "C1": 0
+  },
+  "core_rotation_v34": 4,
+  "teaching_api": {
+    "date": "2026-11-26",
+    "calls": 1
+  },
+  "course_status_v34": {
+    "authored_total": 30,
+    "fixed_target": 96,
+    "authored_published": 1,
+    "fixed_published": 1,
+    "daily_retained": 2,
+    "per_level": {
+      "A1": 1,
+      "A2": 0,
+      "B1": 0,
+      "B2": 0,
+      "C1": 0
+    }
+  }
 }
