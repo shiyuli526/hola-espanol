@@ -93,7 +93,8 @@
           ],
           "answer": 0
         }
-      ]
+      ],
+      "word_audio": {}
     },
     {
       "skip": false,
@@ -197,7 +198,39 @@
         "audio/4d2051de01122221/5.mp3",
         "audio/4d2051de01122221/6.mp3",
         "audio/4d2051de01122221/7.mp3"
-      ]
+      ],
+      "word_audio": {
+        "un": "audio/4d2051de01122221/words/68bca10eea2ba33f.mp3",
+        "estudio": "audio/4d2051de01122221/words/4274e500a4832d20.mp3",
+        "nuevo": "audio/4d2051de01122221/words/238b4429a65d9a87.mp3",
+        "analiza": "audio/4d2051de01122221/words/bb2fe39ba807738a.mp3",
+        "internacional": "audio/4d2051de01122221/words/8d294eb556df7e62.mp3",
+        "la": "audio/4d2051de01122221/words/b737ca7ee563ae80.mp3",
+        "acción": "audio/4d2051de01122221/words/44017cc4aaf75350.mp3",
+        "de": "audio/4d2051de01122221/words/959a45d44e6fcf58.mp3",
+        "plantar": "audio/4d2051de01122221/words/5c15a6bc61cbdb0a.mp3",
+        "árboles": "audio/4d2051de01122221/words/37c9d044e8ed39df.mp3",
+        "universidad": "audio/4d2051de01122221/words/0c8315151c580e31.mp3",
+        "cádiz": "audio/4d2051de01122221/words/1258b89d62d01790.mp3",
+        "lidera": "audio/4d2051de01122221/words/dec8d790ffa285f3.mp3",
+        "importante": "audio/4d2051de01122221/words/7edb94787073db77.mp3",
+        "esta": "audio/4d2051de01122221/words/2d98c0c5592a747c.mp3",
+        "investigación": "audio/4d2051de01122221/words/946995dcbb1c0de0.mp3",
+        "científicos": "audio/4d2051de01122221/words/11f74859e084c369.mp3",
+        "científica": "audio/4d2051de01122221/words/2b31ddd32cb76310.mp3",
+        "españa": "audio/4d2051de01122221/words/57380c5b1cb2b011.mp3",
+        "chile": "audio/4d2051de01122221/words/c42f580108029f09.mp3",
+        "y": "audio/4d2051de01122221/words/a1fce4363854ff88.mp3",
+        "finlandia": "audio/4d2051de01122221/words/c4b8bef691d04a75.mp3",
+        "en": "audio/4d2051de01122221/words/dbd3a49d0d906b4e.mp3",
+        "trabajan": "audio/4d2051de01122221/words/0d4dbf0434d98486.mp3",
+        "este": "audio/4d2051de01122221/words/b3aa33b34e1b14e4.mp3",
+        "equipo": "audio/4d2051de01122221/words/824d95ce2dcb0b88.mp3",
+        "el": "audio/4d2051de01122221/words/d65c3e892354b17a.mp3",
+        "se": "audio/4d2051de01122221/words/ad9a67fefa847de8.mp3",
+        "una": "audio/4d2051de01122221/words/161f0e5ed45f6d51.mp3",
+        "publica": "audio/4d2051de01122221/words/043852c0aa229160.mp3"
+      }
     }
   ]
 }
