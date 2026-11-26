@@ -1,28 +1,38 @@
 name: Daily Spanish reading
+
 on:
   schedule:
     - cron: '17 6 * * *'
   workflow_dispatch:
+
 permissions:
   contents: write
-  models: read
+
 concurrency:
   group: hola-daily
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests feedparser edge-tts
-      - run: python update_daily.py
+
+      - name: Install dependencies
+        run: pip install requests feedparser edge-tts
+
+      - name: Generate Spanish articles
+        run: python update_daily.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: |
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Save articles and audio
+        run: |
           git config user.name 'hola-reading-bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add daily.json
