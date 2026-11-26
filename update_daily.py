@@ -1,4 +1,4 @@
-"""Hola Español 3.4: authored fixed curriculum, content-first, resumable, bounded offline publishing.
+"""Hola Español 3.5: authored fixed curriculum, content-first, resumable, bounded offline publishing.
 No changes to browser playback or existing lesson sentences. No client API calls.
 """
 import asyncio, datetime as dt, hashlib, html, json, os, pathlib, re, shutil, subprocess, sys, unicodedata, urllib.parse
@@ -11,7 +11,7 @@ CURRICULUM='https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/in
 FEEDS=[('RTVE','España','https://api2.rtve.es/rss/temas_noticias.xml'),('SINC','Ciencia','https://www.agenciasinc.es/feed/noticias'),('RTVE','Cultura','https://api2.rtve.es/rss/temas_cultura.xml')]
 MODEL=os.environ.get('GEMINI_MODEL','gemini-3.8-flash')
 MAX_REQUESTS=5
-AUDIO_BUDGET=120
+AUDIO_BUDGET=180
 FIELDS=('meaning','en','es','lemma','pos')
 PROFILES={
  'A1':dict(length=(45,105),line=16,rate='-12%',genres=('dialogue','notice','routine'),grammar='Present indicative; ser/estar/hay/tener; articles, gender, number, basic questions, location, time, simple requests. Avoid complex subordination, uncommon vocabulary and productive subjunctive. Familiar fixed polite formulas are allowed.',goal='Recognise explicit concrete facts and simple requests: person, place, time, quantity, price, intention.'),
@@ -217,7 +217,7 @@ async def fill_audio(data,budget=AUDIO_BUDGET):
     classic_words=list(dict.fromkeys(w for r in sorted(classic,key=lambda r:r[1]!='A1') for w in sorted(wordset(pairs_of(r)))))
     reserve_start=len(jobs)
     for w in classic_words:
-        if len(jobs)-reserve_start>=36:break
+        if len(jobs)-reserve_start>=12:break
         add_shared(words,'words',w)
     # Staged lessons get their exact sentence audio and all word audio before publication.
     for a in sorted(data.get('teaching_pending',[]), key=lambda a:(not coverage(a), a.get('library')!='core')):
@@ -496,7 +496,7 @@ def publish_ready(data):
         if any(x.get('id')==a.get('id') or (key and core_key(x)==key) for x in data['articles']):continue
         a['library']='core' if fixed else 'daily'
         if fixed:a['core_key']=key
-        a['curriculum_version']='3.4';a['generated_on']=DAY;a['date']=DAY;a['published_at']=dt.datetime.now(dt.timezone.utc).isoformat();a['audio_text_sha256']=[sha(p[0]) for p in a['pairs']]
+        a['curriculum_version']='3.5';a['generated_on']=DAY;a['date']=DAY;a['published_at']=dt.datetime.now(dt.timezone.utc).isoformat();a['audio_text_sha256']=[sha(p[0]) for p in a['pairs']]
         for k in list(a):
             if k.startswith('_'):del a[k]
         data['articles'].append(a);data['teaching_pending'].remove(a);published+=1
@@ -523,35 +523,65 @@ def prepare_daily_news(data):
     if any(x['id']==a['id'] for x in data['articles']+data['teaching_pending']):return False
     data['teaching_pending'].append(a);save(data);return True
 
+def stage_authored_batch(data):
+    import copy
+    occupied={core_key(a) for a in data['articles']+data['teaching_pending']}
+    added=0
+    for key,src in AUTHORED_BY_KEY.items():
+        if key in occupied:continue
+        a=copy.deepcopy(src);level=a['level'];seq=a['course']['sequence']
+        a.update(id=f'core-{level.lower()}-{seq+1:02d}',source={'name':'原创固定课程 · CEFR/PCIC分级参考（非新闻）','url':CURRICULUM,'date':DAY},cover='covers/general.svg' if level in ('A1','A2') else 'covers/culture.svg',quality={'rubric':'CEFR/PCIC-inspired; ChatGPT-authored and self-edited; not independently certified','estimated_level':level,'authored':True},_reviewed=True,_source={'kind':'original','name':'原创教学','title':a['esTitle'],'course':a['course']})
+        if not valid(a,level):raise ValueError('Invalid authored lesson '+key)
+        data['teaching_pending'].append(a);occupied.add(key);added+=1
+    # Merge authored entries into an existing draft only if its exact original text matches.
+    for a in data['teaching_pending']:
+        src=AUTHORED_BY_KEY.get(core_key(a))
+        if src and a['pairs']==src['pairs']:
+            lex=a.setdefault('lexicon',{})
+            for w,v in src['lexicon'].items():
+                if complete(v):lex.setdefault(w,copy.deepcopy(v))
+            a['dict']={**a.get('dict',{}),**{w:v['meaning'] for w,v in lex.items() if complete(v)}}
+    save(data);print('Batch staged:',added,flush=True)
+    return added
+
+def queue_rank(data,a):
+    key=core_key(a)
+    if not key:return (2,0,0)
+    gap=a['course']['sequence']-data['course_progress_v33'][a['level']]
+    return (0 if gap==0 else 1,gap,list(CORE_LIMITS).index(a['level']))
+
 def main():
     data=json.loads((ROOT/'daily.json').read_text(encoding='utf-8'));sync_core(data);save(data)
-    # A fixed authored lesson never needs a Gemini body-generation call. Stage two at most to bound disk/time.
-    # Existing fully prepared drafts are published before staging new ones.
-    publish_ready(data)
-    while len(data['teaching_pending'])<2 and authored_next(data):pass
+    publish_ready(data);stage_authored_batch(data)
     api=bool(os.environ.get('GEMINI_API_KEY','').strip()) and '--audio-only' not in sys.argv
-    try:
-        if api:
-            # Only fill missing contextual dictionary entries for already authored lessons; never alter pairs.
-            # Give each pending lesson a turn before a second round.
-            for _ in range(2):
-                for a in list(data['teaching_pending']):
-                    if calls_left(data)<=0:break
-                    editorial_step(data,a)
-            # Existing articles/classic entries still receive bounded maintenance if budget remains.
-            if calls_left(data)>0 and data.get('teaching_legacy_day')!=DAY:
-                data['teaching_legacy_day']=DAY;save(data);enrich_old(data)
-            # Optional fresh news only if core work leaves a slot and budget.
-            if len(data['teaching_pending'])<2 and calls_left(data)>=3:
-                if prepare_daily_news(data):editorial_step(data,data['teaching_pending'][-1])
-    except Exception as ex:
-        print('Teaching API deferred:',type(ex).__name__,str(ex)[:180],flush=True);save(data)
+    if api:
+        # Work on the next contiguous lessons first; use at most the remaining daily budget.
+        # Never allow one malformed response to block all other independent lessons.
+        attempted=set()
+        while calls_left(data)>0:
+            candidates=[a for a in data['teaching_pending'] if (not a.get('_reviewed') or not coverage(a)) and a.get('id') not in attempted]
+            if not candidates:break
+            a=min(candidates,key=lambda a:queue_rank(data,a));attempted.add(a.get('id'))
+            try:editorial_step(data,a);save(data)
+            except requests.HTTPError as ex:
+                print('API deferred:',str(ex)[:160],flush=True);save(data)
+                if ex.response is not None and ex.response.status_code in (400,401,403,404,429):break
+            except Exception as ex:print('Lesson deferred:',a.get('id'),type(ex).__name__,str(ex)[:160],flush=True);save(data)
+        # When authored backlog is cleared, resume optional news and legacy maintenance.
+        if not authored_remaining(data):
+            try:
+                if calls_left(data)>=3 and prepare_daily_news(data):editorial_step(data,data['teaching_pending'][-1])
+                if calls_left(data)>0 and data.get('teaching_legacy_day')!=DAY:
+                    data['teaching_legacy_day']=DAY;save(data);enrich_old(data)
+            except Exception as ex:print('Maintenance deferred:',type(ex).__name__,flush=True);save(data)
+    # Audio prioritises complete, contiguous fixed courses without waiting on unfinished dictionaries.
+    data['teaching_pending'].sort(key=lambda a:queue_rank(data,a));save(data)
     try:asyncio.run(asyncio.wait_for(fill_audio(data),timeout=450))
     except Exception as ex:print('Audio stage deferred:',type(ex).__name__,flush=True);save(data)
-    publish_ready(data)
-    # Store honest progress for audit in daily.json; not shown as completed until published.
-    progress={'authored_total':len(CORE_AUTHORED),'fixed_target':sum(CORE_LIMITS.values()),'authored_published':sum(a.get('library')=='core' and a.get('quality',{}).get('authored') is True and core_key(a) in AUTHORED_BY_KEY for a in data['articles']),'fixed_published':sum(a.get('library')=='core' for a in data['articles']),'daily_retained':sum(a.get('library')!='core' for a in data['articles']),'per_level':{level:sum(a.get('library')=='core' and a.get('level')==level for a in data['articles']) for level in CORE_LIMITS}}
+    # Repeated pass allows contiguous lessons completed out of queue order to publish safely.
+    while publish_ready(data):pass
+    progress={'authored_total':len(CORE_AUTHORED),'fixed_target':sum(CORE_LIMITS.values()),'authored_published':sum(a.get('library')=='core' and a.get('quality',{}).get('authored') is True and core_key(a) in AUTHORED_BY_KEY for a in data['articles']),'fixed_published':sum(a.get('library')=='core' for a in data['articles']),'daily_retained':sum(a.get('library')!='core' for a in data['articles']),'per_level':{level:sum(a.get('library')=='core' and a.get('level')==level for a in data['articles']) for level in CORE_LIMITS},'pending_dictionary_complete':sum(coverage(a) for a in data['teaching_pending'] if core_key(a))}
     data['course_status_v34']=progress;save(data)
-    print('V3.4 progress:',json.dumps(progress,ensure_ascii=False),'pending:',len(data['teaching_pending']),'API remaining:',calls_left(data),flush=True)
+    print('V3.5 progress:',json.dumps(progress,ensure_ascii=False),'pending:',len(data['teaching_pending']),'API remaining:',calls_left(data),flush=True)
 
 if __name__=='__main__':main()
