@@ -64,46 +64,61 @@ async def audio(a):
         path=d/f'{i}.mp3'; voice='es-ES-AlvaroNeural' if a.get('genre')=='dialogue' and i%2 else 'es-ES-ElviraNeural'; await edge_tts.Communicate(p[0],voice).save(str(path));paths.append(str(path.relative_to(ROOT)))
     return paths
 
-async def fill_word_audio(data, budget=30):
-    """Bounded, resumable word audio backfill; no Gemini requests."""
-    import edge_tts, unicodedata
-    jobs=[]; known={}
+async def fill_word_audio(data, budget=48):
+    """Shared reusable audio, independent of rolling article cleanup. No Gemini calls."""
+    import edge_tts, unicodedata, shutil
+    def norm(t): return unicodedata.normalize('NFC',t).strip()
+    lib=data.setdefault('shared_audio',{'words':{},'sentences':{}})
+    words=lib.setdefault('words',{}); sentences=lib.setdefault('sentences',{})
+    def target(kind,t): return f'audio/shared/{kind}/{hashlib.sha256(t.encode()).hexdigest()[:16]}.mp3'
+    def exists(rel): return (ROOT/rel).is_file() and (ROOT/rel).stat().st_size>0
+    def register(mapping,kind,t,legacy=None):
+        rel=target(kind,t)
+        if not exists(rel) and legacy and re.fullmatch(r'audio/[a-zA-Z0-9_-]+/(?:[0-9]+\.mp3|words/[a-f0-9]{16}\.mp3)',legacy) and exists(legacy):
+            dest=ROOT/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/legacy,dest)
+        if exists(rel): mapping[t]=rel;return True
+        mapping.pop(t,None);return False
+    # Recover already-created single-word files into a stable shared library.
     for a in data['articles']:
-        for w, rel in a.get('word_audio',{}).items():
-            if re.fullmatch(r'audio/[a-zA-Z0-9_-]+/words/[a-f0-9]{16}\.mp3',rel) and (ROOT/rel).is_file(): known[w]=rel
+        for w,rel in a.get('word_audio',{}).items():
+            if isinstance(rel,str): register(words,'words',norm(w).lower(),rel)
+    raw=json.JSONDecoder().raw_decode((ROOT/'index.html').read_text(encoding='utf-8').split('const raw=',1)[1])[0]
+    classic=[norm(pair.split('|',1)[0]) for r in raw for pair in r[2].split(';') if '|' in pair]
+    recent=[]; needed_sentences=[]
     for a in sorted(reversed(data['articles']),key=lambda x:x.get('date',''),reverse=True):
-        aid=a.get('id','')
-        if not re.fullmatch(r'[a-zA-Z0-9_-]+',aid): continue
-        mapping=a.setdefault('word_audio',{})
-        words=list(dict.fromkeys(re.findall(r'[^\W\d_]+',unicodedata.normalize('NFC',' '.join(p[0] for p in a['pairs'])).lower())))
-        for w in words:
-            # Keep files inside each article so pruning cannot invalidate another article.
-            rel=f'audio/{aid}/words/{hashlib.sha256(w.encode()).hexdigest()[:16]}.mp3'
-            if (ROOT/rel).is_file() and (ROOT/rel).stat().st_size>0: mapping[w]=rel;continue
-            if len(jobs)<budget: jobs.append((mapping,w,rel))
+        for i,pair in enumerate(a['pairs']):
+            t=norm(pair[0]);recent.append(t)
+            paths=a.get('audio') or []
+            if i>=len(paths) or not isinstance(paths[i],str) or not re.fullmatch(r'audio/[a-zA-Z0-9_-]+/[0-9]+\.mp3',paths[i]) or not exists(paths[i]): needed_sentences.append(t)
+    def unique(items): return list(dict.fromkeys(items))
+    needed_words=unique(re.findall(r'[^\W\d_]+',' '.join(recent+classic).lower()))
+    # Allocate each run across classic sentences and vocabulary; finish either queue with spare slots.
+    sq=[t for t in unique(classic+needed_sentences) if not register(sentences,'sentences',t)]
+    wq=[t for t in needed_words if not register(words,'words',t)]
+    jobs=[]
+    while len(jobs)<budget and (sq or wq):
+        if sq: jobs.append((sentences,'sentences',sq.pop(0)))
+        if wq and len(jobs)<budget: jobs.append((words,'words',wq.pop(0)))
     sem=asyncio.Semaphore(3)
-    async def one(mapping,w,rel):
+    async def one(mapping,kind,t):
         async with sem:
-            p=ROOT/rel; p.parent.mkdir(parents=True,exist_ok=True); tmp=p.with_suffix('.part')
+            rel=target(kind,t); dest=ROOT/rel;dest.parent.mkdir(parents=True,exist_ok=True);tmp=dest.with_suffix('.part')
             try:
-                await asyncio.wait_for(edge_tts.Communicate(w,'es-ES-ElviraNeural').save(str(tmp)),timeout=15)
+                await asyncio.wait_for(edge_tts.Communicate(t,'es-ES-ElviraNeural').save(str(tmp)),timeout=15)
                 if not tmp.stat().st_size: raise ValueError('empty audio')
-                tmp.replace(p);mapping[w]=rel;return 1
-            except Exception:
-                return 0
-            finally:
-                tmp.unlink(missing_ok=True)
-    if jobs:
-        result=await asyncio.gather(*(one(*j) for j in jobs))
-        print('Word audio generated:',sum(result),'/',len(jobs),flush=True)
-        return sum(result)
-    return 0
+                tmp.replace(dest);mapping[t]=rel;return 1
+            except Exception as ex:
+                print('Shared audio failed:',kind,type(ex).__name__,flush=True);return 0
+            finally:tmp.unlink(missing_ok=True)
+    result=await asyncio.gather(*(one(*j) for j in jobs))
+    print('Shared audio generated:',sum(result),'/',len(jobs),'words:',len(words),'sentences:',len(sentences),'remaining:',len(sq)+len(wq)+len(jobs)-sum(result),flush=True)
+    return sum(result)
 
 def backfill_words(data,path):
     try:
-        asyncio.run(asyncio.wait_for(fill_word_audio(data),timeout=180))
+        asyncio.run(asyncio.wait_for(fill_word_audio(data),timeout=420))
     except Exception as ex:
-        print('Word audio backfill:',type(ex).__name__,flush=True)
+        print('Shared audio backfill:',type(ex).__name__,flush=True)
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8');tmp.replace(path)
 
 def canonical(link):
@@ -119,6 +134,9 @@ def prune(data):
     return ordered[100:]
 
 def main():
+    import sys
+    if '--audio-only' in sys.argv:
+        path=ROOT/'daily.json';data=json.loads(path.read_text(encoding='utf-8'));backfill_words(data,path);return
     if not os.environ.get("GEMINI_API_KEY", "").strip():
         raise SystemExit("Missing GEMINI_API_KEY secret; library preserved.")
     import shutil
@@ -210,6 +228,7 @@ def main():
         backfill_words(data,path)
         print(f'No new articles; eligible={len(candidates)}, model attempts={attempts}; existing library preserved.')
         return
+    backfill_words(data,path)
     removed=prune(data)
     tmp=path.with_suffix('.tmp')
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -217,6 +236,5 @@ def main():
     for a in removed:
         aid=a.get('id','')
         if re.fullmatch(r'[a-zA-Z0-9_-]+',aid): shutil.rmtree(ROOT/'audio'/aid,ignore_errors=True)
-    backfill_words(data,path)
     print('Published',added,'retained',len(data['articles']),flush=True)
 if __name__=='__main__':main()
