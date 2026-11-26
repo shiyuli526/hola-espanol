@@ -64,6 +64,48 @@ async def audio(a):
         path=d/f'{i}.mp3'; voice='es-ES-AlvaroNeural' if a.get('genre')=='dialogue' and i%2 else 'es-ES-ElviraNeural'; await edge_tts.Communicate(p[0],voice).save(str(path));paths.append(str(path.relative_to(ROOT)))
     return paths
 
+async def fill_word_audio(data, budget=30):
+    """Bounded, resumable word audio backfill; no Gemini requests."""
+    import edge_tts, unicodedata
+    jobs=[]; known={}
+    for a in data['articles']:
+        for w, rel in a.get('word_audio',{}).items():
+            if re.fullmatch(r'audio/[a-zA-Z0-9_-]+/words/[a-f0-9]{16}\.mp3',rel) and (ROOT/rel).is_file(): known[w]=rel
+    for a in sorted(reversed(data['articles']),key=lambda x:x.get('date',''),reverse=True):
+        aid=a.get('id','')
+        if not re.fullmatch(r'[a-zA-Z0-9_-]+',aid): continue
+        mapping=a.setdefault('word_audio',{})
+        words=list(dict.fromkeys(re.findall(r'[^\W\d_]+',unicodedata.normalize('NFC',' '.join(p[0] for p in a['pairs'])).lower())))
+        for w in words:
+            # Keep files inside each article so pruning cannot invalidate another article.
+            rel=f'audio/{aid}/words/{hashlib.sha256(w.encode()).hexdigest()[:16]}.mp3'
+            if (ROOT/rel).is_file() and (ROOT/rel).stat().st_size>0: mapping[w]=rel;continue
+            if len(jobs)<budget: jobs.append((mapping,w,rel))
+    sem=asyncio.Semaphore(3)
+    async def one(mapping,w,rel):
+        async with sem:
+            p=ROOT/rel; p.parent.mkdir(parents=True,exist_ok=True); tmp=p.with_suffix('.part')
+            try:
+                await asyncio.wait_for(edge_tts.Communicate(w,'es-ES-ElviraNeural').save(str(tmp)),timeout=15)
+                if not tmp.stat().st_size: raise ValueError('empty audio')
+                tmp.replace(p);mapping[w]=rel;return 1
+            except Exception:
+                return 0
+            finally:
+                tmp.unlink(missing_ok=True)
+    if jobs:
+        result=await asyncio.gather(*(one(*j) for j in jobs))
+        print('Word audio generated:',sum(result),'/',len(jobs),flush=True)
+        return sum(result)
+    return 0
+
+def backfill_words(data,path):
+    try:
+        asyncio.run(asyncio.wait_for(fill_word_audio(data),timeout=180))
+    except Exception as ex:
+        print('Word audio backfill:',type(ex).__name__,flush=True)
+    tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8');tmp.replace(path)
+
 def canonical(link):
     u=urllib.parse.urlsplit(link)
     return (u.hostname or '').removeprefix('www.')+u.path.rstrip('/')
@@ -86,7 +128,7 @@ def main():
     todays=[a for a in old if a.get('generated_on',a.get('date'))==str(TODAY) and a.get('source',{}).get('name','').split(' · ')[0] in ('RTVE','SINC','教学模拟')]
     remaining=3-len(todays)
     if remaining<=0:
-        print('Daily limit already reached; no API calls');return
+        print('Daily limit already reached; no Gemini calls');backfill_words(data,path);return
     levels=levels_for(TODAY)
     for a in todays:
         if a.get('level') in levels: levels.remove(a['level'])
@@ -164,7 +206,10 @@ def main():
         tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
         tmp.replace(path)
         print('Saved article:',a['id'],flush=True)
-    if not added: raise SystemExit(f'No new articles; eligible={len(candidates)}, model attempts={attempts}; existing library preserved.')
+    if not added:
+        backfill_words(data,path)
+        print(f'No new articles; eligible={len(candidates)}, model attempts={attempts}; existing library preserved.')
+        return
     removed=prune(data)
     tmp=path.with_suffix('.tmp')
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -172,5 +217,6 @@ def main():
     for a in removed:
         aid=a.get('id','')
         if re.fullmatch(r'[a-zA-Z0-9_-]+',aid): shutil.rmtree(ROOT/'audio'/aid,ignore_errors=True)
+    backfill_words(data,path)
     print('Published',added,'retained',len(data['articles']),flush=True)
 if __name__=='__main__':main()
