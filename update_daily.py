@@ -64,7 +64,7 @@ async def audio(a):
         path=d/f'{i}.mp3'; voice='es-ES-AlvaroNeural' if a.get('genre')=='dialogue' and i%2 else 'es-ES-ElviraNeural'; await edge_tts.Communicate(p[0],voice).save(str(path));paths.append(str(path.relative_to(ROOT)))
     return paths
 
-async def fill_word_audio(data, budget=48):
+async def fill_word_audio(data, budget=160):
     """Shared reusable audio, independent of rolling article cleanup. No Gemini calls."""
     import edge_tts, unicodedata, shutil
     def norm(t): return unicodedata.normalize('NFC',t).strip()
@@ -93,19 +93,21 @@ async def fill_word_audio(data, budget=48):
     def unique(items): return list(dict.fromkeys(items))
     needed_words=unique(re.findall(r'[^\W\d_]+',' '.join(recent+classic).lower()))
     # Allocate each run across classic sentences and vocabulary; finish either queue with spare slots.
-    sq=[t for t in unique(classic+needed_sentences) if not register(sentences,'sentences',t)]
+    sq=[t for t in unique(needed_sentences+classic) if not register(sentences,'sentences',t)]
     wq=[t for t in needed_words if not register(words,'words',t)]
     jobs=[]
     while len(jobs)<budget and (sq or wq):
         if sq: jobs.append((sentences,'sentences',sq.pop(0)))
-        if wq and len(jobs)<budget: jobs.append((words,'words',wq.pop(0)))
+        elif wq: jobs.append((words,'words',wq.pop(0)))
     sem=asyncio.Semaphore(3)
     async def one(mapping,kind,t):
         async with sem:
             rel=target(kind,t); dest=ROOT/rel;dest.parent.mkdir(parents=True,exist_ok=True);tmp=dest.with_suffix('.part')
             try:
                 await asyncio.wait_for(edge_tts.Communicate(t,'es-ES-ElviraNeural').save(str(tmp)),timeout=15)
-                if not tmp.stat().st_size: raise ValueError('empty audio')
+                if tmp.stat().st_size < 512: raise ValueError('invalid audio size')
+                with tmp.open('rb') as f: head=f.read(3)
+                if not (head.startswith(b'ID3') or (head[0]==255 and head[1]&224==224)): raise ValueError('invalid MP3 header')
                 tmp.replace(dest);mapping[t]=rel;return 1
             except Exception as ex:
                 print('Shared audio failed:',kind,type(ex).__name__,flush=True);return 0
@@ -116,7 +118,7 @@ async def fill_word_audio(data, budget=48):
 
 def backfill_words(data,path):
     try:
-        asyncio.run(asyncio.wait_for(fill_word_audio(data),timeout=420))
+        asyncio.run(asyncio.wait_for(fill_word_audio(data),timeout=650))
     except Exception as ex:
         print('Shared audio backfill:',type(ex).__name__,flush=True)
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8');tmp.replace(path)
@@ -137,6 +139,24 @@ def main():
     import sys
     if '--audio-only' in sys.argv:
         path=ROOT/'daily.json';data=json.loads(path.read_text(encoding='utf-8'));backfill_words(data,path);return
+    path=ROOT/'daily.json'
+    data=json.loads(path.read_text(encoding='utf-8'))
+    if not data.get('audio_recovery_v29'):
+        backfill_words(data,path)
+        raw=json.JSONDecoder().raw_decode((ROOT/'index.html').read_text(encoding='utf-8').split('const raw=',1)[1])[0]
+        import unicodedata
+        norm=lambda t:unicodedata.normalize('NFC',t).strip()
+        lib=data.get('shared_audio',{}).get('sentences',{})
+        missing=[norm(pair.split('|',1)[0]) for r in raw for pair in r[2].split(';') if '|' in pair and not lib.get(norm(pair.split('|',1)[0]))]
+        for a in data['articles']:
+            for i,p in enumerate(a['pairs']):
+                paths=a.get('audio') or []
+                if not (i<len(paths) and isinstance(paths[i],str) and (ROOT/paths[i]).is_file()) and not lib.get(norm(p[0])): missing.append(norm(p[0]))
+        print('Recovery missing sentences:',len(missing),flush=True)
+        if not missing:
+            data['audio_recovery_v29']=True
+            path.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
+        return
     if not os.environ.get("GEMINI_API_KEY", "").strip():
         raise SystemExit("Missing GEMINI_API_KEY secret; library preserved.")
     import shutil
@@ -217,6 +237,7 @@ def main():
         except Exception as ex:
             shutil.rmtree(ROOT/'audio'/a['id'],ignore_errors=True)
             print('Neural audio unavailable:',type(ex).__name__,str(ex)[:120])
+            continue
         a['generated_on']=str(TODAY)
         if not simulated: pending.remove(level)
         old.append(a);seen.add(canonical(link));added+=1
