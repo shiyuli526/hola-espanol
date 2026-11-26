@@ -94,6 +94,110 @@
           "answer": 0
         }
       ]
+    },
+    {
+      "skip": false,
+      "title": "非林地植树可能增加火灾风险",
+      "esTitle": "Plantar árboles en terrenos no forestales puede aumentar los incendios",
+      "pairs": [
+        [
+          "Un nuevo estudio internacional analiza la acción de plantar árboles.",
+          "一项新的国际研究分析了植树这一行为。"
+        ],
+        [
+          "La Universidad de Cádiz lidera esta importante investigación científica.",
+          "加的斯大学领导了这项重要的科学研究。"
+        ],
+        [
+          "Científicos de España, Chile y Finlandia trabajan en este equipo.",
+          "来自西班牙、智利和芬兰的科学家在该团队中工作。"
+        ],
+        [
+          "El estudio se publica en una revista científica llamada PNAS.",
+          "该研究发表在一本名为《PNAS》的科学期刊上。"
+        ],
+        [
+          "Plantar árboles en zonas no forestales puede aumentar los incendios.",
+          "在非森林地区植树可能会增加火灾。"
+        ],
+        [
+          "En las regiones templadas, el número de incendios sube un 26 por ciento.",
+          "在温带地区，火灾发生率上升了26%。"
+        ],
+        [
+          "Además, la superficie quemada aumenta un 23 por ciento.",
+          "此外，过火面积增加了23%。"
+        ],
+        [
+          "Los pastizales, sabanas y matorrales no siempre necesitan nuevos árboles.",
+          "草地、稀树草原和灌木丛并不总是需要新树木。"
+        ]
+      ],
+      "grammar": "在西班牙语中，助动词“poder（能够，可能）+ 动词原形（infinitivo）”常用来表达某种动作的可能性或能力。例如文中：“Plantar árboles [...] puede aumentar los incendios”（植树可能会增加火灾）。这里“puede”是动词“poder”的陈述式现在时第三人称单数形式，后面直接连接不定式原形动词“aumentar”（增加），表示客观存在的可能性。",
+      "questions": [
+        {
+          "q": "¿Qué institución lidera esta investigación?",
+          "options": [
+            "La Universidad de Cádiz",
+            "Una universidad de Finlandia",
+            "Un centro exclusivo de Chile"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "¿Qué ocurre al transformar estos terrenos en plantaciones forestales?",
+          "options": [
+            "Disminuyen los incendios",
+            "Aumenta la actividad de incendios",
+            "No produce ningún cambio"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "¿En qué revista científica se publica el estudio?",
+          "options": [
+            "Science",
+            "Nature",
+            "PNAS"
+          ],
+          "answer": 2
+        }
+      ],
+      "dict": {
+        "nuevo": "新的（原形：nuevo）",
+        "estudio": "研究（原形：estudio）",
+        "plantar": "种植（原形：plantar）",
+        "árboles": "树木（原形：árbol）",
+        "lidera": "领导（原形：liderar）",
+        "investigación": "调查，研究（原形：investigación）",
+        "científicos": "科学家（原形：científico）",
+        "revista": "期刊，杂志（原形：revista）",
+        "aumentar": "增加（原形：aumentar）",
+        "incendios": "火灾（原形：incendio）",
+        "regiones": "地区（原形：región）",
+        "superficie": "表面，面积（原形：superficie）",
+        "quemada": "被烧毁的（原形：quemado）",
+        "pastizales": "草地，牧草地（原形：pastizal）"
+      },
+      "id": "4d2051de01122221",
+      "level": "A1",
+      "date": "2026-11-26",
+      "source": {
+        "name": "SINC · Ciencia",
+        "url": "https://www.agenciasinc.es/Noticias/plantar-arboles-en-terrenos-no-forestales-aumenta-la-frecuencia-de-incendios-en-ecosistemas-mediterraneos",
+        "date": "2026-11-24"
+      },
+      "cover": "covers/science.svg",
+      "audio": [
+        "audio/4d2051de01122221/0.mp3",
+        "audio/4d2051de01122221/1.mp3",
+        "audio/4d2051de01122221/2.mp3",
+        "audio/4d2051de01122221/3.mp3",
+        "audio/4d2051de01122221/4.mp3",
+        "audio/4d2051de01122221/5.mp3",
+        "audio/4d2051de01122221/6.mp3",
+        "audio/4d2051de01122221/7.mp3"
+      ]
     }
   ]
 }
