@@ -3,6 +3,9 @@ name: Daily Spanish reading
 on:
   schedule:
     - cron: '17 6 * * *'
+    - cron: '37 10 * * *'
+    - cron: '23 15 * * *'
+    - cron: '43 20 * * *'
   workflow_dispatch:
 
 permissions:
